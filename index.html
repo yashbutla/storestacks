@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Navbar with Animated Hamburger</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- icons -->
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
+  <!-- css -->
+  <link rel="stylesheet" href="/static/css/style.css">
+
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+
+
+
+</head>
+
+<body class="bg-[#031203] text-white">
+  <section id="">
+    <nav class="p-6 bg-[#031203] w-full top-0 left-0 z-50 border-b border-[#FFFFFF14]">
+      <div class="container mx-auto flex justify-around items-center gap-[90px]">
+        <!-- Logo -->
+        <div id="nav-logo" class="text-xl font-bold flex items-center transition-all duration-500 ease-in-out">
+          <img src="https://framerusercontent.com/images/KdL7j248Qf86U9i5ypnwlk151so.png" alt="Logo" class="h-6 mr-2">
+        </div>
+
+        <!-- Desktop Menu (Visible on md and above) -->
+        <div class="hidden md:flex gap-[50px]">
+          <a href="#" class="hover:text-gray-400">Home</a>
+          <a href="#" class="hover:text-gray-400">Pricing</a>
+          <a href="#" class="hover:text-gray-400">Blog</a>
+          <a href="#" class="hover:text-gray-400">Contact Us</a>
+        </div>
+
+        <button class="animated-button hidden md:flex">
+          <svg viewBox="0 0 24 24" class="arr-2" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z">
+            </path>
+          </svg>
+          <span class="text">Enroll Now</span>
+          <span class="circle"></span>
+          <svg viewBox="0 0 24 24" class="arr-1" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z">
+            </path>
+          </svg>
+        </button>
+
+        <!-- Mobile Menu Button (Animated Hamburger) -->
+        <button id="menu-btn" class="md:hidden flex flex-col justify-center items-center w-8 h-8 focus:outline-none">
+          <span class="block w-8 h-1 bg-white mb-2"></span>
+          <span class="block w-8 h-1 bg-white"></span>
+        </button>
+
+      </div>
+
+      <!-- Mobile Menu (Hidden by Default) -->
+      <div id="mobile-menu"
+        class="fixed inset-0 bg-[#031203] bg-opacity-95 z-40 flex flex-col items-center h-[350px] py-14 space-y-6 transform -translate-y-full opacity-0 hidden transition-all duration-300">
+        <!-- Close Button -->
+        <div class="flex items-center w-screen justify-between px-2 absolute top-[25px]">
+          <div class="lgo">
+            <img src="https://framerusercontent.com/images/KdL7j248Qf86U9i5ypnwlk151so.png" alt="Logo" class="h-8 mr-2">
+          </div>
+          <button id="close-btn"><i class="uil uil-times top-1 right-5 text-white text-5xl"></i></button>
+        </div>
+
+        <!-- Mobile Menu Items -->
+        <nav class="flex flex-col items-center space-y-6 text-lg mt-[50px]">
+          <a href="#" class="hover:text-gray-400 menu-link">Home</a>
+          <a href="#" class="hover:text-gray-400 menu-link">Pricing</a>
+          <a href="#" class="hover:text-gray-400 menu-link">Blog</a>
+          <a href="#" class="hover:text-gray-400 menu-link">Contact Us</a>
+        </nav>
+
+        <!-- Enroll Now Button -->
+        <a href="#" class="bg-gray-800 px-6 py-3 rounded-full flex items-center hover:bg-gray-700 transition">
+          <span class="mr-2">➤</span> Enroll now
+        </a>
+      </div>
+    </nav>
+
+
+    <!-- Hero section -->
+
+    <div
+      class="hero-section flex flex-col justify-center items-center relative pt-[80px] py-[50px] mx-[180px] bg-[#103B10] z-[100px] bottom-[0px]">
+      <div class="flex flex-col gap-[50px] items-center">
+        <div class="flex flex-col items-center text-center gap-[30px]">
+          <p class="text-[15px] font-bold text-white border p-[10px] px-[20px] rounded-[25px] tracking-wider">FROM
+            ASPIRING ENTREPRENEUR TO ACHIEVER</p>
+          <h1
+            class="text-5xl md:text-7xl font-extrabold text-transparent bg-clip-text bg-gradient-to-b from-green-300 via-green-100 to-white text-center leading-9">
+            LAUNCH YOUR<br />
+            HIGH CONVERTING<br />
+            SHOPIFY STORE
+          </h1>
+          <p>A fully optimized Shopify brand for just $50 no guesswork, no wasted time. Get instant access to<br>premium
+            themes, Pre-Built branding and launch within 24 hours</p>
+        </div>
+        <div class="flex items-center justify-center gap-[30px]">
+          <button class="animated-button hidden md:flex">
+            <svg viewBox="0 0 24 24" class="arr-2" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z">
+              </path>
+            </svg>
+            <span class="text">Enroll Now</span>
+            <span class="circle"></span>
+            <svg viewBox="0 0 24 24" class="arr-1" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z">
+              </path>
+            </svg>
+          </button>
+          <div class="flex">
+            <div class="flex items-center">
+              <!-- Avatars (overlapping effect) -->
+              <div class="flex -space-x-3">
+                <img src="https://framerusercontent.com/images/sFJggTzla8eMLg8n1AbKDQlyulU.jpg?scale-down-to=1024"
+                  alt="User 1" class="w-10 h-10 rounded-full border-2 border-white object-cover shadow-md">
+
+                <img src="https://framerusercontent.com/images/sFJggTzla8eMLg8n1AbKDQlyulU.jpg?scale-down-to=1024"
+                  alt="User 2" class="w-10 h-10 rounded-full border-2 border-white object-cover shadow-md">
+
+                <img src="https://framerusercontent.com/images/sFJggTzla8eMLg8n1AbKDQlyulU.jpg?scale-down-to=1024"
+                  alt="User 3" class="w-10 h-10 rounded-full border-2 border-white object-cover shadow-md">
+              </div>
+
+              <!-- "+2k" Circle -->
+              <div
+                class="relative right-[15px] w-10 h-10 rounded-full bg-[#0EC927] text-[18px] text-white flex items-center justify-center font-semibold shadow-inner">
+                2k+
+              </div>
+            </div>
+
+
+            <div id="review_star_content" class="flex flex-col gap-[5px]">
+              <div class="star">
+                <img src="/static/images/star-removebg-preview.png" alt="" class="w-[100px]">
+              </div>
+              <div class="">
+                <p class="font-semibold">Join 3000+ Brands</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Background Blur -->
+      
+      <div
+        class="store-blur absolute left-[48%] w-[97%] h-[800px] animate-store-blur pointer-events-none z-0 top-[40%]">
+      </div>
+<!-- Video Thumbnail with Play Button -->
+      <div id="videoContainer"
+        class="relative top-[50px] p-[17px] border border-[#FFFFFF14] flex justify-center items-center w-[97%] aspect-video overflow-hidden shadow-lg cursor-pointer bg-transparent">
+        <img id="videoThumbnail" src="https://i.ytimg.com/vi_webp/m6sTkYE6mB0/maxresdefault.webp" alt="Video Thumbnail"
+          class="w-full h-full object-cover" />
+        <div class="absolute inset-0 flex items-center justify-center ">
+          <svg width="68" height="48" viewBox="0 0 68 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M66.52 7.74C65.74 4.81 64.03 2.33 61.1 1.55C55.79 0.13 34 0 34 0S12.21 0.13 6.9 1.55C3.97 2.33 2.27 4.81 1.48 7.74C0.06 13.05 0 24 0 24s0.06 10.95 1.48 16.26C2.27 43.19 3.97 45.67 6.9 46.45C12.21 47.87 34 48 34 48s21.79 -0.13 27.1 -1.55c2.93 -0.78 4.64 -3.26 5.42 -6.19C67.94 34.95 68 24 68 24S67.94 13.05 66.52 7.74Z"
+              fill="#212121" fill-opacity="0.8" />
+            <path d="M 45 24 L 27 14 V 34 Z" fill="white" />
+          </svg>
+        </div>
+      </div>
+
+      <!-- Video Iframe Placeholder (Hidden initially) -->
+      <div id="videoIframeContainer"
+        class="relative top-[50px] hidden w-[97%] p-[17px] border border-[#FFFFFF14] aspect-video overflow-hidden shadow-lg">
+        <iframe class="w-full h-full" src="https://www.youtube.com/embed/?autoplay=1" frameborder="0"
+          allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>
+      </div>
+
+      <!-- Video Thumbnail with Play Button -->
+
+       <!-- Left to Right Marquee -->
+       <div class="relative py-[50px] flex justify-between items-center overflow-hidden">
+        <div class="p-[20px]">
+          <h1>Trusted By</h1>
+        </div>
+        <div class="marquee-container">
+            <div class="marquee-content flex  items-center gap-[20px]">
+                    <div class="p-[20px] flex items-center justify-center">
+                        <img src="https://framerusercontent.com/images/zdMRoER8JAZBtycxLS5VDUYZ2yg.png" class="w-[100px] object-contain" alt="">
+                    </div>
+                    <div class="p-[20px] flex items-center justify-center">
+                        <img src="https://framerusercontent.com/images/zdMRoER8JAZBtycxLS5VDUYZ2yg.png" class="w-[100px] object-contain" alt="">
+                    </div>
+                    <div class="p-[20px] flex items-center justify-center">
+                        <img src="https://framerusercontent.com/images/zdMRoER8JAZBtycxLS5VDUYZ2yg.png" class="w-[100px] object-contain" alt="">
+                    </div>
+                    <div class="p-[20px] flex items-center justify-center">
+                        <img src="https://framerusercontent.com/images/zdMRoER8JAZBtycxLS5VDUYZ2yg.png" class="w-[100px] object-contain" alt="">
+                    </div>
+                <!-- Duplicate content for seamless effect -->
+                    <div class="p-[20px] flex items-center justify-center">
+                        <img src="https://framerusercontent.com/images/zdMRoER8JAZBtycxLS5VDUYZ2yg.png" class="w-[100px] object-contain" alt="">
+                    </div>
+                    <div class="p-[20px] flex items-center justify-center">
+                        <img src="https://framerusercontent.com/images/zdMRoER8JAZBtycxLS5VDUYZ2yg.png" class="w-[100px] object-contain" alt="">
+                    </div>
+                    <div class="p-[20px] flex items-center justify-center">
+                        <img src="https://framerusercontent.com/images/zdMRoER8JAZBtycxLS5VDUYZ2yg.png" class="w-[100px] object-contain" alt="">
+                    </div>
+                    <div class="p-[20px] flex items-center justify-center">
+                        <img src="https://framerusercontent.com/images/zdMRoER8JAZBtycxLS5VDUYZ2yg.png" class="w-[100px] object-contain" alt="">
+                    </div>
+            </div>
+        </div>
+    </div>
+    </div>
+  </section>
+
+  <!-- Script -->
+  <script src="/static/js/index.js"></script>
+</body>
+
+</html>

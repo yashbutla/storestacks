@@ -1,0 +1,20 @@
+{
+  "name": "storestacks",
+  "version": "1.0.0",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yashbutla/storestacks.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yashbutla/storestacks/issues"
+  },
+  "homepage": "https://github.com/yashbutla/storestacks#readme",
+  "description": ""
+}
