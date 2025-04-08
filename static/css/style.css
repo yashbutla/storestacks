@@ -169,28 +169,39 @@
     opacity: 0.57;
   }
 
-
-
-  .marquee-container {
+  :root {
+    --gap: 20px;
+    --duration: 2s;
+    --scroll-start: 0;
+    --scroll-end: -100%;
+  }
+  
+  .marquee-wrapper {
     width: 100%;
     overflow: hidden;
     position: relative;
   }
   
-  .marquee-content {
+  .marquee {
+    animation: scroll 20s linear infinite;
+    white-space: nowrap;
     display: flex;
-    gap: 20px;
-    width: max-content;
-    animation: marquee 5s linear infinite;
   }
   
-  /* Forward Scrolling */
-  @keyframes marquee {
-    from {
-        transform: translateX(0%);
+  @keyframes scroll {
+    0% {
+      transform: translateX(0%);
     }
-    to {
-        transform: translateX(-50%);
+    100% {
+      transform: translateX(-50%);
     }
+  }
+  
+  /* Optional: Duplicate content for seamless scroll */
+  .marquee::after {
+    content: '';
+    display: flex;
+    gap: 4rem;
+    background: transparent;
   }
   

@@ -33,7 +33,9 @@
       <div class="container mx-auto flex justify-around items-center gap-[90px]">
         <!-- Logo -->
         <div id="nav-logo" class="text-xl font-bold flex items-center transition-all duration-500 ease-in-out">
-          <img src="https://framerusercontent.com/images/KdL7j248Qf86U9i5ypnwlk151so.png" alt="Logo" class="h-6 mr-2">
+          <img src="/static/images/webuilders-logo.png" alt="Logo" class="w-[50px] mr-2"
+            style="filter: invert(93%) sepia(7%) saturate(38%) hue-rotate(260deg) brightness(195%) contrast(195%);">
+          <h2>Webuilders</h2>
         </div>
 
         <!-- Desktop Menu (Visible on md and above) -->
@@ -97,7 +99,7 @@
     <!-- Hero section -->
 
     <div
-      class="hero-section flex flex-col justify-center items-center relative pt-[80px] py-[50px] mx-[180px] bg-[#103B10] z-[100px] bottom-[0px]">
+      class="hero-section flex flex-col justify-center items-center relative pt-[80px] py-[50px] bg-[#103B10] z-[100px] bottom-[0px] overflow-hidden">
       <div class="flex flex-col gap-[50px] items-center">
         <div class="flex flex-col items-center text-center gap-[30px]">
           <p class="text-[15px] font-bold text-white border p-[10px] px-[20px] rounded-[25px] tracking-wider">FROM
@@ -160,13 +162,13 @@
         </div>
       </div>
       <!-- Background Blur -->
-      
+
       <div
-        class="store-blur absolute left-[48%] w-[97%] h-[800px] animate-store-blur pointer-events-none z-0 top-[40%]">
+        class="store-blur absolute left-[43%] w-[80%] h-[800px] animate-store-blur pointer-events-none z-0 top-[45%]">
       </div>
-<!-- Video Thumbnail with Play Button -->
+      <!-- Video Thumbnail with Play Button -->
       <div id="videoContainer"
-        class="relative top-[50px] p-[17px] border border-[#FFFFFF14] flex justify-center items-center w-[97%] aspect-video overflow-hidden shadow-lg cursor-pointer bg-transparent">
+        class="relative top-[50px] p-[17px] border border-[#FFFFFF14] flex justify-center items-center w-[75%] aspect-video overflow-hidden shadow-lg cursor-pointer bg-transparent">
         <img id="videoThumbnail" src="https://i.ytimg.com/vi_webp/m6sTkYE6mB0/maxresdefault.webp" alt="Video Thumbnail"
           class="w-full h-full object-cover" />
         <div class="absolute inset-0 flex items-center justify-center ">
@@ -181,50 +183,213 @@
 
       <!-- Video Iframe Placeholder (Hidden initially) -->
       <div id="videoIframeContainer"
-        class="relative top-[50px] hidden w-[97%] p-[17px] border border-[#FFFFFF14] aspect-video overflow-hidden shadow-lg">
+        class="relative top-[50px] hidden w-[75%] p-[17px] border border-[#FFFFFF14] aspect-video overflow-hidden shadow-lg">
         <iframe class="w-full h-full" src="https://www.youtube.com/embed/?autoplay=1" frameborder="0"
           allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>
       </div>
 
-      <!-- Video Thumbnail with Play Button -->
-
-       <!-- Left to Right Marquee -->
-       <div class="relative py-[50px] flex justify-between items-center overflow-hidden">
-        <div class="p-[20px]">
-          <h1>Trusted By</h1>
-        </div>
-        <div class="marquee-container">
-            <div class="marquee-content flex  items-center gap-[20px]">
-                    <div class="p-[20px] flex items-center justify-center">
-                        <img src="https://framerusercontent.com/images/zdMRoER8JAZBtycxLS5VDUYZ2yg.png" class="w-[100px] object-contain" alt="">
-                    </div>
-                    <div class="p-[20px] flex items-center justify-center">
-                        <img src="https://framerusercontent.com/images/zdMRoER8JAZBtycxLS5VDUYZ2yg.png" class="w-[100px] object-contain" alt="">
-                    </div>
-                    <div class="p-[20px] flex items-center justify-center">
-                        <img src="https://framerusercontent.com/images/zdMRoER8JAZBtycxLS5VDUYZ2yg.png" class="w-[100px] object-contain" alt="">
-                    </div>
-                    <div class="p-[20px] flex items-center justify-center">
-                        <img src="https://framerusercontent.com/images/zdMRoER8JAZBtycxLS5VDUYZ2yg.png" class="w-[100px] object-contain" alt="">
-                    </div>
-                <!-- Duplicate content for seamless effect -->
-                    <div class="p-[20px] flex items-center justify-center">
-                        <img src="https://framerusercontent.com/images/zdMRoER8JAZBtycxLS5VDUYZ2yg.png" class="w-[100px] object-contain" alt="">
-                    </div>
-                    <div class="p-[20px] flex items-center justify-center">
-                        <img src="https://framerusercontent.com/images/zdMRoER8JAZBtycxLS5VDUYZ2yg.png" class="w-[100px] object-contain" alt="">
-                    </div>
-                    <div class="p-[20px] flex items-center justify-center">
-                        <img src="https://framerusercontent.com/images/zdMRoER8JAZBtycxLS5VDUYZ2yg.png" class="w-[100px] object-contain" alt="">
-                    </div>
-                    <div class="p-[20px] flex items-center justify-center">
-                        <img src="https://framerusercontent.com/images/zdMRoER8JAZBtycxLS5VDUYZ2yg.png" class="w-[100px] object-contain" alt="">
-                    </div>
+      <!-- Trusted by brands -->
+      <div class="py-10 relative top-[50px] overflow-hidden">
+        <div class="flex items-center space-y-4">
+          <h2 class="text-sm font-semibold tracking-widest text-white">TRUSTED BY</h2>
+          <div class="marquee-wrapper">
+            <div class="marquee flex items-center space-x-16">
+              <img src="https://cdn.worldvectorlogo.com/logos/shopify.svg" alt="Shopify" class="h-10 opacity-80">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/EBay_logo.svg" alt="eBay" class="h-8">
+              <img src="https://woocommerce.com/wp-content/themes/woo/images/logos/woocommerce-logo.svg"
+                alt="WooCommerce" class="h-8">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" alt="Amazon" class="h-6">
+              <img src="https://cdn.worldvectorlogo.com/logos/shopify.svg" alt="Shopify" class="h-10 opacity-80">
             </div>
+          </div>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="relative flex flex-col justify-center items-center min-h-screen overflow-hidden">
+    <div class="absolute inset-0 w-full h-full z-10">
+      <img src="https://framerusercontent.com/images/i6FNRsgGqrDYDn6GdVHIna7uPc.svg" alt=""
+        class="w-full h-full object-cover absolute top-0 left-0">
+    </div>
+
+    <div class="flex flex-col justify-center items-center z-20 bg-[#031203] p-[50px] pb-[50px]">
+      <div class="flex flex-col items-start w-[600px] gap-[30px] py-[50px]">
+        <p class="text-sm sm:text-base md:text-[15px] font-bold text-white border border-[#FFFFFF14] p-2 sm:p-2.5 md:p-[10px] px-4 sm:px-5 md:px-[20px] rounded-full tracking-wider text-center">STORESTACK</p>
+
+        <h1 class="text-3xl md:text-5xl font-bold w-[600px]">
+          Start your business risk-free within 1 hour
+        </h1>
+        <div class="flex flex-col gap-[30px]">
+          <p class="text-[20px] text-[#FFFF] opacity-70 font-medium">Why pay $10,000+ for a store setup when you can
+            launch a beautifully designed, high-converting Shopify store for just a fraction of the cost?</p>
+          <p class="text-[20px] text-[#FFFF] opacity-70 font-medium">The SST Shopify Store Pack gives you everything you
+            need to create a store that not only looks amazing but also drives results. From stunning landing pages to
+            expertly crafted email funnels and proven CRO tactics, this strategy is designed to maximize conversions and
+            boost sales.</p>
+          <p class="text-[20px] text-[#FFFF] opacity-70 font-medium">Skip the expensive agencies and take control of
+            your store’s success. With a system that works around the clock, you'll be able to launch a visually
+            stunning store that keeps customers engaged and coming back for more.</p>
+          <p class="text-[20px] text-[#FFFF] opacity-70 font-medium">Start smarter, scale faster, and unlock your
+            store’s full potential without breaking the bank.</p>
+        </div>
+      </div>
+      <div>
+        <img src="https://framerusercontent.com/images/hOJpJfJwbVr7hL0NkMZ7aX87iQ.png?scale-down-to=1024" alt=""
+          class="w-[600px]">
+      </div>
+      <div class="w-full flex justify-start">
+        <div class="flex items-center gap-[30px]">
+          <button class="animated-button hidden md:flex">
+            <svg viewBox="0 0 24 24" class="arr-2" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z">
+              </path>
+            </svg>
+            <span class="text">Enroll Now</span>
+            <span class="circle"></span>
+            <svg viewBox="0 0 24 24" class="arr-1" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z">
+              </path>
+            </svg>
+          </button>
+          <div class="flex">
+            <div class="flex items-center">
+              <!-- Avatars (overlapping effect) -->
+              <div class="flex -space-x-3">
+                <img src="https://framerusercontent.com/images/sFJggTzla8eMLg8n1AbKDQlyulU.jpg?scale-down-to=1024"
+                  alt="User 1" class="w-10 h-10 rounded-full border-2 border-white object-cover shadow-md">
+
+                <img src="https://framerusercontent.com/images/sFJggTzla8eMLg8n1AbKDQlyulU.jpg?scale-down-to=1024"
+                  alt="User 2" class="w-10 h-10 rounded-full border-2 border-white object-cover shadow-md">
+
+                <img src="https://framerusercontent.com/images/sFJggTzla8eMLg8n1AbKDQlyulU.jpg?scale-down-to=1024"
+                  alt="User 3" class="w-10 h-10 rounded-full border-2 border-white object-cover shadow-md">
+              </div>
+
+              <!-- "+2k" Circle -->
+              <div
+                class="relative right-[15px] w-10 h-10 rounded-full bg-[#0EC927] text-[18px] text-white flex items-center justify-center font-semibold shadow-inner">
+                2k+
+              </div>
+            </div>
+
+
+            <div id="review_star_content" class="flex flex-col gap-[5px]">
+              <div class="star">
+                <img src="/static/images/star-removebg-preview.png" alt="" class="w-[100px]">
+              </div>
+              <div class="">
+                <p class="font-semibold">Join 3000+ Brands</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     </div>
   </section>
+
+  <section class="relative top-[50px] text-white font-sora">
+    <!-- Background Image -->
+    <div class="absolute inset-0 z-0">
+      <img src="https://framerusercontent.com/images/OKbtpZaMwU1kucFAqMoRrafKTDs.jpg" alt="Background"
+        class="w-full h-full object-cover">
+      <div
+        class="absolute inset-0 bg-[linear-gradient(180deg,#040313_0%,rgba(4,3,18,0)_19.82%,rgba(4,3,18,0)_74.77%,#040313_100%)]">
+      </div>
+    </div>
+
+    <!-- Content -->
+    <div class="relative z-10 max-w-6xl mx-auto px-4 py-20">
+      <!-- Header -->
+      <div class="text-center mb-16">
+        <p class="text-sm uppercase tracking-wide text-green-400">STORESTACK</p>
+        <h2 class="text-4xl font-bold mt-2">How does it work?</h2>
+        <p class="text-base text-gray-200 mt-4 max-w-2xl mx-auto">
+          Valour's curriculum is divided into five key modules designed to build your expertise step-by-step.
+        </p>
+      </div>
+
+      <!-- Modules Grid -->
+      <div class="grid md:grid-cols-2">
+        <!-- Step 1 -->
+        <div class="bg-white/5 backdrop-blur-sm p-6 border border-[#FFFFFF14]">
+          <p class="text-2xl font-semibold bg-gradient-to-t from-green-400 to-green-200 bg-clip-text text-transparent">
+            STEP 1</p>
+          <h3 class="text-xl font-bold mt-4">Choose a Prebuilt Store</h3>
+          <p class="text-gray-300 mt-2">
+            Secure your Prebuilt Shopify (custom themes included) store today with a fast, hassle-free checkout process,
+            so you can start your e-commerce journey within 1 hour.
+          </p>
+          <ul class="list-none mt-4 space-y-1 text-sm text-green-200">
+            <li>• 30+ Themes</li>
+            <li>• 1 Hour Setup</li>
+          </ul>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="bg-white/5 backdrop-blur-sm p-6 border border-[#FFFFFF14]">
+          <p class="text-2xl font-semibold bg-gradient-to-t from-green-400 to-green-200 bg-clip-text text-transparent">
+            STEP 2</p>
+          <h3 class="text-xl font-bold mt-4">Customize Your Brand</h3>
+          <p class="text-gray-300 mt-2">
+            Add your logo, colors, and branding elements using our drag-and-drop builder or ask our team to do it for
+            you.
+          </p>
+          <ul class="list-none mt-4 space-y-1 text-sm text-green-200">
+            <li>• No Coding</li>
+            <li>• Brand Ready</li>
+          </ul>
+        </div>
+        <div class="bg-white/5 backdrop-blur-sm p-6 border border-[#FFFFFF14]">
+          <p class="text-2xl font-semibold bg-gradient-to-t from-green-400 to-green-200 bg-clip-text text-transparent">
+            STEP 2</p>
+          <h3 class="text-xl font-bold mt-4">Customize Your Brand</h3>
+          <p class="text-gray-300 mt-2">
+            Add your logo, colors, and branding elements using our drag-and-drop builder or ask our team to do it for
+            you.
+          </p>
+          <ul class="list-none mt-4 space-y-1 text-sm text-green-200">
+            <li>• No Coding</li>
+            <li>• Brand Ready</li>
+          </ul>
+        </div>
+        <div class="bg-white/5 backdrop-blur-sm p-6 border border-[#FFFFFF14]">
+          <p class="text-2xl font-semibold bg-gradient-to-t from-green-400 to-green-200 bg-clip-text text-transparent">
+            STEP 2</p>
+          <h3 class="text-xl font-bold mt-4">Customize Your Brand</h3>
+          <p class="text-gray-300 mt-2">
+            Add your logo, colors, and branding elements using our drag-and-drop builder or ask our team to do it for
+            you.
+          </p>
+          <ul class="list-none mt-4 space-y-1 text-sm text-green-200">
+            <li>• No Coding</li>
+            <li>• Brand Ready</li>
+          </ul>
+        </div>
+
+        <!-- Add more steps as needed -->
+      </div>
+      <div class="grid relative">
+        <div class="bg-white/5 backdrop-blur-sm p-6 border border-[#FFFFFF14]">
+          <p class="text-2xl font-semibold bg-gradient-to-t from-green-400 to-green-200 bg-clip-text text-transparent">
+            STEP 2</p>
+          <h3 class="text-xl font-bold mt-4">Customize Your Brand</h3>
+          <p class="text-gray-300 mt-2">
+            Add your logo, colors, and branding elements using our drag-and-drop builder or ask our team to do it for
+            you.
+          </p>
+          <ul class="list-none mt-4 space-y-1 text-sm text-green-200">
+            <li>• No Coding</li>
+            <li>• Brand Ready</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
 
   <!-- Script -->
   <script src="/static/js/index.js"></script>
