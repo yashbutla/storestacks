@@ -23,6 +23,21 @@
     rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
 
+  <!-- Add Alpine.js CDN in <head> -->
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <!-- Owl Carousel CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+
+  <!-- Owl Carousel JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
 
 </head>
@@ -30,7 +45,7 @@
 <body class="bg-[#031203] text-white">
   <section id="">
     <nav class="p-6 bg-[#031203] w-full top-0 left-0 z-50 border-b border-[#FFFFFF14]">
-      <div class="container mx-auto flex justify-around items-center gap-[90px]">
+      <div class="container mx-auto flex justify-around items-center">
         <!-- Logo -->
         <div id="nav-logo" class="text-xl font-bold flex items-center transition-all duration-500 ease-in-out">
           <img src="/static/images/webuilders-logo.png" alt="Logo" class="w-[50px] mr-2"
@@ -45,76 +60,8 @@
           <a href="#" class="hover:text-gray-400">Blog</a>
           <a href="#" class="hover:text-gray-400">Contact Us</a>
         </div>
-
-        <button class="animated-button hidden md:flex">
-          <svg viewBox="0 0 24 24" class="arr-2" xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z">
-            </path>
-          </svg>
-          <span class="text">Enroll Now</span>
-          <span class="circle"></span>
-          <svg viewBox="0 0 24 24" class="arr-1" xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z">
-            </path>
-          </svg>
-        </button>
-
-        <!-- Mobile Menu Button (Animated Hamburger) -->
-        <button id="menu-btn" class="md:hidden flex flex-col justify-center items-center w-8 h-8 focus:outline-none">
-          <span class="block w-8 h-1 bg-white mb-2"></span>
-          <span class="block w-8 h-1 bg-white"></span>
-        </button>
-
-      </div>
-
-      <!-- Mobile Menu (Hidden by Default) -->
-      <div id="mobile-menu"
-        class="fixed inset-0 bg-[#031203] bg-opacity-95 z-40 flex flex-col items-center h-[350px] py-14 space-y-6 transform -translate-y-full opacity-0 hidden transition-all duration-300">
-        <!-- Close Button -->
-        <div class="flex items-center w-screen justify-between px-2 absolute top-[25px]">
-          <div class="lgo">
-            <img src="https://framerusercontent.com/images/KdL7j248Qf86U9i5ypnwlk151so.png" alt="Logo" class="h-8 mr-2">
-          </div>
-          <button id="close-btn"><i class="uil uil-times top-1 right-5 text-white text-5xl"></i></button>
-        </div>
-
-        <!-- Mobile Menu Items -->
-        <nav class="flex flex-col items-center space-y-6 text-lg mt-[50px]">
-          <a href="#" class="hover:text-gray-400 menu-link">Home</a>
-          <a href="#" class="hover:text-gray-400 menu-link">Pricing</a>
-          <a href="#" class="hover:text-gray-400 menu-link">Blog</a>
-          <a href="#" class="hover:text-gray-400 menu-link">Contact Us</a>
-        </nav>
-
-        <!-- Enroll Now Button -->
-        <a href="#" class="bg-gray-800 px-6 py-3 rounded-full flex items-center hover:bg-gray-700 transition">
-          <span class="mr-2">➤</span> Enroll now
-        </a>
-      </div>
-    </nav>
-
-
-    <!-- Hero section -->
-
-    <div
-      class="hero-section flex flex-col justify-center items-center relative pt-[80px] py-[50px] bg-[#103B10] z-[100px] bottom-[0px] overflow-hidden">
-      <div class="flex flex-col gap-[50px] items-center">
-        <div class="flex flex-col items-center text-center gap-[30px]">
-          <p class="text-[15px] font-bold text-white border p-[10px] px-[20px] rounded-[25px] tracking-wider">FROM
-            ASPIRING ENTREPRENEUR TO ACHIEVER</p>
-          <h1
-            class="text-5xl md:text-7xl font-extrabold text-transparent bg-clip-text bg-gradient-to-b from-green-300 via-green-100 to-white text-center leading-9">
-            LAUNCH YOUR<br />
-            HIGH CONVERTING<br />
-            SHOPIFY STORE
-          </h1>
-          <p>A fully optimized Shopify brand for just $50 no guesswork, no wasted time. Get instant access to<br>premium
-            themes, Pre-Built branding and launch within 24 hours</p>
-        </div>
-        <div class="flex items-center justify-center gap-[30px]">
-          <button class="animated-button hidden md:flex">
+        <a href="https://storestacks.gumroad.com/l/Pack">
+          <button class="sec-animated-button hidden md:flex">
             <svg viewBox="0 0 24 24" class="arr-2" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z">
@@ -128,6 +75,96 @@
               </path>
             </svg>
           </button>
+        </a>
+        
+
+        <!-- Mobile Menu Button (Animated Hamburger) -->
+        <button id="menu-btn" class="md:hidden flex flex-col justify-center items-center w-8 h-8 focus:outline-none">
+          <span class="block w-8 h-1 bg-white mb-2"></span>
+          <span class="block w-8 h-1 bg-white"></span>
+        </button>
+
+      </div>
+
+      <!-- Mobile Menu (Hidden by Default) -->
+      <div id="mobile-menu"
+        class="fixed inset-0 bg-[#031203] bg-opacity-95 z-40 flex-col items-center h-[380px] py-14 space-y-6 transform -translate-y-full opacity-0 hidden transition-all duration-300">
+        <!-- Close Button -->
+        <div class="flex items-center w-screen justify-between px-[40px] absolute top-[25px]">
+          <div id="nav-logo" class="text-xl font-bold flex items-center transition-all duration-500 ease-in-out">
+            <img src="/static/images/webuilders-logo.png" alt="Logo" class="w-[50px] mr-2"
+              style="filter: invert(93%) sepia(7%) saturate(38%) hue-rotate(260deg) brightness(195%) contrast(195%);">
+            <h2>Webuilders</h2>
+          </div>
+          <button id="close-btn"><i class="uil uil-times top-1  text-white text-5xl"></i></button>
+        </div>
+
+        <!-- Mobile Menu Items -->
+        <nav class="flex flex-col items-center space-y-6 text-lg mt-[50px] relative top-[10px]">
+          <a href="#" class="hover:text-gray-400 menu-link">Home</a>
+          <a href="#" class="hover:text-gray-400 menu-link">Pricing</a>
+          <a href="#" class="hover:text-gray-400 menu-link">Blog</a>
+          <a href="#" class="hover:text-gray-400 menu-link">Contact Us</a>
+          <a href="https://storestacks.gumroad.com/l/Pack">
+            <button class="sec-animated-button">
+              <svg viewBox="0 0 24 24" class="arr-2" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z">
+                </path>
+              </svg>
+              <span class="text">Enroll Now</span>
+              <span class="circle"></span>
+              <svg viewBox="0 0 24 24" class="arr-1" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z">
+                </path>
+              </svg>
+            </button>
+          </a>  
+        </nav>
+
+        <!-- Enroll Now Button -->
+          
+      </div>
+    </nav>
+
+
+    <!-- Hero section -->
+
+    <div
+      class="hero-section flex flex-col justify-center items-center relative pt-[80px] py-[50px] bg-[#103B10] z-[100px] bottom-[0px] overflow-hidden">
+      <div class="flex flex-col gap-[50px] items-center">
+        <div class="flex flex-col items-center text-center gap-6">
+          <p class="text-sm sm:text-base font-bold text-white border p-2 px-5 rounded-full tracking-wider">
+            FROM ASPIRING ENTREPRENEUR TO ACHIEVER
+          </p>
+          <h1 class="text-4xl sm:text-5xl md:text-6xl xl:text-7xl font-extrabold text-transparent bg-clip-text bg-gradient-to-b from-green-300 via-green-100 to-white leading-tight">
+            LAUNCH YOUR<br />
+            HIGH CONVERTING<br />
+            SHOPIFY STORE
+          </h1>
+          <p class="text-white text-sm sm:text-base max-w-3xl">
+            A fully optimized Shopify brand for just $50. No guesswork, no wasted time. Get instant access to
+            premium themes, pre-built branding and launch within 24 hours.
+          </p>
+        </div>
+        <div class="flex items-center justify-center gap-[30px]">
+          <a href="https://storestacks.gumroad.com/l/Pack">
+            <button class="sec-animated-button hidden md:flex">
+              <svg viewBox="0 0 24 24" class="arr-2" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z">
+                </path>
+              </svg>
+              <span class="text">Enroll Now</span>
+              <span class="circle"></span>
+              <svg viewBox="0 0 24 24" class="arr-1" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z">
+                </path>
+              </svg>
+            </button>
+          </a>
           <div class="flex">
             <div class="flex items-center">
               <!-- Avatars (overlapping effect) -->
@@ -168,7 +205,7 @@
       </div>
       <!-- Video Thumbnail with Play Button -->
       <div id="videoContainer"
-        class="relative top-[50px] p-[17px] border border-[#FFFFFF14] flex justify-center items-center w-[75%] aspect-video overflow-hidden shadow-lg cursor-pointer bg-transparent">
+        class="relative top-[50px]  p-[17px] border border-[#FFFFFF14] flex justify-center items-center w-full md:w-[75%] aspect-video overflow-hidden shadow-lg cursor-pointer bg-transparent">
         <img id="videoThumbnail" src="https://i.ytimg.com/vi_webp/m6sTkYE6mB0/maxresdefault.webp" alt="Video Thumbnail"
           class="w-full h-full object-cover" />
         <div class="absolute inset-0 flex items-center justify-center ">
@@ -183,27 +220,40 @@
 
       <!-- Video Iframe Placeholder (Hidden initially) -->
       <div id="videoIframeContainer"
-        class="relative top-[50px] hidden w-[75%] p-[17px] border border-[#FFFFFF14] aspect-video overflow-hidden shadow-lg">
-        <iframe class="w-full h-full" src="https://www.youtube.com/embed/?autoplay=1" frameborder="0"
+        class="relative top-[50px] hidden w-full md:w-[75%] p-[17px] border border-[#FFFFFF14] aspect-video overflow-hidden shadow-lg">
+        <iframe class="w-full h-full" src="https://www.youtube.com/embed/m6sTkYE6mB0?iv_load_policy=3&rel=0&modestbranding=1&playsinline=1&autoplay=1" frameborder="0"
           allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>
       </div>
 
       <!-- Trusted by brands -->
-      <div class="py-10 relative top-[50px] overflow-hidden">
-        <div class="flex items-center space-y-4">
-          <h2 class="text-sm font-semibold tracking-widest text-white">TRUSTED BY</h2>
-          <div class="marquee-wrapper">
-            <div class="marquee flex items-center space-x-16">
-              <img src="https://cdn.worldvectorlogo.com/logos/shopify.svg" alt="Shopify" class="h-10 opacity-80">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/EBay_logo.svg" alt="eBay" class="h-8">
-              <img src="https://woocommerce.com/wp-content/themes/woo/images/logos/woocommerce-logo.svg"
-                alt="WooCommerce" class="h-8">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" alt="Amazon" class="h-6">
-              <img src="https://cdn.worldvectorlogo.com/logos/shopify.svg" alt="Shopify" class="h-10 opacity-80">
-            </div>
+      <div class="w-[75%] py-10 mt-[50px] flex items-center gap-[20px] justify-center">
+        <div class="text-center">
+          <h2 class="text-white text-[15px] font-semibold uppercase whitespace-nowrap">Trusted by</h2>
+        </div>
+      
+        <div class="relative overflow-hidden">
+          <!-- Optional fading edges for style -->
+          <div class="absolute left-0 top-0 h-full w-12  to-transparent z-10 pointer-events-none"></div>
+          <div class="absolute right-0 top-0 h-full w-12  to-transparent z-10 pointer-events-none"></div>
+      
+          <!-- Scrolling logo container -->
+          <div class="flex animate-slide gap-10 px-6 items-center min-w-[200%]">
+            <!-- First Set -->
+            <img src="https://framerusercontent.com/images/AlUol886vvzuVxkFuvAdxT6NyU.png" alt="logo" class="w-[90px] sm:w-[100px] md:w-[120px] lg:w-[150px]" />
+            <img src="https://framerusercontent.com/images/zdMRoER8JAZBtycxLS5VDUYZ2yg.png" alt="logo" class="w-[80px] sm:w-[90px] md:w-[100px]" />
+            <img src="https://framerusercontent.com/images/xSBi2bcTV9BOSFAeLbIF0TktV0.png" alt="logo" class="w-[90px] h-[30px] sm:h-[35px] md:h-[40px]" />
+            <img src="https://framerusercontent.com/images/ksbl2MlE5LEo0qa1ddD19GHv3mE.png" alt="logo" class="w-[90px] sm:w-[100px]" />
+      
+            <!-- Repeat Set -->
+            <img src="https://framerusercontent.com/images/AlUol886vvzuVxkFuvAdxT6NyU.png" alt="logo" class="w-[90px] sm:w-[100px] md:w-[120px] lg:w-[150px]" />
+            <img src="https://framerusercontent.com/images/zdMRoER8JAZBtycxLS5VDUYZ2yg.png" alt="logo" class="w-[80px] sm:w-[90px] md:w-[100px]" />
+            <img src="https://framerusercontent.com/images/xSBi2bcTV9BOSFAeLbIF0TktV0.png" alt="logo" class="w-[90px] h-[30px] sm:h-[35px] md:h-[40px]" />
+            <img src="https://framerusercontent.com/images/ksbl2MlE5LEo0qa1ddD19GHv3mE.png" alt="logo" class="w-[90px] sm:w-[100px]" />
           </div>
         </div>
       </div>
+      
+      
     </div>
   </section>
 
@@ -214,10 +264,12 @@
     </div>
 
     <div class="flex flex-col justify-center items-center z-20 bg-[#031203] p-[50px] pb-[50px]">
-      <div class="flex flex-col items-start w-[600px] gap-[30px] py-[50px]">
-        <p class="text-sm sm:text-base md:text-[15px] font-bold text-white border border-[#FFFFFF14] p-2 sm:p-2.5 md:p-[10px] px-4 sm:px-5 md:px-[20px] rounded-full tracking-wider text-center">STORESTACK</p>
+      <div class="flex flex-col items-start w-[300px] md:w-[600px] gap-[30px] py-[50px]">
+        <p
+          class="text-sm sm:text-base md:text-[15px] font-bold text-white border border-[#FFFFFF14] p-2 sm:p-2.5 md:p-[10px] px-4 sm:px-5 md:px-[20px] rounded-full tracking-wider text-center">
+          STORESTACK</p>
 
-        <h1 class="text-3xl md:text-5xl font-bold w-[600px]">
+        <h1 class="text-2xl md:text-4xl font-bold w-[300px] md:w-[600px]">
           Start your business risk-free within 1 hour
         </h1>
         <div class="flex flex-col gap-[30px]">
@@ -236,163 +288,893 @@
       </div>
       <div>
         <img src="https://framerusercontent.com/images/hOJpJfJwbVr7hL0NkMZ7aX87iQ.png?scale-down-to=1024" alt=""
-          class="w-[600px]">
+          class="w-[300px] md:w-[600px]">
       </div>
-      <div class="w-full flex justify-start">
-        <div class="flex items-center gap-[30px]">
-          <button class="animated-button hidden md:flex">
-            <svg viewBox="0 0 24 24" class="arr-2" xmlns="http://www.w3.org/2000/svg">
+      <div class="flex items-center gap-6 mt-8 ">
+      
+      <!-- CTA Button -->
+       <div>
+        <a href="https://storestacks.gumroad.com/l/Pack">
+          <button
+            class="animated-button flex bg-white hover:bg-[#16CF2F] text-green-600 hover:text-white transition-all duration-300 px-4 py-2 rounded-md items-center gap-2 relative">
+            <svg viewBox="0 0 24 24"
+              class="arr-2 w-5 h-6  p-1 rounded-full bg-white text-green-600 transition-all duration-300"
+              xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z">
               </path>
             </svg>
-            <span class="text">Enroll Now</span>
-            <span class="circle"></span>
-            <svg viewBox="0 0 24 24" class="arr-1" xmlns="http://www.w3.org/2000/svg">
+
+            <span class="text font-medium border-white px-[10px]">GRAB YOURS</span>
+            <span class="circle hidden"></span>
+            <!-- if this is decorative or animation controlled by CSS, keep it. -->
+
+            <svg viewBox="0 0 24 24"
+              class="arr-1 w-5 h-6 p-1 rounded-full bg-[#16CF2F] text-green-600 transition-all duration-300"
+              xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z">
               </path>
             </svg>
           </button>
-          <div class="flex">
-            <div class="flex items-center">
-              <!-- Avatars (overlapping effect) -->
-              <div class="flex -space-x-3">
-                <img src="https://framerusercontent.com/images/sFJggTzla8eMLg8n1AbKDQlyulU.jpg?scale-down-to=1024"
-                  alt="User 1" class="w-10 h-10 rounded-full border-2 border-white object-cover shadow-md">
-
-                <img src="https://framerusercontent.com/images/sFJggTzla8eMLg8n1AbKDQlyulU.jpg?scale-down-to=1024"
-                  alt="User 2" class="w-10 h-10 rounded-full border-2 border-white object-cover shadow-md">
-
-                <img src="https://framerusercontent.com/images/sFJggTzla8eMLg8n1AbKDQlyulU.jpg?scale-down-to=1024"
-                  alt="User 3" class="w-10 h-10 rounded-full border-2 border-white object-cover shadow-md">
-              </div>
-
-              <!-- "+2k" Circle -->
-              <div
-                class="relative right-[15px] w-10 h-10 rounded-full bg-[#0EC927] text-[18px] text-white flex items-center justify-center font-semibold shadow-inner">
+        </a>
+       </div>
+        <!-- Avatars & Reviews -->
+        <div class="flex items-center gap-4">
+          <!-- Avatars -->
+          <div class="flex -space-x-3">
+            <img src="https://framerusercontent.com/images/sFJggTzla8eMLg8n1AbKDQlyulU.jpg" alt="User"
+              class="w-10 h-10 rounded-full border-2 border-white shadow-md object-cover">
+            <img src="https://framerusercontent.com/images/sFJggTzla8eMLg8n1AbKDQlyulU.jpg" alt="User"
+              class="w-10 h-10 rounded-full border-2 border-white shadow-md object-cover">
+            <img src="https://framerusercontent.com/images/sFJggTzla8eMLg8n1AbKDQlyulU.jpg" alt="User"
+              class="w-10 h-10 rounded-full border-2 border-white shadow-md object-cover">
+              <div class="w-10 h-10 rounded-full bg-[#0EC927]  text-white flex items-center justify-center font-bold text-sm">
                 2k+
               </div>
-            </div>
-
-
-            <div id="review_star_content" class="flex flex-col gap-[5px]">
-              <div class="star">
-                <img src="/static/images/star-removebg-preview.png" alt="" class="w-[100px]">
-              </div>
-              <div class="">
-                <p class="font-semibold">Join 3000+ Brands</p>
-              </div>
-            </div>
+          </div>
+          <!-- +2k badge -->
+          
+          <!-- Text -->
+          <div class="hidden md:flex md:flex-col">
+            <img src="/static/images/star-removebg-preview.png" alt="Star Rating" class="w-[80px]">
+            <p class="font-semibold text-sm">Join 3000+ Brands</p>
           </div>
         </div>
       </div>
+    <!-- Trusted by brands -->
+    <div class="relative overflow-hidden py-4">
+      <!-- Scrolling container -->
+      <div class="slider-container flex gap-10 animate-scroll whitespace-nowrap will-change-transform">
+        <!-- Slider content (duplicated for infinite loop effect) -->
+        <div class="flex gap-10">
+          <!-- Repeat these <div> for each benefit -->
+          <div class="flex-shrink-0 flex text-center w-[150px]">
+            <div class="flex justify-center gap-[10px] items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" class="w-5 h-5 text-[#0EC927] relative top-[2px]">
+                <path fill="currentColor" d="M225.86,102.82c-3.77-3.94-7.67-8-9.14-11.57-1.36-3.27-1.44-8.69-1.52-13.94-.15-9.76-.31-20.82-8-28.51s-18.75-7.85-28.51-8c-5.25-.08-10.67-.16-13.94-1.52-3.56-1.47-7.63-5.37-11.57-9.14C146.28,23.51,138.44,16,128,16s-18.27,7.51-25.18,14.14c-3.94,3.77-8,7.67-11.57,9.14C88,40.64,82.56,40.72,77.31,40.8c-9.76.15-20.82.31-28.51,8S41,67.55,40.8,77.31c-.08,5.25-.16,10.67-1.52,13.94-1.47,3.56-5.37,7.63-9.14,11.57C23.51,109.72,16,117.56,16,128s7.51,18.27,14.14,25.18c3.77,3.94,7.67,8,9.14,11.57,1.36,3.27,1.44,8.69,1.52,13.94.15,9.76.31,20.82,8,28.51s18.75,7.85,28.51,8c5.25.08,10.67.16,13.94,1.52,3.56,1.47,7.63,5.37,11.57,9.14C109.72,232.49,117.56,240,128,240s18.27-7.51,25.18-14.14c3.94-3.77,8-7.67,11.57-9.14,3.27-1.36,8.69-1.44,13.94-1.52,9.76-.15,20.82-.31,28.51-8s7.85-18.75,8-28.51c.08-5.25.16-10.67,1.52-13.94,1.47-3.56,5.37-7.63,9.14-11.57C232.49,146.28,240,138.44,240,128S232.49,109.73,225.86,102.82ZM173.66,98.34a8,8,0,0,1,0,11.32l-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35A8,8,0,0,1,173.66,98.34Z"/>
+              </svg>
+              <p class="mt-2 text-sm font-medium">7-day guarantee</p>
+            </div>
+          </div>
+    
+          <div class="flex-shrink-0 flex text-center w-[150px]">
+            <div class="flex gap-[10px]  items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" class="w-5 h-5 text-[#0EC927] relative top-[2px]">
+                <path fill="currentColor" d="M215.79,118.17a8,8,0,0,0-5-5.66L153.18,90.9l14.66-73.33a8,8,0,0,0-13.69-7l-112,120a8,8,0,0,0,3,13l57.63,21.61L88.16,238.43a8,8,0,0,0,13.69,7l112-120A8,8,0,0,0,215.79,118.17ZM109.37,214l10.47-52.38a8,8,0,0,0-5-9.06L62,132.71l84.62-90.66L136.16,94.43a8,8,0,0,0,5,9..."/>
+              </svg>
+              <p class="mt-2 text-sm font-medium">Fast shipping</p>
+            </div>
+          </div>
+    
+          <!-- ... add more benefit items here ... -->
+        </div>
+    
+        <!-- Duplicate for infinite loop -->
+        <div class="flex gap-10">
+          <!-- Repeat these <div> for each benefit -->
+          <div class="flex-shrink-0 flex text-center w-[150px]">
+            <div class="flex gap-[10px]  items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" class="w-5 h-5 text-[#0EC927] relative top-[2px]">
+                <path fill="currentColor" d="M225.86,102.82c-3.77-3.94-7.67-8-9.14-11.57-1.36-3.27-1.44-8.69-1.52-13.94-.15-9.76-.31-20.82-8-28.51s-18.75-7.85-28.51-8c-5.25-.08-10.67-.16-13.94-1.52-3.56-1.47-7.63-5.37-11.57-9.14C146.28,23.51,138.44,16,128,16s-18.27,7.51-25.18,14.14c-3.94,3.77-8,7.67-11.57,9.14C88,40.64,82.56,40.72,77.31,40.8c-9.76.15-20.82.31-28.51,8S41,67.55,40.8,77.31c-.08,5.25-.16,10.67-1.52,13.94-1.47,3.56-5.37,7.63-9.14,11.57C23.51,109.72,16,117.56,16,128s7.51,18.27,14.14,25.18c3.77,3.94,7.67,8,9.14,11.57,1.36,3.27,1.44,8.69,1.52,13.94.15,9.76.31,20.82,8,28.51s18.75,7.85,28.51,8c5.25.08,10.67.16,13.94,1.52,3.56,1.47,7.63,5.37,11.57,9.14C109.72,232.49,117.56,240,128,240s18.27-7.51,25.18-14.14c3.94-3.77,8-7.67,11.57-9.14,3.27-1.36,8.69-1.44,13.94-1.52,9.76-.15,20.82-.31,28.51-8s7.85-18.75,8-28.51c.08-5.25.16-10.67,1.52-13.94,1.47-3.56,5.37-7.63,9.14-11.57C232.49,146.28,240,138.44,240,128S232.49,109.73,225.86,102.82ZM173.66,98.34a8,8,0,0,1,0,11.32l-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35A8,8,0,0,1,173.66,98.34Z"/>
+              </svg>
+              <p class="mt-2 text-sm font-medium">7-day guarantee</p>
+            </div>
+          </div>
+    
+          <div class="flex-shrink-0 flex text-center w-[150px]">
+            <div class="flex gap-[10px]  items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" class="w-5 h-5 text-[#0EC927] relative top-[2px]">
+                <path fill="currentColor" d="M215.79,118.17a8,8,0,0,0-5-5.66L153.18,90.9l14.66-73.33a8,8,0,0,0-13.69-7l-112,120a8,8,0,0,0,3,13l57.63,21.61L88.16,238.43a8,8,0,0,0,13.69,7l112-120A8,8,0,0,0,215.79,118.17ZM109.37,214l10.47-52.38a8,8,0,0,0-5-9.06L62,132.71l84.62-90.66L136.16,94.43a8,8,0,0,0,5,9..."/>
+              </svg>
+              <p class="mt-2 text-sm font-medium">Fast shipping</p>
+            </div>
+          </div>
+    
+          <!-- ... add more benefit items here ... -->
+        </div>
+      </div>
     </div>
-    </div>
+    
+    
   </section>
+  
 
-  <section class="relative top-[50px] text-white font-sora">
+  <section class="relative  text-white font-sora">
     <!-- Background Image -->
     <div class="absolute inset-0 z-0">
       <img src="https://framerusercontent.com/images/OKbtpZaMwU1kucFAqMoRrafKTDs.jpg" alt="Background"
-        class="w-full h-full object-cover">
-      <div
-        class="absolute inset-0 bg-[linear-gradient(180deg,#040313_0%,rgba(4,3,18,0)_19.82%,rgba(4,3,18,0)_74.77%,#040313_100%)]">
+        class="w-full h-full object-cover bg-[linear-gradient(180deg,#040313_0%,rgba(4,3,18,0)_19.82%,rgba(4,3,18,0)_74.77%,#040313_100%)]">
+      <div class="absolute inset-0">
       </div>
     </div>
 
     <!-- Content -->
-    <div class="relative z-10 max-w-6xl mx-auto px-4 py-20">
+    <div class="how-work relative z-10 max-w-[68rem] mx-auto px-4 py-20">
       <!-- Header -->
-      <div class="text-center mb-16">
-        <p class="text-sm uppercase tracking-wide text-green-400">STORESTACK</p>
+      <div class="text-center mb-16 flex flex-col justify-center items-center">
+
+        <p
+          class="text-[12px] font-medium tracking-[0.03em] uppercase text-white p-[5px] px-[10px] rounded-[20px] border border-white/20">
+          STORESTACK</p>
+
         <h2 class="text-4xl font-bold mt-2">How does it work?</h2>
-        <p class="text-base text-gray-200 mt-4 max-w-2xl mx-auto">
+        <p class="text-base text-gray-200 mt-4 max-w-[550px] mx-auto">
           Valour's curriculum is divided into five key modules designed to build your expertise step-by-step.
         </p>
+
       </div>
 
       <!-- Modules Grid -->
       <div class="grid md:grid-cols-2">
         <!-- Step 1 -->
-        <div class="bg-white/5 backdrop-blur-sm p-6 border border-[#FFFFFF14]">
-          <p class="text-2xl font-semibold bg-gradient-to-t from-green-400 to-green-200 bg-clip-text text-transparent">
-            STEP 1</p>
+        <div
+          class="bg-[#0403133d] backdrop-blur-[24px] p-[45px] border border-[#FFFFFF14] flex flex-col items-center justify-center gap-[20px] text-center">
+          <p
+            class="text-[42px] md:text-[54px] font-bold leading-[100%] tracking-[-0.03em] text-center text-white capitalize font-[Sora]">
+            <span class="bg-gradient-to-t from-[rgba(63,15,201,0)_15%] to-[#6ffc82] bg-clip-text text-transparent">STEP
+              1</span>
+          </p>
           <h3 class="text-xl font-bold mt-4">Choose a Prebuilt Store</h3>
           <p class="text-gray-300 mt-2">
             Secure your Prebuilt Shopify (custom themes included) store today with a fast, hassle-free checkout process,
             so you can start your e-commerce journey within 1 hour.
           </p>
-          <ul class="list-none mt-4 space-y-1 text-sm text-green-200">
-            <li>• 30+ Themes</li>
-            <li>• 1 Hour Setup</li>
-          </ul>
+          <div class="flex gap-6" data-framer-name="Highlights">
+            <!-- Highlight 1 -->
+            <div class="flex items-center gap-2 border border-white/20 p-2 rounded-[25px] px-[15px]"
+              data-framer-name="Wrapper">
+              <!-- SVG Icon -->
+              <div class="w-4 h-5 shrink-0" aria-hidden="true">
+                <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="13"
+                  height="15" viewBox="0 0 13 15" fill="none" id="svg637706277_1717">
+                  <path
+                    d="M2.03409 0C1.1901 0 0.5 0.690101 0.5 1.53409V13.4659C0.5 14.3099 1.1901 15 2.03409 15H11.75C11.9285 15 12.0909 14.8376 12.0909 14.6591C12.0909 14.6591 12.0909 2.78948 12.0909 2.72727C12.0909 2.53899 11.9383 2.38636 11.75 2.38636H11.6594C11.2244 2.3435 10.8977 1.98227 10.8977 1.53409C10.8977 1.05604 11.2719 0.681818 11.75 0.681818C11.9383 0.681818 12.0909 0.529188 12.0909 0.340909C12.0909 0.15263 11.9383 0 11.75 0H2.03409ZM2.03409 0.681818H10.5089C10.339 0.928667 10.2159 1.21338 10.2159 1.53409C10.2159 1.85744 10.3418 2.13834 10.5142 2.38636H2.03409C1.55603 2.38636 1.18182 2.01215 1.18182 1.53409C1.18182 1.05604 1.55603 0.681818 2.03409 0.681818ZM1.18182 2.76989C1.42951 2.9416 1.71148 3.06818 2.03409 3.06818H5.95455V7.15909C5.95499 7.28316 6.02911 7.40419 6.13942 7.46098C6.24973 7.51777 6.3913 7.50779 6.49254 7.43608L8 6.38139L9.50746 7.43608C9.6087 7.50779 9.75027 7.51777 9.86058 7.46098C9.97089 7.40419 10.045 7.28316 10.0455 7.15909V3.06818H11.4091V14.3182H2.03409C1.55603 14.3182 1.18182 13.944 1.18182 13.4659V2.76989ZM6.63636 3.06818H9.36364V6.49858L8.19709 5.68359C8.08277 5.60261 7.91723 5.60261 7.80291 5.68359L6.63636 6.49858V3.06818ZM4.25 9.20455C4.06114 9.20455 3.90909 9.35659 3.90909 9.54545C3.90909 9.73432 4.06114 9.88636 4.25 9.88636H9.70455C9.89341 9.88636 10.0455 9.73432 10.0455 9.54545C10.0455 9.35659 9.89341 9.20455 9.70455 9.20455H4.25ZM4.25 11.5909C4.06114 11.5909 3.90909 11.743 3.90909 11.9318C3.90909 12.1207 4.06114 12.2727 4.25 12.2727H9.70455C9.89341 12.2727 10.0455 12.1207 10.0455 11.9318C10.0455 11.743 9.89341 11.5909 9.70455 11.5909H4.25Z"
+                    fill="#6769FF"></path>
+                </svg>
+              </div>
+              <!-- Text -->
+              <div class="flex flex-col justify-start shrink-0">
+                <p class="text-[14px] leading-[14px] text-white text-center">30+ Themes</p>
+              </div>
+            </div>
+
+            <!-- Highlight 2 -->
+            <div class="flex items-center gap-2 border border-white/20 p-2 rounded-[25px] px-[15px]"
+              data-framer-name="Wrapper">
+              <!-- SVG Icon -->
+              <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="17" height="16"
+                viewBox="0 0 17 16" fill="none" id="svg277474897_5578">
+                <path
+                  d="M0.45 8C0.45 12.4387 4.06127 16.05 8.5 16.05C12.9387 16.05 16.55 12.4387 16.55 8C16.55 3.56127 12.9387 -0.05 8.5 -0.05C4.06127 -0.05 0.45 3.56127 0.45 8ZM1.23093 8C1.23093 3.99208 4.49208 0.730926 8.5 0.730926C12.5079 0.730926 15.7691 3.99208 15.7691 8C15.7691 12.0079 12.5079 15.2691 8.5 15.2691C4.49208 15.2691 1.23093 12.0079 1.23093 8Z"
+                  fill="#6769FF" stroke="#6769FF" stroke-width="0.1px"></path>
+                <path
+                  d="M10.7772 10.8288C10.8533 10.9049 10.9537 10.9434 11.0533 10.9434C11.1526 10.9434 11.2531 10.9058 11.3288 10.8293C11.4812 10.6769 11.4811 10.4295 11.3287 10.2771L8.89016 7.83854V3.17698C8.89016 2.96193 8.71588 2.78685 8.50004 2.78685C8.28499 2.78685 8.10991 2.96114 8.10991 3.17698V8.00005C8.10991 8.10329 8.15059 8.20289 8.2239 8.2762L8.2239 8.2762L10.7772 10.8288ZM10.7772 10.8288L10.8125 10.7934L10.7772 10.8288L10.7772 10.8288Z"
+                  fill="#6769FF" stroke="#6769FF" stroke-width="0.1px"></path>
+                <path
+                  d="M8.10991 1.10663C8.10991 1.32168 8.2842 1.49676 8.50004 1.49676C8.71587 1.49676 8.89017 1.32169 8.89017 1.10663V0.393471C8.89017 0.178426 8.71588 0.00334473 8.50004 0.00334473C8.28499 0.00334473 8.10991 0.177633 8.10991 0.393471V1.10663Z"
+                  fill="#6769FF" stroke="#6769FF" stroke-width="0.1px"></path>
+                <mask id="svg277474897_5578_path-4-outside-1_1849_230" maskUnits="userSpaceOnUse" x="1.78052"
+                  y="1.28058" width="3" height="3" fill="black">
+                  <rect fill="#FFFFFF" x="1.78052" y="1.28058" width="3" height="3"></rect>
+                  <path
+                    d="M3.62493 3.46578C3.53809 3.46578 3.45058 3.43223 3.38414 3.36578L2.88019 2.86183C2.74729 2.72894 2.74729 2.51315 2.88019 2.38025C3.01308 2.24736 3.22887 2.24736 3.36177 2.38025L3.86572 2.8842C3.99862 3.01709 3.99862 3.23288 3.86572 3.36578C3.79927 3.43223 3.71243 3.46578 3.62493 3.46578Z">
+                  </path>
+                </mask>
+                <path
+                  d="M3.62493 3.46578C3.53809 3.46578 3.45058 3.43223 3.38414 3.36578L2.88019 2.86183C2.74729 2.72894 2.74729 2.51315 2.88019 2.38025C3.01308 2.24736 3.22887 2.24736 3.36177 2.38025L3.86572 2.8842C3.99862 3.01709 3.99862 3.23288 3.86572 3.36578C3.79927 3.43223 3.71243 3.46578 3.62493 3.46578Z"
+                  fill="#6769FF"></path>
+                <path
+                  d="M3.38414 3.36578L3.45485 3.29507L3.45485 3.29507L3.38414 3.36578ZM2.88019 2.38025L2.80948 2.30954L2.80948 2.30954L2.88019 2.38025ZM3.36177 2.38025L3.43248 2.30954L3.43248 2.30954L3.36177 2.38025ZM3.86572 3.36578L3.93643 3.43649L3.93643 3.43649L3.86572 3.36578ZM3.62493 3.36578C3.56368 3.36578 3.5019 3.34212 3.45485 3.29507L3.31342 3.43649C3.39926 3.52234 3.51249 3.56578 3.62493 3.56578V3.36578ZM3.45485 3.29507L2.9509 2.79112L2.80948 2.93254L3.31343 3.43649L3.45485 3.29507ZM2.9509 2.79112C2.85706 2.69728 2.85706 2.54481 2.9509 2.45096L2.80948 2.30954C2.63753 2.48149 2.63753 2.7606 2.80948 2.93254L2.9509 2.79112ZM2.9509 2.45096C3.04474 2.35712 3.19721 2.35712 3.29106 2.45096L3.43248 2.30954C3.26053 2.13759 2.98143 2.13759 2.80948 2.30954L2.9509 2.45096ZM3.29106 2.45096L3.79501 2.95491L3.93643 2.81349L3.43248 2.30954L3.29106 2.45096ZM3.79501 2.95491C3.88885 3.04875 3.88885 3.20122 3.79501 3.29507L3.93643 3.43649C4.10838 3.26454 4.10838 2.98544 3.93643 2.81349L3.79501 2.95491ZM3.79501 3.29507C3.74789 3.34219 3.68673 3.36578 3.62493 3.36578V3.56578C3.73813 3.56578 3.85066 3.52226 3.93643 3.43649L3.79501 3.29507Z"
+                  fill="#6769FF" mask="url(#svg277474897_5578_path-4-outside-1_1849_230)"></path>
+                <path
+                  d="M0.893349 8.39023H1.60651C1.82156 8.39023 1.99664 8.21594 1.99664 8.0001C1.99664 7.78505 1.82235 7.60997 1.60651 7.60997H0.893349C0.678304 7.60997 0.503223 7.78426 0.503223 8.0001C0.503223 8.21514 0.677511 8.39023 0.893349 8.39023Z"
+                  fill="#6769FF" stroke="#6769FF" stroke-width="0.1px"></path>
+                <path
+                  d="M2.84483 13.1021L2.84483 13.1021L3.34878 12.5982C3.5012 12.4458 3.74865 12.4458 3.90108 12.5982L3.90108 12.5982C4.0535 12.7506 4.0535 12.9981 3.90108 13.1505L3.90108 13.1505L3.3973 13.6543C3.39727 13.6543 3.39724 13.6543 3.39721 13.6543C3.32089 13.7314 3.22107 13.7691 3.12098 13.7691L2.84483 13.1021ZM2.84483 13.1021C2.69241 13.2546 2.69241 13.502 2.84483 13.6544L2.84483 13.1021Z"
+                  fill="#6769FF" stroke="#6769FF" stroke-width="0.1px"></path>
+                <path
+                  d="M8.10991 15.6073C8.10991 15.8224 8.2842 15.9974 8.50004 15.9974C8.71587 15.9974 8.89017 15.8224 8.89017 15.6073V14.8941C8.89017 14.6791 8.71588 14.504 8.50004 14.504C8.28499 14.504 8.10991 14.6783 8.10991 14.8941V15.6073Z"
+                  fill="#6769FF" stroke="#6769FF" stroke-width="0.1px"></path>
+                <path
+                  d="M13.099 12.5982L13.099 12.5982C12.9466 12.7506 12.9466 12.9981 13.099 13.1505L13.6029 13.6544C13.6791 13.7306 13.7794 13.7691 13.8791 13.7691C13.9785 13.7691 14.0789 13.7314 14.1553 13.6544C14.3076 13.5019 14.3076 13.2545 14.1552 13.1021L13.6513 12.5982L13.6513 12.5982C13.4989 12.4458 13.2514 12.4458 13.099 12.5982Z"
+                  fill="#6769FF" stroke="#6769FF" stroke-width="0.1px"></path>
+                <path
+                  d="M16.4966 7.99999C16.4966 7.78499 16.3223 7.60997 16.1065 7.60997H15.3933C15.1783 7.60997 15.0032 7.78426 15.0032 8.0001C15.0032 8.21514 15.1775 8.39023 15.3933 8.39023H16.1065C16.3221 8.39023 16.4974 8.21603 16.4966 7.99999ZM16.4966 7.99999C16.4966 7.99997 16.4966 7.99995 16.4966 7.99992L16.4466 8.0001H16.4966C16.4966 8.00006 16.4966 8.00003 16.4966 7.99999Z"
+                  fill="#6769FF" stroke="#6769FF" stroke-width="0.1px"></path>
+                <path
+                  d="M13.0987 2.84884L13.0987 2.84884L13.6027 2.34489C13.7551 2.19247 14.0026 2.19247 14.155 2.34489L14.155 2.34489C14.3074 2.49732 14.3074 2.74476 14.155 2.89719L14.155 2.89719L13.651 3.40114C13.5749 3.47728 13.4745 3.51578 13.3749 3.51578L13.0987 2.84884ZM13.0987 2.84884C12.9463 3.00127 12.9463 3.24871 13.0987 3.40114L13.0987 2.84884ZM13.134 2.88413L13.1341 2.8842L13.134 2.88413Z"
+                  fill="#6769FF" stroke="#6769FF" stroke-width="0.1px"></path>
+              </svg>
+              <!-- Text -->
+              <div class="flex flex-col justify-start shrink-0">
+                <p class="text-[14px] leading-[14px] text-white text-center">1 hour</p>
+              </div>
+            </div>
+          </div>
+
         </div>
 
         <!-- Step 2 -->
-        <div class="bg-white/5 backdrop-blur-sm p-6 border border-[#FFFFFF14]">
-          <p class="text-2xl font-semibold bg-gradient-to-t from-green-400 to-green-200 bg-clip-text text-transparent">
-            STEP 2</p>
-          <h3 class="text-xl font-bold mt-4">Customize Your Brand</h3>
-          <p class="text-gray-300 mt-2">
-            Add your logo, colors, and branding elements using our drag-and-drop builder or ask our team to do it for
-            you.
+        <div
+          class="bg-[#0403133d] backdrop-blur-[24px] p-[45px] border border-[#FFFFFF14] flex flex-col items-center justify-center gap-[20px] text-center">
+          <p
+            class="text-[42px] md:text-[54px] font-bold leading-[100%] tracking-[-0.03em] text-center text-white capitalize font-[Sora]">
+            <span class="bg-gradient-to-t from-[rgba(63,15,201,0)_15%] to-[#6ffc82] bg-clip-text text-transparent">STEP
+              2</span>
           </p>
-          <ul class="list-none mt-4 space-y-1 text-sm text-green-200">
-            <li>• No Coding</li>
-            <li>• Brand Ready</li>
-          </ul>
-        </div>
-        <div class="bg-white/5 backdrop-blur-sm p-6 border border-[#FFFFFF14]">
-          <p class="text-2xl font-semibold bg-gradient-to-t from-green-400 to-green-200 bg-clip-text text-transparent">
-            STEP 2</p>
-          <h3 class="text-xl font-bold mt-4">Customize Your Brand</h3>
+          <h3 class="text-xl font-bold mt-4">We Set Up Your Store</h3>
           <p class="text-gray-300 mt-2">
-            Add your logo, colors, and branding elements using our drag-and-drop builder or ask our team to do it for
-            you.
+            Our team configures your store, integrates high-converting products, and even provides ad strategies to help
+            you start strong.
           </p>
-          <ul class="list-none mt-4 space-y-1 text-sm text-green-200">
-            <li>• No Coding</li>
-            <li>• Brand Ready</li>
-          </ul>
-        </div>
-        <div class="bg-white/5 backdrop-blur-sm p-6 border border-[#FFFFFF14]">
-          <p class="text-2xl font-semibold bg-gradient-to-t from-green-400 to-green-200 bg-clip-text text-transparent">
-            STEP 2</p>
-          <h3 class="text-xl font-bold mt-4">Customize Your Brand</h3>
-          <p class="text-gray-300 mt-2">
-            Add your logo, colors, and branding elements using our drag-and-drop builder or ask our team to do it for
-            you.
-          </p>
-          <ul class="list-none mt-4 space-y-1 text-sm text-green-200">
-            <li>• No Coding</li>
-            <li>• Brand Ready</li>
-          </ul>
-        </div>
+          <div class="flex gap-6" data-framer-name="Highlights">
 
+
+            <!-- Highlight 2 -->
+            <div class="flex items-center gap-2 border border-white/20 p-2 rounded-[25px] px-[15px]"
+              data-framer-name="Wrapper">
+              <!-- SVG Icon -->
+              <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="17" height="16"
+                viewBox="0 0 17 16" fill="none" id="svg277474897_5578">
+                <path
+                  d="M0.45 8C0.45 12.4387 4.06127 16.05 8.5 16.05C12.9387 16.05 16.55 12.4387 16.55 8C16.55 3.56127 12.9387 -0.05 8.5 -0.05C4.06127 -0.05 0.45 3.56127 0.45 8ZM1.23093 8C1.23093 3.99208 4.49208 0.730926 8.5 0.730926C12.5079 0.730926 15.7691 3.99208 15.7691 8C15.7691 12.0079 12.5079 15.2691 8.5 15.2691C4.49208 15.2691 1.23093 12.0079 1.23093 8Z"
+                  fill="#6769FF" stroke="#6769FF" stroke-width="0.1px"></path>
+                <path
+                  d="M10.7772 10.8288C10.8533 10.9049 10.9537 10.9434 11.0533 10.9434C11.1526 10.9434 11.2531 10.9058 11.3288 10.8293C11.4812 10.6769 11.4811 10.4295 11.3287 10.2771L8.89016 7.83854V3.17698C8.89016 2.96193 8.71588 2.78685 8.50004 2.78685C8.28499 2.78685 8.10991 2.96114 8.10991 3.17698V8.00005C8.10991 8.10329 8.15059 8.20289 8.2239 8.2762L8.2239 8.2762L10.7772 10.8288ZM10.7772 10.8288L10.8125 10.7934L10.7772 10.8288L10.7772 10.8288Z"
+                  fill="#6769FF" stroke="#6769FF" stroke-width="0.1px"></path>
+                <path
+                  d="M8.10991 1.10663C8.10991 1.32168 8.2842 1.49676 8.50004 1.49676C8.71587 1.49676 8.89017 1.32169 8.89017 1.10663V0.393471C8.89017 0.178426 8.71588 0.00334473 8.50004 0.00334473C8.28499 0.00334473 8.10991 0.177633 8.10991 0.393471V1.10663Z"
+                  fill="#6769FF" stroke="#6769FF" stroke-width="0.1px"></path>
+                <mask id="svg277474897_5578_path-4-outside-1_1849_230" maskUnits="userSpaceOnUse" x="1.78052"
+                  y="1.28058" width="3" height="3" fill="black">
+                  <rect fill="#FFFFFF" x="1.78052" y="1.28058" width="3" height="3"></rect>
+                  <path
+                    d="M3.62493 3.46578C3.53809 3.46578 3.45058 3.43223 3.38414 3.36578L2.88019 2.86183C2.74729 2.72894 2.74729 2.51315 2.88019 2.38025C3.01308 2.24736 3.22887 2.24736 3.36177 2.38025L3.86572 2.8842C3.99862 3.01709 3.99862 3.23288 3.86572 3.36578C3.79927 3.43223 3.71243 3.46578 3.62493 3.46578Z">
+                  </path>
+                </mask>
+                <path
+                  d="M3.62493 3.46578C3.53809 3.46578 3.45058 3.43223 3.38414 3.36578L2.88019 2.86183C2.74729 2.72894 2.74729 2.51315 2.88019 2.38025C3.01308 2.24736 3.22887 2.24736 3.36177 2.38025L3.86572 2.8842C3.99862 3.01709 3.99862 3.23288 3.86572 3.36578C3.79927 3.43223 3.71243 3.46578 3.62493 3.46578Z"
+                  fill="#6769FF"></path>
+                <path
+                  d="M3.38414 3.36578L3.45485 3.29507L3.45485 3.29507L3.38414 3.36578ZM2.88019 2.38025L2.80948 2.30954L2.80948 2.30954L2.88019 2.38025ZM3.36177 2.38025L3.43248 2.30954L3.43248 2.30954L3.36177 2.38025ZM3.86572 3.36578L3.93643 3.43649L3.93643 3.43649L3.86572 3.36578ZM3.62493 3.36578C3.56368 3.36578 3.5019 3.34212 3.45485 3.29507L3.31342 3.43649C3.39926 3.52234 3.51249 3.56578 3.62493 3.56578V3.36578ZM3.45485 3.29507L2.9509 2.79112L2.80948 2.93254L3.31343 3.43649L3.45485 3.29507ZM2.9509 2.79112C2.85706 2.69728 2.85706 2.54481 2.9509 2.45096L2.80948 2.30954C2.63753 2.48149 2.63753 2.7606 2.80948 2.93254L2.9509 2.79112ZM2.9509 2.45096C3.04474 2.35712 3.19721 2.35712 3.29106 2.45096L3.43248 2.30954C3.26053 2.13759 2.98143 2.13759 2.80948 2.30954L2.9509 2.45096ZM3.29106 2.45096L3.79501 2.95491L3.93643 2.81349L3.43248 2.30954L3.29106 2.45096ZM3.79501 2.95491C3.88885 3.04875 3.88885 3.20122 3.79501 3.29507L3.93643 3.43649C4.10838 3.26454 4.10838 2.98544 3.93643 2.81349L3.79501 2.95491ZM3.79501 3.29507C3.74789 3.34219 3.68673 3.36578 3.62493 3.36578V3.56578C3.73813 3.56578 3.85066 3.52226 3.93643 3.43649L3.79501 3.29507Z"
+                  fill="#6769FF" mask="url(#svg277474897_5578_path-4-outside-1_1849_230)"></path>
+                <path
+                  d="M0.893349 8.39023H1.60651C1.82156 8.39023 1.99664 8.21594 1.99664 8.0001C1.99664 7.78505 1.82235 7.60997 1.60651 7.60997H0.893349C0.678304 7.60997 0.503223 7.78426 0.503223 8.0001C0.503223 8.21514 0.677511 8.39023 0.893349 8.39023Z"
+                  fill="#6769FF" stroke="#6769FF" stroke-width="0.1px"></path>
+                <path
+                  d="M2.84483 13.1021L2.84483 13.1021L3.34878 12.5982C3.5012 12.4458 3.74865 12.4458 3.90108 12.5982L3.90108 12.5982C4.0535 12.7506 4.0535 12.9981 3.90108 13.1505L3.90108 13.1505L3.3973 13.6543C3.39727 13.6543 3.39724 13.6543 3.39721 13.6543C3.32089 13.7314 3.22107 13.7691 3.12098 13.7691L2.84483 13.1021ZM2.84483 13.1021C2.69241 13.2546 2.69241 13.502 2.84483 13.6544L2.84483 13.1021Z"
+                  fill="#6769FF" stroke="#6769FF" stroke-width="0.1px"></path>
+                <path
+                  d="M8.10991 15.6073C8.10991 15.8224 8.2842 15.9974 8.50004 15.9974C8.71587 15.9974 8.89017 15.8224 8.89017 15.6073V14.8941C8.89017 14.6791 8.71588 14.504 8.50004 14.504C8.28499 14.504 8.10991 14.6783 8.10991 14.8941V15.6073Z"
+                  fill="#6769FF" stroke="#6769FF" stroke-width="0.1px"></path>
+                <path
+                  d="M13.099 12.5982L13.099 12.5982C12.9466 12.7506 12.9466 12.9981 13.099 13.1505L13.6029 13.6544C13.6791 13.7306 13.7794 13.7691 13.8791 13.7691C13.9785 13.7691 14.0789 13.7314 14.1553 13.6544C14.3076 13.5019 14.3076 13.2545 14.1552 13.1021L13.6513 12.5982L13.6513 12.5982C13.4989 12.4458 13.2514 12.4458 13.099 12.5982Z"
+                  fill="#6769FF" stroke="#6769FF" stroke-width="0.1px"></path>
+                <path
+                  d="M16.4966 7.99999C16.4966 7.78499 16.3223 7.60997 16.1065 7.60997H15.3933C15.1783 7.60997 15.0032 7.78426 15.0032 8.0001C15.0032 8.21514 15.1775 8.39023 15.3933 8.39023H16.1065C16.3221 8.39023 16.4974 8.21603 16.4966 7.99999ZM16.4966 7.99999C16.4966 7.99997 16.4966 7.99995 16.4966 7.99992L16.4466 8.0001H16.4966C16.4966 8.00006 16.4966 8.00003 16.4966 7.99999Z"
+                  fill="#6769FF" stroke="#6769FF" stroke-width="0.1px"></path>
+                <path
+                  d="M13.0987 2.84884L13.0987 2.84884L13.6027 2.34489C13.7551 2.19247 14.0026 2.19247 14.155 2.34489L14.155 2.34489C14.3074 2.49732 14.3074 2.74476 14.155 2.89719L14.155 2.89719L13.651 3.40114C13.5749 3.47728 13.4745 3.51578 13.3749 3.51578L13.0987 2.84884ZM13.0987 2.84884C12.9463 3.00127 12.9463 3.24871 13.0987 3.40114L13.0987 2.84884ZM13.134 2.88413L13.1341 2.8842L13.134 2.88413Z"
+                  fill="#6769FF" stroke="#6769FF" stroke-width="0.1px"></path>
+              </svg>
+              <!-- Text -->
+              <div class="flex flex-col justify-start shrink-0">
+                <p class="text-[14px] leading-[14px] text-white text-center">INSTANT DELIVERY</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <!-- Step 3 -->
+        <div
+          class="bg-[#0403133d] backdrop-blur-[24px] p-[45px] border border-[#FFFFFF14] flex flex-col items-center justify-center gap-[20px] text-center">
+          <p
+            class="text-[42px] md:text-[54px] font-bold leading-[100%] tracking-[-0.03em] text-center text-white capitalize font-[Sora]">
+            <span class="bg-gradient-to-t from-[rgba(63,15,201,0)_15%] to-[#6ffc82] bg-clip-text text-transparent">STEP
+              3</span>
+          </p>
+          <h3 class="text-xl font-bold mt-4">Supplier Ships Your Orders Automatically</h3>
+          <p class="text-gray-300 mt-2">
+            Whenever you make a sale, the supplier handles fulfillment. For example, if you're selling a smartwatch for
+            $49.99, we connect you with a supplier who ships it worldwide for just $12.99—completely hands-off.
+          </p>
+          <div class="flex gap-6" data-framer-name="Highlights">
+            <!-- Highlight 1 -->
+            <div class="flex items-center gap-2 border border-white/20 p-2 rounded-[25px] px-[15px]"
+              data-framer-name="Wrapper">
+              <!-- SVG Icon -->
+              <div class="w-4 h-5 shrink-0" aria-hidden="true">
+                <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="13"
+                  height="15" viewBox="0 0 13 15" fill="none" id="svg637706277_1717">
+                  <path
+                    d="M2.03409 0C1.1901 0 0.5 0.690101 0.5 1.53409V13.4659C0.5 14.3099 1.1901 15 2.03409 15H11.75C11.9285 15 12.0909 14.8376 12.0909 14.6591C12.0909 14.6591 12.0909 2.78948 12.0909 2.72727C12.0909 2.53899 11.9383 2.38636 11.75 2.38636H11.6594C11.2244 2.3435 10.8977 1.98227 10.8977 1.53409C10.8977 1.05604 11.2719 0.681818 11.75 0.681818C11.9383 0.681818 12.0909 0.529188 12.0909 0.340909C12.0909 0.15263 11.9383 0 11.75 0H2.03409ZM2.03409 0.681818H10.5089C10.339 0.928667 10.2159 1.21338 10.2159 1.53409C10.2159 1.85744 10.3418 2.13834 10.5142 2.38636H2.03409C1.55603 2.38636 1.18182 2.01215 1.18182 1.53409C1.18182 1.05604 1.55603 0.681818 2.03409 0.681818ZM1.18182 2.76989C1.42951 2.9416 1.71148 3.06818 2.03409 3.06818H5.95455V7.15909C5.95499 7.28316 6.02911 7.40419 6.13942 7.46098C6.24973 7.51777 6.3913 7.50779 6.49254 7.43608L8 6.38139L9.50746 7.43608C9.6087 7.50779 9.75027 7.51777 9.86058 7.46098C9.97089 7.40419 10.045 7.28316 10.0455 7.15909V3.06818H11.4091V14.3182H2.03409C1.55603 14.3182 1.18182 13.944 1.18182 13.4659V2.76989ZM6.63636 3.06818H9.36364V6.49858L8.19709 5.68359C8.08277 5.60261 7.91723 5.60261 7.80291 5.68359L6.63636 6.49858V3.06818ZM4.25 9.20455C4.06114 9.20455 3.90909 9.35659 3.90909 9.54545C3.90909 9.73432 4.06114 9.88636 4.25 9.88636H9.70455C9.89341 9.88636 10.0455 9.73432 10.0455 9.54545C10.0455 9.35659 9.89341 9.20455 9.70455 9.20455H4.25ZM4.25 11.5909C4.06114 11.5909 3.90909 11.743 3.90909 11.9318C3.90909 12.1207 4.06114 12.2727 4.25 12.2727H9.70455C9.89341 12.2727 10.0455 12.1207 10.0455 11.9318C10.0455 11.743 9.89341 11.5909 9.70455 11.5909H4.25Z"
+                    fill="#6769FF"></path>
+                </svg>
+              </div>
+              <!-- Text -->
+              <div class="flex flex-col justify-start shrink-0">
+                <p class="text-[12px] leading-[14px] text-white text-center">FOR BRANDS WITH NO SUPPLIERS</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <!-- Step 4 -->
+        <div
+          class="bg-[#0403133d] backdrop-blur-[24px] p-[45px] border border-[#FFFFFF14] flex flex-col items-center justify-center gap-[20px] text-center">
+          <p
+            class="text-[42px] md:text-[54px] font-bold leading-[100%] tracking-[-0.03em] text-center text-white capitalize font-[Sora]">
+            <span class="bg-gradient-to-t from-[rgba(63,15,201,0)_15%] to-[#6ffc82] bg-clip-text text-transparent">STEP
+              4</span>
+          </p>
+          <h3 class="text-xl font-bold mt-4">Keep Your Profits & Scale Your Store</h3>
+          <p class="text-gray-300 mt-2">
+            You keep the profit from every sale based on your product margins. Use the included course and proven
+            strategies to grow and scale your business even further.
+          </p>
+          <div class="flex gap-6" data-framer-name="Highlights">
+            <!-- Highlight 1 -->
+            <div class="flex items-center gap-2 border border-white/20 p-2 rounded-[25px] px-[15px]"
+              data-framer-name="Wrapper">
+              <!-- SVG Icon -->
+              <div class="w-4 h-5 shrink-0" aria-hidden="true">
+                <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="13"
+                  height="15" viewBox="0 0 13 15" fill="none" id="svg637706277_1717">
+                  <path
+                    d="M2.03409 0C1.1901 0 0.5 0.690101 0.5 1.53409V13.4659C0.5 14.3099 1.1901 15 2.03409 15H11.75C11.9285 15 12.0909 14.8376 12.0909 14.6591C12.0909 14.6591 12.0909 2.78948 12.0909 2.72727C12.0909 2.53899 11.9383 2.38636 11.75 2.38636H11.6594C11.2244 2.3435 10.8977 1.98227 10.8977 1.53409C10.8977 1.05604 11.2719 0.681818 11.75 0.681818C11.9383 0.681818 12.0909 0.529188 12.0909 0.340909C12.0909 0.15263 11.9383 0 11.75 0H2.03409ZM2.03409 0.681818H10.5089C10.339 0.928667 10.2159 1.21338 10.2159 1.53409C10.2159 1.85744 10.3418 2.13834 10.5142 2.38636H2.03409C1.55603 2.38636 1.18182 2.01215 1.18182 1.53409C1.18182 1.05604 1.55603 0.681818 2.03409 0.681818ZM1.18182 2.76989C1.42951 2.9416 1.71148 3.06818 2.03409 3.06818H5.95455V7.15909C5.95499 7.28316 6.02911 7.40419 6.13942 7.46098C6.24973 7.51777 6.3913 7.50779 6.49254 7.43608L8 6.38139L9.50746 7.43608C9.6087 7.50779 9.75027 7.51777 9.86058 7.46098C9.97089 7.40419 10.045 7.28316 10.0455 7.15909V3.06818H11.4091V14.3182H2.03409C1.55603 14.3182 1.18182 13.944 1.18182 13.4659V2.76989ZM6.63636 3.06818H9.36364V6.49858L8.19709 5.68359C8.08277 5.60261 7.91723 5.60261 7.80291 5.68359L6.63636 6.49858V3.06818ZM4.25 9.20455C4.06114 9.20455 3.90909 9.35659 3.90909 9.54545C3.90909 9.73432 4.06114 9.88636 4.25 9.88636H9.70455C9.89341 9.88636 10.0455 9.73432 10.0455 9.54545C10.0455 9.35659 9.89341 9.20455 9.70455 9.20455H4.25ZM4.25 11.5909C4.06114 11.5909 3.90909 11.743 3.90909 11.9318C3.90909 12.1207 4.06114 12.2727 4.25 12.2727H9.70455C9.89341 12.2727 10.0455 12.1207 10.0455 11.9318C10.0455 11.743 9.89341 11.5909 9.70455 11.5909H4.25Z"
+                    fill="#6769FF"></path>
+                </svg>
+              </div>
+              <!-- Text -->
+              <div class="flex flex-col justify-start shrink-0">
+                <p class="text-[14px] leading-[14px] text-white text-center">5 lessons</p>
+              </div>
+            </div>
+
+            <!-- Highlight 2 -->
+            <div class="flex items-center gap-2 border border-white/20 p-2 rounded-[25px] px-[15px]"
+              data-framer-name="Wrapper">
+              <!-- SVG Icon -->
+              <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="17" height="16"
+                viewBox="0 0 17 16" fill="none" id="svg277474897_5578">
+                <path
+                  d="M0.45 8C0.45 12.4387 4.06127 16.05 8.5 16.05C12.9387 16.05 16.55 12.4387 16.55 8C16.55 3.56127 12.9387 -0.05 8.5 -0.05C4.06127 -0.05 0.45 3.56127 0.45 8ZM1.23093 8C1.23093 3.99208 4.49208 0.730926 8.5 0.730926C12.5079 0.730926 15.7691 3.99208 15.7691 8C15.7691 12.0079 12.5079 15.2691 8.5 15.2691C4.49208 15.2691 1.23093 12.0079 1.23093 8Z"
+                  fill="#6769FF" stroke="#6769FF" stroke-width="0.1px"></path>
+                <path
+                  d="M10.7772 10.8288C10.8533 10.9049 10.9537 10.9434 11.0533 10.9434C11.1526 10.9434 11.2531 10.9058 11.3288 10.8293C11.4812 10.6769 11.4811 10.4295 11.3287 10.2771L8.89016 7.83854V3.17698C8.89016 2.96193 8.71588 2.78685 8.50004 2.78685C8.28499 2.78685 8.10991 2.96114 8.10991 3.17698V8.00005C8.10991 8.10329 8.15059 8.20289 8.2239 8.2762L8.2239 8.2762L10.7772 10.8288ZM10.7772 10.8288L10.8125 10.7934L10.7772 10.8288L10.7772 10.8288Z"
+                  fill="#6769FF" stroke="#6769FF" stroke-width="0.1px"></path>
+                <path
+                  d="M8.10991 1.10663C8.10991 1.32168 8.2842 1.49676 8.50004 1.49676C8.71587 1.49676 8.89017 1.32169 8.89017 1.10663V0.393471C8.89017 0.178426 8.71588 0.00334473 8.50004 0.00334473C8.28499 0.00334473 8.10991 0.177633 8.10991 0.393471V1.10663Z"
+                  fill="#6769FF" stroke="#6769FF" stroke-width="0.1px"></path>
+                <mask id="svg277474897_5578_path-4-outside-1_1849_230" maskUnits="userSpaceOnUse" x="1.78052"
+                  y="1.28058" width="3" height="3" fill="black">
+                  <rect fill="#FFFFFF" x="1.78052" y="1.28058" width="3" height="3"></rect>
+                  <path
+                    d="M3.62493 3.46578C3.53809 3.46578 3.45058 3.43223 3.38414 3.36578L2.88019 2.86183C2.74729 2.72894 2.74729 2.51315 2.88019 2.38025C3.01308 2.24736 3.22887 2.24736 3.36177 2.38025L3.86572 2.8842C3.99862 3.01709 3.99862 3.23288 3.86572 3.36578C3.79927 3.43223 3.71243 3.46578 3.62493 3.46578Z">
+                  </path>
+                </mask>
+                <path
+                  d="M3.62493 3.46578C3.53809 3.46578 3.45058 3.43223 3.38414 3.36578L2.88019 2.86183C2.74729 2.72894 2.74729 2.51315 2.88019 2.38025C3.01308 2.24736 3.22887 2.24736 3.36177 2.38025L3.86572 2.8842C3.99862 3.01709 3.99862 3.23288 3.86572 3.36578C3.79927 3.43223 3.71243 3.46578 3.62493 3.46578Z"
+                  fill="#6769FF"></path>
+                <path
+                  d="M3.38414 3.36578L3.45485 3.29507L3.45485 3.29507L3.38414 3.36578ZM2.88019 2.38025L2.80948 2.30954L2.80948 2.30954L2.88019 2.38025ZM3.36177 2.38025L3.43248 2.30954L3.43248 2.30954L3.36177 2.38025ZM3.86572 3.36578L3.93643 3.43649L3.93643 3.43649L3.86572 3.36578ZM3.62493 3.36578C3.56368 3.36578 3.5019 3.34212 3.45485 3.29507L3.31342 3.43649C3.39926 3.52234 3.51249 3.56578 3.62493 3.56578V3.36578ZM3.45485 3.29507L2.9509 2.79112L2.80948 2.93254L3.31343 3.43649L3.45485 3.29507ZM2.9509 2.79112C2.85706 2.69728 2.85706 2.54481 2.9509 2.45096L2.80948 2.30954C2.63753 2.48149 2.63753 2.7606 2.80948 2.93254L2.9509 2.79112ZM2.9509 2.45096C3.04474 2.35712 3.19721 2.35712 3.29106 2.45096L3.43248 2.30954C3.26053 2.13759 2.98143 2.13759 2.80948 2.30954L2.9509 2.45096ZM3.29106 2.45096L3.79501 2.95491L3.93643 2.81349L3.43248 2.30954L3.29106 2.45096ZM3.79501 2.95491C3.88885 3.04875 3.88885 3.20122 3.79501 3.29507L3.93643 3.43649C4.10838 3.26454 4.10838 2.98544 3.93643 2.81349L3.79501 2.95491ZM3.79501 3.29507C3.74789 3.34219 3.68673 3.36578 3.62493 3.36578V3.56578C3.73813 3.56578 3.85066 3.52226 3.93643 3.43649L3.79501 3.29507Z"
+                  fill="#6769FF" mask="url(#svg277474897_5578_path-4-outside-1_1849_230)"></path>
+                <path
+                  d="M0.893349 8.39023H1.60651C1.82156 8.39023 1.99664 8.21594 1.99664 8.0001C1.99664 7.78505 1.82235 7.60997 1.60651 7.60997H0.893349C0.678304 7.60997 0.503223 7.78426 0.503223 8.0001C0.503223 8.21514 0.677511 8.39023 0.893349 8.39023Z"
+                  fill="#6769FF" stroke="#6769FF" stroke-width="0.1px"></path>
+                <path
+                  d="M2.84483 13.1021L2.84483 13.1021L3.34878 12.5982C3.5012 12.4458 3.74865 12.4458 3.90108 12.5982L3.90108 12.5982C4.0535 12.7506 4.0535 12.9981 3.90108 13.1505L3.90108 13.1505L3.3973 13.6543C3.39727 13.6543 3.39724 13.6543 3.39721 13.6543C3.32089 13.7314 3.22107 13.7691 3.12098 13.7691L2.84483 13.1021ZM2.84483 13.1021C2.69241 13.2546 2.69241 13.502 2.84483 13.6544L2.84483 13.1021Z"
+                  fill="#6769FF" stroke="#6769FF" stroke-width="0.1px"></path>
+                <path
+                  d="M8.10991 15.6073C8.10991 15.8224 8.2842 15.9974 8.50004 15.9974C8.71587 15.9974 8.89017 15.8224 8.89017 15.6073V14.8941C8.89017 14.6791 8.71588 14.504 8.50004 14.504C8.28499 14.504 8.10991 14.6783 8.10991 14.8941V15.6073Z"
+                  fill="#6769FF" stroke="#6769FF" stroke-width="0.1px"></path>
+                <path
+                  d="M13.099 12.5982L13.099 12.5982C12.9466 12.7506 12.9466 12.9981 13.099 13.1505L13.6029 13.6544C13.6791 13.7306 13.7794 13.7691 13.8791 13.7691C13.9785 13.7691 14.0789 13.7314 14.1553 13.6544C14.3076 13.5019 14.3076 13.2545 14.1552 13.1021L13.6513 12.5982L13.6513 12.5982C13.4989 12.4458 13.2514 12.4458 13.099 12.5982Z"
+                  fill="#6769FF" stroke="#6769FF" stroke-width="0.1px"></path>
+                <path
+                  d="M16.4966 7.99999C16.4966 7.78499 16.3223 7.60997 16.1065 7.60997H15.3933C15.1783 7.60997 15.0032 7.78426 15.0032 8.0001C15.0032 8.21514 15.1775 8.39023 15.3933 8.39023H16.1065C16.3221 8.39023 16.4974 8.21603 16.4966 7.99999ZM16.4966 7.99999C16.4966 7.99997 16.4966 7.99995 16.4966 7.99992L16.4466 8.0001H16.4966C16.4966 8.00006 16.4966 8.00003 16.4966 7.99999Z"
+                  fill="#6769FF" stroke="#6769FF" stroke-width="0.1px"></path>
+                <path
+                  d="M13.0987 2.84884L13.0987 2.84884L13.6027 2.34489C13.7551 2.19247 14.0026 2.19247 14.155 2.34489L14.155 2.34489C14.3074 2.49732 14.3074 2.74476 14.155 2.89719L14.155 2.89719L13.651 3.40114C13.5749 3.47728 13.4745 3.51578 13.3749 3.51578L13.0987 2.84884ZM13.0987 2.84884C12.9463 3.00127 12.9463 3.24871 13.0987 3.40114L13.0987 2.84884ZM13.134 2.88413L13.1341 2.8842L13.134 2.88413Z"
+                  fill="#6769FF" stroke="#6769FF" stroke-width="0.1px"></path>
+              </svg>
+              <!-- Text -->
+              <div class="flex flex-col justify-start shrink-0">
+                <p class="text-[14px] leading-[14px] text-white text-center">1 month</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
         <!-- Add more steps as needed -->
       </div>
       <div class="grid relative">
-        <div class="bg-white/5 backdrop-blur-sm p-6 border border-[#FFFFFF14]">
-          <p class="text-2xl font-semibold bg-gradient-to-t from-green-400 to-green-200 bg-clip-text text-transparent">
-            STEP 2</p>
-          <h3 class="text-xl font-bold mt-4">Customize Your Brand</h3>
+        <div
+          class="bg-[#0403133d] backdrop-blur-[24px] p-[45px] border border-[#FFFFFF14] flex flex-col items-center justify-center gap-[50px] text-center">
+
+          <h1 class="text-4xl font-bold mt-4">Full Refund Guarantee 💰</h1>
           <p class="text-gray-300 mt-2">
-            Add your logo, colors, and branding elements using our drag-and-drop builder or ask our team to do it for
-            you.
+            If you're <span class="font-bold">not completely satisfied</span> with your store or the results you
+            achieve, we offer a <span class="font-bold">full refund</span> of your <span class="font-bold">purchase
+              price</span> along with any <span class="font-bold">Shopify subscription fees</span> you've paid. There
+            are no hidden costs, no complicated processes—just a <span class="font-bold">straightforward
+              guarantee</span> to ensure you can start your business with <span class="font-bold">confidence</span> and
+            <span class="font-bold">peace of mind</span>.
           </p>
-          <ul class="list-none mt-4 space-y-1 text-sm text-green-200">
-            <li>• No Coding</li>
-            <li>• Brand Ready</li>
+          <div class="flex gap-6" data-framer-name="Highlights">
+            <!-- Highlight 1 -->
+            <div class="flex items-center gap-2 border border-white/20 p-2 rounded-[25px] px-[15px]"
+              data-framer-name="Wrapper">
+              <!-- SVG Icon -->
+              <div class="w-4 h-5 shrink-0" aria-hidden="true">
+                <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="13"
+                  height="15" viewBox="0 0 13 15" fill="none" id="svg637706277_1717">
+                  <path
+                    d="M2.03409 0C1.1901 0 0.5 0.690101 0.5 1.53409V13.4659C0.5 14.3099 1.1901 15 2.03409 15H11.75C11.9285 15 12.0909 14.8376 12.0909 14.6591C12.0909 14.6591 12.0909 2.78948 12.0909 2.72727C12.0909 2.53899 11.9383 2.38636 11.75 2.38636H11.6594C11.2244 2.3435 10.8977 1.98227 10.8977 1.53409C10.8977 1.05604 11.2719 0.681818 11.75 0.681818C11.9383 0.681818 12.0909 0.529188 12.0909 0.340909C12.0909 0.15263 11.9383 0 11.75 0H2.03409ZM2.03409 0.681818H10.5089C10.339 0.928667 10.2159 1.21338 10.2159 1.53409C10.2159 1.85744 10.3418 2.13834 10.5142 2.38636H2.03409C1.55603 2.38636 1.18182 2.01215 1.18182 1.53409C1.18182 1.05604 1.55603 0.681818 2.03409 0.681818ZM1.18182 2.76989C1.42951 2.9416 1.71148 3.06818 2.03409 3.06818H5.95455V7.15909C5.95499 7.28316 6.02911 7.40419 6.13942 7.46098C6.24973 7.51777 6.3913 7.50779 6.49254 7.43608L8 6.38139L9.50746 7.43608C9.6087 7.50779 9.75027 7.51777 9.86058 7.46098C9.97089 7.40419 10.045 7.28316 10.0455 7.15909V3.06818H11.4091V14.3182H2.03409C1.55603 14.3182 1.18182 13.944 1.18182 13.4659V2.76989ZM6.63636 3.06818H9.36364V6.49858L8.19709 5.68359C8.08277 5.60261 7.91723 5.60261 7.80291 5.68359L6.63636 6.49858V3.06818ZM4.25 9.20455C4.06114 9.20455 3.90909 9.35659 3.90909 9.54545C3.90909 9.73432 4.06114 9.88636 4.25 9.88636H9.70455C9.89341 9.88636 10.0455 9.73432 10.0455 9.54545C10.0455 9.35659 9.89341 9.20455 9.70455 9.20455H4.25ZM4.25 11.5909C4.06114 11.5909 3.90909 11.743 3.90909 11.9318C3.90909 12.1207 4.06114 12.2727 4.25 12.2727H9.70455C9.89341 12.2727 10.0455 12.1207 10.0455 11.9318C10.0455 11.743 9.89341 11.5909 9.70455 11.5909H4.25Z"
+                    fill="#6769FF"></path>
+                </svg>
+              </div>
+              <!-- Text -->
+              <div class="flex flex-col justify-start shrink-0">
+                <p class="text-[14px] leading-[14px] text-white text-center">ONE TIME PAYMENT</p>
+              </div>
+            </div>
+
+
+          </div>
+
+        </div>
+      </div>
+  </section>
+
+  <section class="py-16 px-6 text-white text-center md:px-[220px]">
+    <div
+      class="pricing flex justify-start max-w-[380px] border border-[#FFFFFF14] shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+      <div class="product-card p-[25px]">
+        <div class="flex items-center justify-between">
+          <div class="pricing-img flex items-center justify-between gap-[10px]">
+            <img src="https://framerusercontent.com/images/6gSa2nXW3YqDmOGEDolzmwi4bg.png" alt="">
+            <h2 class="font-bold text-[20px]">Pro</h2>
+          </div>
+          <div>
+            <p
+              class="text-sm sm:text-base md:text-[12px] font-bold text-white border border-[#FFFFFF14] p-2 sm:p-2.5 md:p-[10px] px-4 sm:px-5 md:px-[10px] md:py-[5px] rounded-[5px] tracking-wider text-center">
+              247 AVALIABLE PACKS</p>
+          </div>
+        </div>
+        <div class="price flex flex-col justify-start items-start  text-start py-[30px]">
+          <h2 class="font-medium text-[55px]">$49.95</h2>
+          <p class="flex text-[15px]">Everything you need to launch your own branded Shopify store in 24 hours.</p>
+        </div>
+        <hr>
+        <div class="theme-features py-[20px]">
+          <ul class="text-sm text-gray-600 flex flex-col gap-[15px]">
+            <li class="flex items-center gap-[10px]">
+              <i class="uil uil-check text-[#FFFF] text-[25px]"></i>
+              <h2 class="text-[15px] leading-7   text-[#FFFF] text-start">30 Premium Themes + Pre-Built Shopify Store
+              </h2>
+            </li>
+            <li class="flex items-center gap-[10px]">
+              <i class="uil uil-check text-[#FFFF] text-[25px]"></i>
+              <h2 class="text-[15px] leading-7   text-[#FFFF] text-start">Winning Product + Verified Supplier watchlist
+              </h2>
+            </li>
+            <li class="flex items-center gap-[10px]">
+              <i class="uil uil-check text-[#FFFF] text-[25px]"></i>
+              <h2 class="text-[15px] leading-7   text-[#FFFF] text-start">Aesthetic, High-Converting Design</h2>
+            </li>
+            <li class="flex items-center gap-[10px]">
+              <i class="uil uil-check text-[#FFFF] text-[25px]"></i>
+              <h2 class="text-[15px] leading-7   text-[#FFFF] text-start">One-time payment. Instant access. Zero fluff
+              </h2>
+            </li>
           </ul>
+        </div>
+        <div class="pricing-btn">
+          <a href="https://storestacks.gumroad.com/l/Pack">
+            <button
+              class="animated-button hidden md:flex bg-white hover:bg-[#16CF2F] text-green-600 hover:text-white transition-all duration-300 px-4 py-2 rounded-md items-center gap-2 relative">
+              <svg viewBox="0 0 24 24"
+                class="arr-2 w-5 h-6  p-1 rounded-full bg-white text-green-600 transition-all duration-300"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z">
+                </path>
+              </svg>
+
+              <span class="text font-medium border-white px-[10px]">GRAB YOURS</span>
+              <span class="circle hidden"></span>
+              <!-- if this is decorative or animation controlled by CSS, keep it. -->
+
+              <svg viewBox="0 0 24 24"
+                class="arr-1 w-5 h-6 p-1 rounded-full bg-[#16CF2F] text-green-600 transition-all duration-300"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z">
+                </path>
+              </svg>
+            </button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="text-white px-4 py-12">
+    <div class="max-w-2xl flex flex-col items-center mx-auto text-center">
+      <div class="">
+        <p
+          class="text-sm tracking-widest uppercase font-bold border border-[#FFFFFF14] px-[15px] py-[7px] rounded-[25px]">
+          FAQ</p>
+      </div>
+      <h2 class="text-4xl font-bold mt-2">Maybe we have an answer</h2>
+    </div>
+
+    <div class="mt-10 w-full md:px-[220px] mx-auto">
+      <!-- Accordion Item -->
+      <div x-data="{ open: false }"
+        class="w-full border border-white/20 backdrop-blur-md  framer-hover hover:bg-white/10 hover:border-white/10">
+        <button @click="open = !open" class="flex justify-between items-center w-full px-6 py-6 focus:outline-none">
+          <h5 class="text-left text-lg font-bold">What is included?</h5>
+          <svg :class="{'rotate-45': open}" class="w-5 h-5 transform transition-transform duration-300 text-white"
+            fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4" />
+          </svg>
+        </button>
+        <div x-show="open" x-transition class="px-6 pb-4 text-[15px] font-semibold text-gray-300">
+          You’ll receive a fully optimized, pre-built Shopify store, premium theme, winning product with supplier,
+          branding kit, and a launch blueprint, everything you need to start fast.
+        </div>
+      </div>
+
+      <!-- Repeat for more FAQ items -->
+      <div x-data="{ open: false }"
+        class="w-full border border-white/20 backdrop-blur-md  framer-hover hover:bg-white/10 hover:border-white/10">
+        <button @click="open = !open" class="flex justify-between items-center w-full px-6 py-6 focus:outline-none">
+          <h5 class="text-left text-lg font-bold">Do I need experience to run this store?</h5>
+          <svg :class="{'rotate-45': open}" class="w-5 h-5 transform transition-transform duration-300 text-white"
+            fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4" />
+          </svg>
+        </button>
+        <div x-show="open" x-transition class="px-6 pb-4 text-[15px] font-semibold text-gray-300">
+          No prior experience is needed! Our stores are fully set up and optimized, making them beginner-friendly. Plus,
+          we include a step-by-step guide to help you with everything from managing orders to marketing your store. If
+          you need more help, don't hesitate to contact us.
+        </div>
+      </div>
+      <div x-data="{ open: false }"
+        class="w-full border border-white/20 backdrop-blur-md  framer-hover hover:bg-white/10 hover:border-white/10">
+        <button @click="open = !open" class="flex justify-between items-center w-full px-6 py-6 focus:outline-none">
+          <h5 class="text-left text-lg font-bold">Is the store optimized for mobile devices?</h5>
+          <svg :class="{'rotate-45': open}" class="w-5 h-5 transform transition-transform duration-300 text-white"
+            fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4" />
+          </svg>
+        </button>
+        <div x-show="open" x-transition class="px-6 pb-4 text-[15px] font-semibold text-gray-300">
+          Absolutely. Every store is fully responsive and built with mobile-first design in mind. Your store will look
+          clean, professional, and high-converting on all devices, especially mobile, where most customers shop.
+        </div>
+      </div>
+      <div x-data="{ open: false }"
+        class="w-full border border-white/20 backdrop-blur-md  framer-hover hover:bg-white/10 hover:border-white/10">
+        <button @click="open = !open" class="flex justify-between items-center w-full px-6 py-6 focus:outline-none">
+          <h5 class="text-left text-lg font-bold">Can I Sell My Own Chosen Products?</h5>
+          <svg :class="{'rotate-45': open}" class="w-5 h-5 transform transition-transform duration-300 text-white"
+            fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4" />
+          </svg>
+        </button>
+        <div x-show="open" x-transition class="px-6 pb-4 text-[15px] font-semibold text-gray-300">
+          Yes! You have full control over your store’s products. You can add or remove products anytime to suit your
+          niche and business goals
+        </div>
+      </div>
+      <div x-data="{ open: false }"
+        class="w-full border border-white/20 backdrop-blur-md  framer-hover hover:bg-white/10 hover:border-white/10">
+        <button @click="open = !open" class="flex justify-between items-center w-full px-6 py-6 focus:outline-none">
+          <h5 class="text-left text-lg font-bold">What If I Have Issues After Purchasing?</h5>
+          <svg :class="{'rotate-45': open}" class="w-5 h-5 transform transition-transform duration-300 text-white"
+            fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4" />
+          </svg>
+        </button>
+        <div x-show="open" x-transition class="px-6 pb-4 text-[15px] font-semibold text-gray-300">
+          We offer full support to help you get started. If you run into any issues, you can reach out to our team for
+          assistance.
+        </div>
+      </div>
+
+      <!-- Add more FAQs below similarly -->
+    </div>
+  </section>
+
+  <section
+    class="py-[150px] sm:py-[180px] md:py-[200px] text-white px-4 sm:px-8 md:px-[100px] lg:px-[150px] xl:px-[220px] flex flex-col justify-center items-center relative">
+    <!-- Background Image -->
+    <div class="absolute inset-0 flex justify-center items-center">
+      <img src="https://framerusercontent.com/images/z73ieFN8PAYaq2AhJRjefimEQPw.jpg" alt="Guarantee Background"
+        class="w-full object-cover max-w-[90%] h-[500px] rounded-[5px] sm:max-w-[80%] md:max-w-[70%]" />
+    </div>
+
+    <!-- Overlay Content -->
+    <div
+      class="relative top-[20px] z-10 w-full max-w-6xl mx-auto text-center text-white flex flex-col justify-center items-center gap-[30px] px-4 sm:px-6">
+      <!-- Preheading -->
+      <p
+        class="text-sm tracking-widest uppercase font-bold border border-[#FFFFFF14] px-[15px] py-[7px] rounded-[25px]">
+        FAQ</p>
+
+      <!-- Title -->
+      <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold">Your Success, Guaranteed.</h2>
+
+      <!-- Description -->
+      <p class="text-sm sm:text-base md:text-[15px] text-white max-w-2xl mx-auto">
+        With StoreStack, your satisfaction is our priority. If you're not completely satisfied with your purchase within
+        7 days, we'll refund your investment no questions asked
+      </p>
+
+      <div class="flex flex-col md:flex-row justify-center items-center gap-[20px] sm:gap-[30px]">
+        <!-- CTA Button -->
+        <div class="flex justify-center pt-4">
+          <a href="https://storestacks.gumroad.com/l/Pack">
+            <button
+              class="animated-button hidden md:flex bg-white hover:bg-[#16CF2F] text-green-600 hover:text-white transition-all duration-300 px-4 py-2 rounded-md items-center gap-2 relative">
+              <svg viewBox="0 0 24 24"
+                class="arr-2 w-5 h-6 p-1 rounded-full bg-white text-green-600 transition-all duration-300"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z">
+                </path>
+              </svg>
+              <span class="text font-medium border-white px-[10px]">GRAB YOURS</span>
+              <span class="circle hidden"></span>
+              <svg viewBox="0 0 24 24"
+                class="arr-1 w-5 h-6 p-1 rounded-full bg-[#16CF2F] text-green-600 transition-all duration-300"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z">
+                </path>
+              </svg>
+            </button>
+          </a>
+        </div>
+
+        <!-- Avatars and Stats -->
+        <div class="flex flex-col sm:flex-row items-center gap-4">
+          <div class="flex items-center">
+            <!-- Avatars -->
+            <div class="flex -space-x-3">
+              <img src="https://framerusercontent.com/images/sFJggTzla8eMLg8n1AbKDQlyulU.jpg?scale-down-to=1024"
+                alt="User 1" class="w-10 h-10 rounded-full border-2 border-white object-cover shadow-md">
+              <img src="https://framerusercontent.com/images/sFJggTzla8eMLg8n1AbKDQlyulU.jpg?scale-down-to=1024"
+                alt="User 2" class="w-10 h-10 rounded-full border-2 border-white object-cover shadow-md">
+              <img src="https://framerusercontent.com/images/sFJggTzla8eMLg8n1AbKDQlyulU.jpg?scale-down-to=1024"
+                alt="User 3" class="w-10 h-10 rounded-full border-2 border-white object-cover shadow-md">
+            </div>
+
+            <!-- "+2k" -->
+            <div
+              class="relative -right-[15px] w-10 h-10 rounded-full bg-[#0EC927] text-[18px] text-white flex items-center justify-center font-semibold shadow-inner">
+              2k+
+            </div>
+          </div>
+
+          <!-- Review Stats -->
+          <div id="review_star_content"
+            class="flex flex-col items-center sm:items-start gap-[5px] text-center sm:text-left">
+            <div class="star">
+              <img src="/static/images/star-removebg-preview.png" alt="" class="w-[100px]">
+            </div>
+            <p class="font-semibold">Join 3000+ Brands</p>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
+  <section class="py-10 flex flex-col gap-[50px]  bg-[#031203] px-[50px]">
+    <div class="max-w-2xl flex flex-col items-center mx-auto text-center py-[50px]">
+      <div class="">
+        <p
+          class="text-sm tracking-widest uppercase font-bold border border-[#FFFFFF14] px-[15px] py-[7px] rounded-[25px]">
+          FAQ</p>
+      </div>
+      <h2 class="text-4xl font-bold mt-2">Maybe we have an answer</h2>
+    </div>
+    <div class="container px-4 relative">
+      <!-- Carousel -->
+      <div id="testimonial-carousel" class="owl-carousel">
+        <!-- Testimonial Item -->
+        <div class="item text-center px-6 py-10 bg-[#081708] shadow-lg rounded-lg">
+          <div class="w-20 h-20 mx-auto mb-4">
+            <img src="https://i.pravatar.cc/100?img=1" alt="User"
+              class="w-full h-full object-cover rounded-full shadow-md border-2 border-white" />
+          </div>
+          <p class="text-gray-600 text-base italic mb-4">
+            “This toy changed the way my kids play. So creative and eco-friendly!”
+          </p>
+          <h4 class="text-lg font-semibold text-white">Rahul Sharma</h4>
+        </div>
 
-  <!-- Script -->
-  <script src="/static/js/index.js"></script>
+        <!-- Copy and change content for more items -->
+        <div class="item text-center px-6 py-10 bg-[#081708] shadow-lg rounded-lg">
+          <div class="w-20 h-20 mx-auto mb-4">
+            <img src="https://i.pravatar.cc/100?img=2" alt="User"
+              class="w-full h-full object-cover rounded-full shadow-md border-2 border-white" />
+          </div>
+          <p class="text-gray-600 text-base italic mb-4">
+            “Loved the quality and design. Definitely a favorite in our home!”
+          </p>
+          <h4 class="text-lg font-semibold text-white">Sneha Patel</h4>
+        </div>
+
+        <div class="item text-center px-6 py-10 bg-[#081708] shadow-lg rounded-lg">
+          <div class="w-20 h-20 mx-auto mb-4">
+            <img src="https://i.pravatar.cc/100?img=3" alt="User"
+              class="w-full h-full object-cover rounded-full shadow-md border-2 border-white" />
+          </div>
+          <p class="text-gray-600 text-base italic mb-4">
+            “Beautifully crafted wooden toys. Highly recommend for all parents!”
+          </p>
+          <h4 class="text-lg font-semibold text-white">Aarav Desai</h4>
+        </div>
+      </div>
+
+      <!-- Arrows (hidden on mobile) -->
+      <div class="hidden md:block absolute left-0 top-1/2 transform -translate-y-1/2 z-10">
+        <button id="prevBtn" class="bg-[#081708] border border-[#FFFFFF14] text-white p-[5px] px-[10px] rounded-full shadow ">
+          &larr;
+        </button>
+      </div>
+      <div class="hidden md:block absolute right-0 top-1/2 transform -translate-y-1/2 z-10">
+        <button id="nextBtn" class=" bg-[#081708] border border-[#FFFFFF14] text-white p-[5px] px-[10px] rounded-full shadow ">
+          &rarr;
+        </button>
+      </div>
+    </div>
+    </section>
+
+
+    <section class="relative bg-gradient-to-b from-[#040313] to-transparent to-[38%] opacity-100 text-white font-sora">
+      <!-- Background Image -->
+      <div class="absolute inset-0 z-0">
+        <img src="https://framerusercontent.com/images/TZGgHyBBmDQxbDq0hRCGlId50FU.png" alt="Background"
+          class="w-full h-full object-cover bg-gradient-to-b from-[#040313] to-transparent to-[38%] opacity-100">
+        <div class="absolute inset-0"></div>
+      </div>
+    
+      <div class="footer-bg relative z-10 max-w-[70rem] mx-auto py-20 px-4 sm:px-6 lg:px-8">
+        <div class="footer-header flex flex-col lg:flex-row justify-between gap-10 lg:gap-0 p-[20px]">
+          <h1 class="text-[40px] md:text-[60px] font-bold leading-tight">Join The<br>Community</h1>
+          <div class="socials flex flex-col w-full lg:w-[400px] gap-[10px]">
+            <div class="fB flex justify-between gap-[30px] sm:gap-[50px] items-center">
+              <div class="flex items-center gap-[15px]">
+                <i class="uil uil-facebook text-[25px]"></i>
+                <h2>FACEBOOK</h2>
+              </div>
+              <div>
+                <i class="uil uil-arrow-up-right"></i>
+              </div>
+            </div>
+            <div class="border border-[#FFFFFF14]"></div>
+    
+            <div class="fb flex justify-between gap-[30px] sm:gap-[50px] items-center">
+              <div class="flex items-center gap-[15px]">
+                <i class="uil uil-instagram text-[25px]"></i>
+                <h2>INSTAGRAM</h2>
+              </div>
+              <div>
+                <i class="uil uil-arrow-up-right"></i>
+              </div>
+            </div>
+            <div class="border border-[#FFFFFF14]"></div>
+    
+            <div class="fb flex justify-between gap-[30px] sm:gap-[50px] items-center">
+              <div class="flex items-center gap-[15px]">
+                <i class="fa-brands fa-tiktok text-[25px]"></i>
+                <h2>TIKTOK</h2>
+              </div>
+              <div>
+                <i class="uil uil-arrow-up-right"></i>
+              </div>
+            </div>
+            <div class="border border-[#FFFFFF14]"></div>
+          </div>
+        </div>
+    
+        <div class="footer-policy flex flex-col gap-[20px] pt-[50px] p-[20px]">
+          <div class="footer-subheading py-[50px]">
+            <h2 class="text-[28px] font-bold text-white">StoreStack- Shopify Packs for Entrepreneurs</h2>
+          </div>
+          <div class="flex flex-col gap-[15px]">
+            <div class="flex justify-between items-center">
+              <div class="footer-heading">
+                <h2 class="uppercase font-medium">Price</h2>
+              </div>
+              <div>
+                <i class="uil uil-arrow-up-right"></i>
+              </div>
+            </div>
+            <div class="border border-[#FFFFFF14]"></div>
+    
+            <div class="flex justify-between items-center">
+              <div class="footer-heading">
+                <h2 class="uppercase font-medium">Blog</h2>
+              </div>
+              <div>
+                <i class="uil uil-arrow-up-right"></i>
+              </div>
+            </div>
+            <div class="border border-[#FFFFFF14]"></div>
+    
+            <div class="flex justify-between items-center">
+              <div class="footer-heading">
+                <h2 class="uppercase font-medium">Contact</h2>
+              </div>
+              <div>
+                <i class="uil uil-arrow-up-right"></i>
+              </div>
+            </div>
+            <div class="border border-[#FFFFFF14]"></div>
+    
+            <div class="flex justify-between items-center">
+              <div class="footer-heading">
+                <h2 class="uppercase font-medium">Terms & Conditions</h2>
+              </div>
+              <div>
+                <i class="uil uil-arrow-up-right"></i>
+              </div>
+            </div>
+            <div class="border border-[#FFFFFF14]"></div>
+    
+            <div class="flex justify-between items-center">
+              <div class="footer-heading">
+                <h2 class="uppercase font-medium">Privacy Policy</h2>
+              </div>
+              <div>
+                <i class="uil uil-arrow-up-right"></i>
+              </div>
+            </div>
+            <div class="border border-[#FFFFFF14]"></div>
+          </div>
+        </div>
+    
+        <div class="pt-[50px] p-[20px] text-sm sm:text-base">
+          <h3>© StoreStack 2025. All Rights Reserved.</h3>
+        </div>
+      </div>
+    </section>
+    
+    
+
+    <!-- Script -->
+    <script src="/static/js/index.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
 </body>
 
 </html>
