@@ -51,39 +51,8 @@ const menuBtn = document.getElementById('menu-btn');
     });
 
 
-    $(document).ready(function(){
-      const owl = $('#testimonial-carousel');
-  
-      owl.owlCarousel({
-        loop: true,
-        margin: 24,
-        autoplay: true,
-        autoplayTimeout: 4000,
-        autoplayHoverPause: true,
-        smartSpeed: 800,
-        nav: false,
-        dots: true,
-        responsive: {
-          0: {
-            items: 1,
-            dots: true
-          },
-          768: {
-            items: 2,
-            dots: true
-          },
-          1024: {
-            items: 3,
-            dots: false
-          }
-        }
-      });
-  
-      // Navigation buttons (only for desktop)
-      $('#prevBtn').click(function() {
-        owl.trigger('prev.owl.carousel');
-      });
-      $('#nextBtn').click(function() {
-        owl.trigger('next.owl.carousel');
-      });
-    });
+    
+
+
+
+    

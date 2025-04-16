@@ -16,5 +16,8 @@
     "url": "https://github.com/yashbutla/storestacks/issues"
   },
   "homepage": "https://github.com/yashbutla/storestacks#readme",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "aos": "^2.3.4"
+  }
 }

@@ -28,37 +28,40 @@
 
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-  <!-- jQuery -->
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
   <!-- Owl Carousel CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
   <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
 
+
   <!-- Owl Carousel JS -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
+  <!-- AOS CSS -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
 
 </head>
 
-<body class="bg-[#031203] text-white">
-  <section id="">
+<body class="bg-[#031203] text-white scroll-smooth">
+  <section>
     <nav class="p-6 bg-[#031203] w-full top-0 left-0 z-50 border-b border-[#FFFFFF14]">
       <div class="container mx-auto flex justify-around items-center">
         <!-- Logo -->
+        <a href="/index.html">
         <div id="nav-logo" class="text-xl font-bold flex items-center transition-all duration-500 ease-in-out">
           <img src="/static/images/webuilders-logo.png" alt="Logo" class="w-[50px] mr-2"
             style="filter: invert(93%) sepia(7%) saturate(38%) hue-rotate(260deg) brightness(195%) contrast(195%);">
-          <h2>Webuilders</h2>
+          <h2 class="text-[18px]">Webuilders</h2>
         </div>
 
+      </a> 
+        
         <!-- Desktop Menu (Visible on md and above) -->
         <div class="hidden md:flex gap-[50px]">
-          <a href="#" class="hover:text-gray-400">Home</a>
-          <a href="#" class="hover:text-gray-400">Pricing</a>
-          <a href="#" class="hover:text-gray-400">Blog</a>
-          <a href="#" class="hover:text-gray-400">Contact Us</a>
+          <a href="#" class="hover:text-gray-400 text-[14px]">Home</a>
+          <a href="#" class="hover:text-gray-400 text-[14px]">Pricing</a>
+          <a href="#" class="hover:text-gray-400 text-[14px]">Blog</a>
+          <a href="#" class="hover:text-gray-400 text-[14px]">Contact Us</a>
         </div>
         <a href="https://storestacks.gumroad.com/l/Pack">
           <button class="sec-animated-button hidden md:flex">
@@ -67,7 +70,7 @@
                 d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z">
               </path>
             </svg>
-            <span class="text">Enroll Now</span>
+            <span class="text text-[14px]">Enroll Now</span>
             <span class="circle"></span>
             <svg viewBox="0 0 24 24" class="arr-1" xmlns="http://www.w3.org/2000/svg">
               <path
@@ -76,7 +79,7 @@
             </svg>
           </button>
         </a>
-        
+
 
         <!-- Mobile Menu Button (Animated Hamburger) -->
         <button id="menu-btn" class="md:hidden flex flex-col justify-center items-center w-8 h-8 focus:outline-none">
@@ -91,20 +94,23 @@
         class="fixed inset-0 bg-[#031203] bg-opacity-95 z-40 flex-col items-center h-[380px] py-14 space-y-6 transform -translate-y-full opacity-0 hidden transition-all duration-300">
         <!-- Close Button -->
         <div class="flex items-center w-screen justify-between px-[40px] absolute top-[25px]">
-          <div id="nav-logo" class="text-xl font-bold flex items-center transition-all duration-500 ease-in-out">
-            <img src="/static/images/webuilders-logo.png" alt="Logo" class="w-[50px] mr-2"
-              style="filter: invert(93%) sepia(7%) saturate(38%) hue-rotate(260deg) brightness(195%) contrast(195%);">
-            <h2>Webuilders</h2>
-          </div>
+          <a href="/index.html">
+            <div id="nav-logo" class="text-xl font-bold flex items-center transition-all duration-500 ease-in-out">
+              <img src="/static/images/webuilders-logo.png" alt="Logo" class="w-[50px] mr-2"
+                style="filter: invert(93%) sepia(7%) saturate(38%) hue-rotate(260deg) brightness(195%) contrast(195%);">
+              <h2 class="text-[20px]">Webuilders</h2>
+            </div>
+    
+          </a> 
           <button id="close-btn"><i class="uil uil-times top-1  text-white text-5xl"></i></button>
         </div>
 
         <!-- Mobile Menu Items -->
         <nav class="flex flex-col items-center space-y-6 text-lg mt-[50px] relative top-[10px]">
-          <a href="#" class="hover:text-gray-400 menu-link">Home</a>
-          <a href="#" class="hover:text-gray-400 menu-link">Pricing</a>
-          <a href="#" class="hover:text-gray-400 menu-link">Blog</a>
-          <a href="#" class="hover:text-gray-400 menu-link">Contact Us</a>
+          <a href="#" class="hover:text-gray-400 menu-link text-[14px]">Home</a>
+          <a href="#" class="hover:text-gray-400 menu-link text-[14px]">Pricing</a>
+          <a href="#" class="hover:text-gray-400 menu-link text-[14px]">Blog</a>
+          <a href="#" class="hover:text-gray-400 menu-link text-[14px]">Contact Us</a>
           <a href="https://storestacks.gumroad.com/l/Pack">
             <button class="sec-animated-button">
               <svg viewBox="0 0 24 24" class="arr-2" xmlns="http://www.w3.org/2000/svg">
@@ -112,7 +118,7 @@
                   d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z">
                 </path>
               </svg>
-              <span class="text">Enroll Now</span>
+              <span class="text text-[14px]">Enroll Now</span>
               <span class="circle"></span>
               <svg viewBox="0 0 24 24" class="arr-1" xmlns="http://www.w3.org/2000/svg">
                 <path
@@ -120,11 +126,11 @@
                 </path>
               </svg>
             </button>
-          </a>  
+          </a>
         </nav>
 
         <!-- Enroll Now Button -->
-          
+
       </div>
     </nav>
 
@@ -133,22 +139,23 @@
 
     <div
       class="hero-section flex flex-col justify-center items-center relative pt-[80px] py-[50px] bg-[#103B10] z-[100px] bottom-[0px] overflow-hidden">
-      <div class="flex flex-col gap-[50px] items-center">
-        <div class="flex flex-col items-center text-center gap-6">
-          <p class="text-sm sm:text-base font-bold text-white border p-2 px-5 rounded-full tracking-wider">
+      <div class="flex flex-col gap-[50px] items-center" data-aos="fade-up">
+        <div class="flex flex-col items-center text-center gap-6" data-aos="fade-up">
+          <p class="text-[14px] sm:text-[12px]font-bold text-white border p-2 px-5 rounded-full tracking-wider">
             FROM ASPIRING ENTREPRENEUR TO ACHIEVER
           </p>
-          <h1 class="text-4xl sm:text-5xl md:text-6xl xl:text-7xl font-extrabold text-transparent bg-clip-text bg-gradient-to-b from-green-300 via-green-100 to-white leading-tight">
+          <h1
+            class="block text-4xl sm:text-[46px] md:text-[58px] xl:text-[70px] font-extrabold text-transparent bg-clip-text bg-gradient-to-b from-green-300 via-green-100 to-white leading-tight">
             LAUNCH YOUR<br />
             HIGH CONVERTING<br />
             SHOPIFY STORE
           </h1>
-          <p class="text-white text-sm sm:text-base max-w-3xl">
+          <p class="text-white text-[12px] sm:text-[16px] max-w-3xl">
             A fully optimized Shopify brand for just $50. No guesswork, no wasted time. Get instant access to
             premium themes, pre-built branding and launch within 24 hours.
           </p>
         </div>
-        <div class="flex items-center justify-center gap-[30px]">
+        <div class="flex items-center justify-center gap-[30px]" data-aos="fade-up">
           <a href="https://storestacks.gumroad.com/l/Pack">
             <button class="sec-animated-button hidden md:flex">
               <svg viewBox="0 0 24 24" class="arr-2" xmlns="http://www.w3.org/2000/svg">
@@ -156,7 +163,7 @@
                   d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z">
                 </path>
               </svg>
-              <span class="text">Enroll Now</span>
+              <span class="text text-[14px]">Enroll Now</span>
               <span class="circle"></span>
               <svg viewBox="0 0 24 24" class="arr-1" xmlns="http://www.w3.org/2000/svg">
                 <path
@@ -167,45 +174,41 @@
           </a>
           <div class="flex">
             <div class="flex items-center">
-              <!-- Avatars (overlapping effect) -->
+              <!-- Avatars -->
               <div class="flex -space-x-3">
                 <img src="https://framerusercontent.com/images/sFJggTzla8eMLg8n1AbKDQlyulU.jpg?scale-down-to=1024"
                   alt="User 1" class="w-10 h-10 rounded-full border-2 border-white object-cover shadow-md">
-
                 <img src="https://framerusercontent.com/images/sFJggTzla8eMLg8n1AbKDQlyulU.jpg?scale-down-to=1024"
                   alt="User 2" class="w-10 h-10 rounded-full border-2 border-white object-cover shadow-md">
-
                 <img src="https://framerusercontent.com/images/sFJggTzla8eMLg8n1AbKDQlyulU.jpg?scale-down-to=1024"
                   alt="User 3" class="w-10 h-10 rounded-full border-2 border-white object-cover shadow-md">
               </div>
-
-              <!-- "+2k" Circle -->
               <div
                 class="relative right-[15px] w-10 h-10 rounded-full bg-[#0EC927] text-[18px] text-white flex items-center justify-center font-semibold shadow-inner">
                 2k+
               </div>
             </div>
-
-
             <div id="review_star_content" class="flex flex-col gap-[5px]">
               <div class="star">
                 <img src="/static/images/star-removebg-preview.png" alt="" class="w-[100px]">
               </div>
               <div class="">
-                <p class="font-semibold">Join 3000+ Brands</p>
+                <p class="font-semibold text-[12px]">Join 3000+ Brands</p>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <!-- Background Blur -->
 
+      <!-- Background Blur -->
       <div
         class="store-blur absolute left-[43%] w-[80%] h-[800px] animate-store-blur pointer-events-none z-0 top-[45%]">
       </div>
-      <!-- Video Thumbnail with Play Button -->
+
+      <!-- Video Thumbnail -->
       <div id="videoContainer"
-        class="relative top-[50px]  p-[17px] border border-[#FFFFFF14] flex justify-center items-center w-full md:w-[75%] aspect-video overflow-hidden shadow-lg cursor-pointer bg-transparent">
+        class="relative top-[50px]  p-[17px] border border-[#FFFFFF14] flex justify-center items-center w-full md:w-[75%] aspect-video overflow-hidden shadow-lg cursor-pointer bg-transparent"
+        data-aos="fade-up">
         <img id="videoThumbnail" src="https://i.ytimg.com/vi_webp/m6sTkYE6mB0/maxresdefault.webp" alt="Video Thumbnail"
           class="w-full h-full object-cover" />
         <div class="absolute inset-0 flex items-center justify-center ">
@@ -218,107 +221,109 @@
         </div>
       </div>
 
-      <!-- Video Iframe Placeholder (Hidden initially) -->
+      <!-- Hidden Video Iframe -->
       <div id="videoIframeContainer"
-        class="relative top-[50px] hidden w-full md:w-[75%] p-[17px] border border-[#FFFFFF14] aspect-video overflow-hidden shadow-lg">
-        <iframe class="w-full h-full" src="https://www.youtube.com/embed/m6sTkYE6mB0?iv_load_policy=3&rel=0&modestbranding=1&playsinline=1&autoplay=1" frameborder="0"
-          allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>
+        class="relative top-[50px] hidden w-full md:w-[75%] p-[17px] border border-[#FFFFFF14] aspect-video overflow-hidden shadow-lg"
+        data-aos="fade-up">
+        <iframe class="w-full h-full"
+          src="https://www.youtube.com/embed/m6sTkYE6mB0?iv_load_policy=3&rel=0&modestbranding=1&playsinline=1&autoplay=1"
+          frameborder="0" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>
       </div>
 
       <!-- Trusted by brands -->
-      <div class="w-[75%] py-10 mt-[50px] flex items-center gap-[20px] justify-center">
+      <div class="w-[75%] py-10 mt-[50px] flex items-center gap-[20px] justify-center" data-aos="fade-up">
         <div class="text-center">
           <h2 class="text-white text-[15px] font-semibold uppercase whitespace-nowrap">Trusted by</h2>
         </div>
-      
         <div class="relative overflow-hidden">
-          <!-- Optional fading edges for style -->
           <div class="absolute left-0 top-0 h-full w-12  to-transparent z-10 pointer-events-none"></div>
           <div class="absolute right-0 top-0 h-full w-12  to-transparent z-10 pointer-events-none"></div>
-      
-          <!-- Scrolling logo container -->
           <div class="flex animate-slide gap-10 px-6 items-center min-w-[200%]">
-            <!-- First Set -->
-            <img src="https://framerusercontent.com/images/AlUol886vvzuVxkFuvAdxT6NyU.png" alt="logo" class="w-[90px] sm:w-[100px] md:w-[120px] lg:w-[150px]" />
-            <img src="https://framerusercontent.com/images/zdMRoER8JAZBtycxLS5VDUYZ2yg.png" alt="logo" class="w-[80px] sm:w-[90px] md:w-[100px]" />
-            <img src="https://framerusercontent.com/images/xSBi2bcTV9BOSFAeLbIF0TktV0.png" alt="logo" class="w-[90px] h-[30px] sm:h-[35px] md:h-[40px]" />
-            <img src="https://framerusercontent.com/images/ksbl2MlE5LEo0qa1ddD19GHv3mE.png" alt="logo" class="w-[90px] sm:w-[100px]" />
-      
+            <img src="https://framerusercontent.com/images/AlUol886vvzuVxkFuvAdxT6NyU.png" alt="logo"
+              class="w-[90px] sm:w-[100px] md:w-[120px] lg:w-[150px]" />
+            <img src="https://framerusercontent.com/images/zdMRoER8JAZBtycxLS5VDUYZ2yg.png" alt="logo"
+              class="w-[80px] sm:w-[90px] md:w-[100px]" />
+            <img src="https://framerusercontent.com/images/xSBi2bcTV9BOSFAeLbIF0TktV0.png" alt="logo"
+              class="w-[90px] h-[30px] sm:h-[35px] md:h-[40px]" />
+            <img src="https://framerusercontent.com/images/ksbl2MlE5LEo0qa1ddD19GHv3mE.png" alt="logo"
+              class="w-[90px] sm:w-[100px]" />
             <!-- Repeat Set -->
-            <img src="https://framerusercontent.com/images/AlUol886vvzuVxkFuvAdxT6NyU.png" alt="logo" class="w-[90px] sm:w-[100px] md:w-[120px] lg:w-[150px]" />
-            <img src="https://framerusercontent.com/images/zdMRoER8JAZBtycxLS5VDUYZ2yg.png" alt="logo" class="w-[80px] sm:w-[90px] md:w-[100px]" />
-            <img src="https://framerusercontent.com/images/xSBi2bcTV9BOSFAeLbIF0TktV0.png" alt="logo" class="w-[90px] h-[30px] sm:h-[35px] md:h-[40px]" />
-            <img src="https://framerusercontent.com/images/ksbl2MlE5LEo0qa1ddD19GHv3mE.png" alt="logo" class="w-[90px] sm:w-[100px]" />
+            <img src="https://framerusercontent.com/images/AlUol886vvzuVxkFuvAdxT6NyU.png" alt="logo"
+              class="w-[90px] sm:w-[100px] md:w-[120px] lg:w-[150px]" />
+            <img src="https://framerusercontent.com/images/zdMRoER8JAZBtycxLS5VDUYZ2yg.png" alt="logo"
+              class="w-[80px] sm:w-[90px] md:w-[100px]" />
+            <img src="https://framerusercontent.com/images/xSBi2bcTV9BOSFAeLbIF0TktV0.png" alt="logo"
+              class="w-[90px] h-[30px] sm:h-[35px] md:h-[40px]" />
+            <img src="https://framerusercontent.com/images/ksbl2MlE5LEo0qa1ddD19GHv3mE.png" alt="logo"
+              class="w-[90px] sm:w-[100px]" />
           </div>
         </div>
       </div>
-      
-      
     </div>
   </section>
 
-  <section class="relative flex flex-col justify-center items-center min-h-screen overflow-hidden">
+  <section class="relative flex flex-col justify-center items-center min-h-screen overflow-hidden" data-aos="fade-up">
     <div class="absolute inset-0 w-full h-full z-10">
       <img src="https://framerusercontent.com/images/i6FNRsgGqrDYDn6GdVHIna7uPc.svg" alt=""
         class="w-full h-full object-cover absolute top-0 left-0">
     </div>
 
-    <div class="flex flex-col justify-center items-center z-20 bg-[#031203] p-[50px] pb-[50px]">
-      <div class="flex flex-col items-start w-[300px] md:w-[600px] gap-[30px] py-[50px]">
+    <div class="flex flex-col justify-center items-center z-20 bg-[#031203] p-[50px] pb-[50px]" data-aos="fade-up">
+      <div class="flex flex-col items-start w-[300px] md:w-[600px] gap-[30px] py-[50px]" data-aos="fade-up">
         <p
-          class="text-sm sm:text-base md:text-[15px] font-bold text-white border border-[#FFFFFF14] p-2 sm:p-2.5 md:p-[10px] px-4 sm:px-5 md:px-[20px] rounded-full tracking-wider text-center">
-          STORESTACK</p>
+          class="text-[12px] sm:text-[14px] md:text-[13px] font-bold text-white border border-[#FFFFFF14] p-2 sm:p-2.5 md:p-[10px] px-4 sm:px-5 md:px-[20px] rounded-full tracking-wider text-center">
+          WEBUILDERS</p>
 
-        <h1 class="text-2xl md:text-4xl font-bold w-[300px] md:w-[600px]">
+        <h1 class="text-[22px] md:text-[34px] font-bold w-[300px] md:w-[600px]">
           Start your business risk-free within 1 hour
         </h1>
         <div class="flex flex-col gap-[30px]">
-          <p class="text-[20px] text-[#FFFF] opacity-70 font-medium">Why pay $10,000+ for a store setup when you can
+          <p class="text-[17px] text-[#FFFF] opacity-70 font-medium">Why pay $10,000+ for a store setup when you can
             launch a beautifully designed, high-converting Shopify store for just a fraction of the cost?</p>
-          <p class="text-[20px] text-[#FFFF] opacity-70 font-medium">The SST Shopify Store Pack gives you everything you
+          <p class="text-[17px] text-[#FFFF] opacity-70 font-medium">The SST Shopify Store Pack gives you everything you
             need to create a store that not only looks amazing but also drives results. From stunning landing pages to
             expertly crafted email funnels and proven CRO tactics, this strategy is designed to maximize conversions and
             boost sales.</p>
-          <p class="text-[20px] text-[#FFFF] opacity-70 font-medium">Skip the expensive agencies and take control of
+          <p class="text-[17px] text-[#FFFF] opacity-70 font-medium">Skip the expensive agencies and take control of
             your store’s success. With a system that works around the clock, you'll be able to launch a visually
             stunning store that keeps customers engaged and coming back for more.</p>
-          <p class="text-[20px] text-[#FFFF] opacity-70 font-medium">Start smarter, scale faster, and unlock your
+          <p class="text-[17px] text-[#FFFF] opacity-70 font-medium">Start smarter, scale faster, and unlock your
             store’s full potential without breaking the bank.</p>
         </div>
       </div>
-      <div>
+      <div data-aos="fade-up">
         <img src="https://framerusercontent.com/images/hOJpJfJwbVr7hL0NkMZ7aX87iQ.png?scale-down-to=1024" alt=""
           class="w-[300px] md:w-[600px]">
       </div>
-      <div class="flex items-center gap-6 mt-8 ">
-      
-      <!-- CTA Button -->
-       <div>
-        <a href="https://storestacks.gumroad.com/l/Pack">
-          <button
-            class="animated-button flex bg-white hover:bg-[#16CF2F] text-green-600 hover:text-white transition-all duration-300 px-4 py-2 rounded-md items-center gap-2 relative">
-            <svg viewBox="0 0 24 24"
-              class="arr-2 w-5 h-6  p-1 rounded-full bg-white text-green-600 transition-all duration-300"
-              xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z">
-              </path>
-            </svg>
+      <div class="flex items-center gap-6 mt-8 " data-aos="fade-up">
 
-            <span class="text font-medium border-white px-[10px]">GRAB YOURS</span>
-            <span class="circle hidden"></span>
-            <!-- if this is decorative or animation controlled by CSS, keep it. -->
+        <!-- CTA Button -->
+        <div>
+          <a href="https://storestacks.gumroad.com/l/Pack">
+            <button
+              class="animated-button flex bg-white hover:bg-[#16CF2F] text-green-600 hover:text-white transition-all duration-300 px-4 py-2 rounded-md items-center gap-2 relative">
+              <svg viewBox="0 0 24 24"
+                class="arr-2 w-5 h-6  p-1 rounded-full bg-white text-green-600 transition-all duration-300"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z">
+                </path>
+              </svg>
 
-            <svg viewBox="0 0 24 24"
-              class="arr-1 w-5 h-6 p-1 rounded-full bg-[#16CF2F] text-green-600 transition-all duration-300"
-              xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z">
-              </path>
-            </svg>
-          </button>
-        </a>
-       </div>
+              <span class="text font-medium border-white px-[10px] text-[14px]">GRAB YOURS</span>
+              <span class="circle hidden"></span>
+              <!-- if this is decorative or animation controlled by CSS, keep it. -->
+
+              <svg viewBox="0 0 24 24"
+                class="arr-1 w-5 h-6 p-1 rounded-full bg-[#16CF2F] text-green-600 transition-all duration-300"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z">
+                </path>
+              </svg>
+            </button>
+          </a>
+        </div>
         <!-- Avatars & Reviews -->
         <div class="flex items-center gap-4">
           <!-- Avatars -->
@@ -329,80 +334,90 @@
               class="w-10 h-10 rounded-full border-2 border-white shadow-md object-cover">
             <img src="https://framerusercontent.com/images/sFJggTzla8eMLg8n1AbKDQlyulU.jpg" alt="User"
               class="w-10 h-10 rounded-full border-2 border-white shadow-md object-cover">
-              <div class="w-10 h-10 rounded-full bg-[#0EC927]  text-white flex items-center justify-center font-bold text-sm">
-                2k+
-              </div>
+            <div
+              class="w-10 h-10 rounded-full bg-[#0EC927]  text-white flex items-center justify-center font-bold text-sm">
+              2k+
+            </div>
           </div>
           <!-- +2k badge -->
-          
+
           <!-- Text -->
           <div class="hidden md:flex md:flex-col">
             <img src="/static/images/star-removebg-preview.png" alt="Star Rating" class="w-[80px]">
-            <p class="font-semibold text-sm">Join 3000+ Brands</p>
+            <p class="font-semibold text-[12px]">Join 3000+ Brands</p>
           </div>
         </div>
       </div>
-    <!-- Trusted by brands -->
-    <div class="relative overflow-hidden py-4">
-      <!-- Scrolling container -->
-      <div class="slider-container flex gap-10 animate-scroll whitespace-nowrap will-change-transform">
-        <!-- Slider content (duplicated for infinite loop effect) -->
-        <div class="flex gap-10">
-          <!-- Repeat these <div> for each benefit -->
-          <div class="flex-shrink-0 flex text-center w-[150px]">
-            <div class="flex justify-center gap-[10px] items-center">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" class="w-5 h-5 text-[#0EC927] relative top-[2px]">
-                <path fill="currentColor" d="M225.86,102.82c-3.77-3.94-7.67-8-9.14-11.57-1.36-3.27-1.44-8.69-1.52-13.94-.15-9.76-.31-20.82-8-28.51s-18.75-7.85-28.51-8c-5.25-.08-10.67-.16-13.94-1.52-3.56-1.47-7.63-5.37-11.57-9.14C146.28,23.51,138.44,16,128,16s-18.27,7.51-25.18,14.14c-3.94,3.77-8,7.67-11.57,9.14C88,40.64,82.56,40.72,77.31,40.8c-9.76.15-20.82.31-28.51,8S41,67.55,40.8,77.31c-.08,5.25-.16,10.67-1.52,13.94-1.47,3.56-5.37,7.63-9.14,11.57C23.51,109.72,16,117.56,16,128s7.51,18.27,14.14,25.18c3.77,3.94,7.67,8,9.14,11.57,1.36,3.27,1.44,8.69,1.52,13.94.15,9.76.31,20.82,8,28.51s18.75,7.85,28.51,8c5.25.08,10.67.16,13.94,1.52,3.56,1.47,7.63,5.37,11.57,9.14C109.72,232.49,117.56,240,128,240s18.27-7.51,25.18-14.14c3.94-3.77,8-7.67,11.57-9.14,3.27-1.36,8.69-1.44,13.94-1.52,9.76-.15,20.82-.31,28.51-8s7.85-18.75,8-28.51c.08-5.25.16-10.67,1.52-13.94,1.47-3.56,5.37-7.63,9.14-11.57C232.49,146.28,240,138.44,240,128S232.49,109.73,225.86,102.82ZM173.66,98.34a8,8,0,0,1,0,11.32l-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35A8,8,0,0,1,173.66,98.34Z"/>
-              </svg>
-              <p class="mt-2 text-sm font-medium">7-day guarantee</p>
+      <!-- Trusted by brands -->
+      <div class="relative overflow-hidden py-4" data-aos="fade-up">
+        <!-- Scrolling container -->
+        <div class="slider-container flex gap-10 animate-scroll whitespace-nowrap will-change-transform">
+          <!-- Slider content (duplicated for infinite loop effect) -->
+          <div class="flex gap-10">
+            <!-- Repeat these <div> for each benefit -->
+            <div class="flex-shrink-0 flex text-center w-[150px]">
+              <div class="flex justify-center gap-[10px] items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"
+                  class="w-5 h-5 text-[#0EC927] relative top-[2px]">
+                  <path fill="currentColor"
+                    d="M225.86,102.82c-3.77-3.94-7.67-8-9.14-11.57-1.36-3.27-1.44-8.69-1.52-13.94-.15-9.76-.31-20.82-8-28.51s-18.75-7.85-28.51-8c-5.25-.08-10.67-.16-13.94-1.52-3.56-1.47-7.63-5.37-11.57-9.14C146.28,23.51,138.44,16,128,16s-18.27,7.51-25.18,14.14c-3.94,3.77-8,7.67-11.57,9.14C88,40.64,82.56,40.72,77.31,40.8c-9.76.15-20.82.31-28.51,8S41,67.55,40.8,77.31c-.08,5.25-.16,10.67-1.52,13.94-1.47,3.56-5.37,7.63-9.14,11.57C23.51,109.72,16,117.56,16,128s7.51,18.27,14.14,25.18c3.77,3.94,7.67,8,9.14,11.57,1.36,3.27,1.44,8.69,1.52,13.94.15,9.76.31,20.82,8,28.51s18.75,7.85,28.51,8c5.25.08,10.67.16,13.94,1.52,3.56,1.47,7.63,5.37,11.57,9.14C109.72,232.49,117.56,240,128,240s18.27-7.51,25.18-14.14c3.94-3.77,8-7.67,11.57-9.14,3.27-1.36,8.69-1.44,13.94-1.52,9.76-.15,20.82-.31,28.51-8s7.85-18.75,8-28.51c.08-5.25.16-10.67,1.52-13.94,1.47-3.56,5.37-7.63,9.14-11.57C232.49,146.28,240,138.44,240,128S232.49,109.73,225.86,102.82ZM173.66,98.34a8,8,0,0,1,0,11.32l-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35A8,8,0,0,1,173.66,98.34Z" />
+                </svg>
+                <p class="mt-2 text-[12px] font-medium">7-day guarantee</p>
+              </div>
             </div>
-          </div>
-    
-          <div class="flex-shrink-0 flex text-center w-[150px]">
-            <div class="flex gap-[10px]  items-center">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" class="w-5 h-5 text-[#0EC927] relative top-[2px]">
-                <path fill="currentColor" d="M215.79,118.17a8,8,0,0,0-5-5.66L153.18,90.9l14.66-73.33a8,8,0,0,0-13.69-7l-112,120a8,8,0,0,0,3,13l57.63,21.61L88.16,238.43a8,8,0,0,0,13.69,7l112-120A8,8,0,0,0,215.79,118.17ZM109.37,214l10.47-52.38a8,8,0,0,0-5-9.06L62,132.71l84.62-90.66L136.16,94.43a8,8,0,0,0,5,9..."/>
-              </svg>
-              <p class="mt-2 text-sm font-medium">Fast shipping</p>
-            </div>
-          </div>
-    
-          <!-- ... add more benefit items here ... -->
-        </div>
-    
-        <!-- Duplicate for infinite loop -->
-        <div class="flex gap-10">
-          <!-- Repeat these <div> for each benefit -->
-          <div class="flex-shrink-0 flex text-center w-[150px]">
-            <div class="flex gap-[10px]  items-center">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" class="w-5 h-5 text-[#0EC927] relative top-[2px]">
-                <path fill="currentColor" d="M225.86,102.82c-3.77-3.94-7.67-8-9.14-11.57-1.36-3.27-1.44-8.69-1.52-13.94-.15-9.76-.31-20.82-8-28.51s-18.75-7.85-28.51-8c-5.25-.08-10.67-.16-13.94-1.52-3.56-1.47-7.63-5.37-11.57-9.14C146.28,23.51,138.44,16,128,16s-18.27,7.51-25.18,14.14c-3.94,3.77-8,7.67-11.57,9.14C88,40.64,82.56,40.72,77.31,40.8c-9.76.15-20.82.31-28.51,8S41,67.55,40.8,77.31c-.08,5.25-.16,10.67-1.52,13.94-1.47,3.56-5.37,7.63-9.14,11.57C23.51,109.72,16,117.56,16,128s7.51,18.27,14.14,25.18c3.77,3.94,7.67,8,9.14,11.57,1.36,3.27,1.44,8.69,1.52,13.94.15,9.76.31,20.82,8,28.51s18.75,7.85,28.51,8c5.25.08,10.67.16,13.94,1.52,3.56,1.47,7.63,5.37,11.57,9.14C109.72,232.49,117.56,240,128,240s18.27-7.51,25.18-14.14c3.94-3.77,8-7.67,11.57-9.14,3.27-1.36,8.69-1.44,13.94-1.52,9.76-.15,20.82-.31,28.51-8s7.85-18.75,8-28.51c.08-5.25.16-10.67,1.52-13.94,1.47-3.56,5.37-7.63,9.14-11.57C232.49,146.28,240,138.44,240,128S232.49,109.73,225.86,102.82ZM173.66,98.34a8,8,0,0,1,0,11.32l-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35A8,8,0,0,1,173.66,98.34Z"/>
-              </svg>
-              <p class="mt-2 text-sm font-medium">7-day guarantee</p>
-            </div>
-          </div>
-    
-          <div class="flex-shrink-0 flex text-center w-[150px]">
-            <div class="flex gap-[10px]  items-center">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" class="w-5 h-5 text-[#0EC927] relative top-[2px]">
-                <path fill="currentColor" d="M215.79,118.17a8,8,0,0,0-5-5.66L153.18,90.9l14.66-73.33a8,8,0,0,0-13.69-7l-112,120a8,8,0,0,0,3,13l57.63,21.61L88.16,238.43a8,8,0,0,0,13.69,7l112-120A8,8,0,0,0,215.79,118.17ZM109.37,214l10.47-52.38a8,8,0,0,0-5-9.06L62,132.71l84.62-90.66L136.16,94.43a8,8,0,0,0,5,9..."/>
-              </svg>
-              <p class="mt-2 text-sm font-medium">Fast shipping</p>
-            </div>
-          </div>
-    
-          <!-- ... add more benefit items here ... -->
-        </div>
-      </div>
-    </div>
-    
-    
-  </section>
-  
 
-  <section class="relative  text-white font-sora">
+            <div class="flex-shrink-0 flex text-center w-[150px]">
+              <div class="flex gap-[10px]  items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"
+                  class="w-5 h-5 text-[#0EC927] relative top-[2px]">
+                  <path fill="currentColor"
+                    d="M215.79,118.17a8,8,0,0,0-5-5.66L153.18,90.9l14.66-73.33a8,8,0,0,0-13.69-7l-112,120a8,8,0,0,0,3,13l57.63,21.61L88.16,238.43a8,8,0,0,0,13.69,7l112-120A8,8,0,0,0,215.79,118.17ZM109.37,214l10.47-52.38a8,8,0,0,0-5-9.06L62,132.71l84.62-90.66L136.16,94.43a8,8,0,0,0,5,9..." />
+                </svg>
+                <p class="mt-2 text-[12px] font-medium">Fast shipping</p>
+              </div>
+            </div>
+
+            <!-- ... add more benefit items here ... -->
+          </div>
+
+          <!-- Duplicate for infinite loop -->
+          <div class="flex gap-10">
+            <!-- Repeat these <div> for each benefit -->
+            <div class="flex-shrink-0 flex text-center w-[150px]">
+              <div class="flex gap-[10px]  items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"
+                  class="w-5 h-5 text-[#0EC927] relative top-[2px]">
+                  <path fill="currentColor"
+                    d="M225.86,102.82c-3.77-3.94-7.67-8-9.14-11.57-1.36-3.27-1.44-8.69-1.52-13.94-.15-9.76-.31-20.82-8-28.51s-18.75-7.85-28.51-8c-5.25-.08-10.67-.16-13.94-1.52-3.56-1.47-7.63-5.37-11.57-9.14C146.28,23.51,138.44,16,128,16s-18.27,7.51-25.18,14.14c-3.94,3.77-8,7.67-11.57,9.14C88,40.64,82.56,40.72,77.31,40.8c-9.76.15-20.82.31-28.51,8S41,67.55,40.8,77.31c-.08,5.25-.16,10.67-1.52,13.94-1.47,3.56-5.37,7.63-9.14,11.57C23.51,109.72,16,117.56,16,128s7.51,18.27,14.14,25.18c3.77,3.94,7.67,8,9.14,11.57,1.36,3.27,1.44,8.69,1.52,13.94.15,9.76.31,20.82,8,28.51s18.75,7.85,28.51,8c5.25.08,10.67.16,13.94,1.52,3.56,1.47,7.63,5.37,11.57,9.14C109.72,232.49,117.56,240,128,240s18.27-7.51,25.18-14.14c3.94-3.77,8-7.67,11.57-9.14,3.27-1.36,8.69-1.44,13.94-1.52,9.76-.15,20.82-.31,28.51-8s7.85-18.75,8-28.51c.08-5.25.16-10.67,1.52-13.94,1.47-3.56,5.37-7.63,9.14-11.57C232.49,146.28,240,138.44,240,128S232.49,109.73,225.86,102.82ZM173.66,98.34a8,8,0,0,1,0,11.32l-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35A8,8,0,0,1,173.66,98.34Z" />
+                </svg>
+                <p class="mt-2 text-[12px] font-medium">7-day guarantee</p>
+              </div>
+            </div>
+
+            <div class="flex-shrink-0 flex text-center w-[150px]">
+              <div class="flex gap-[10px]  items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"
+                  class="w-5 h-5 text-[#0EC927] relative top-[2px]">
+                  <path fill="currentColor"
+                    d="M215.79,118.17a8,8,0,0,0-5-5.66L153.18,90.9l14.66-73.33a8,8,0,0,0-13.69-7l-112,120a8,8,0,0,0,3,13l57.63,21.61L88.16,238.43a8,8,0,0,0,13.69,7l112-120A8,8,0,0,0,215.79,118.17ZM109.37,214l10.47-52.38a8,8,0,0,0-5-9.06L62,132.71l84.62-90.66L136.16,94.43a8,8,0,0,0,5,9..." />
+                </svg>
+                <p class="mt-2 text-[12px] font-medium">Fast shipping</p>
+              </div>
+            </div>
+
+            <!-- ... add more benefit items here ... -->
+          </div>
+        </div>
+      </div>
+
+
+  </section>
+
+
+
+  <section class="relative  text-white font-sora" data-aos="fade-up">
     <!-- Background Image -->
-    <div class="absolute inset-0 z-0">
+    <div class="absolute inset-0 z-0" data-aos="fade-up">
       <img src="https://framerusercontent.com/images/OKbtpZaMwU1kucFAqMoRrafKTDs.jpg" alt="Background"
         class="w-full h-full object-cover bg-[linear-gradient(180deg,#040313_0%,rgba(4,3,18,0)_19.82%,rgba(4,3,18,0)_74.77%,#040313_100%)]">
       <div class="absolute inset-0">
@@ -410,40 +425,42 @@
     </div>
 
     <!-- Content -->
-    <div class="how-work relative z-10 max-w-[68rem] mx-auto px-4 py-20">
+    <div class="how-work relative z-10 max-w-[68rem] mx-auto px-4 py-20" data-aos="fade-up">
       <!-- Header -->
-      <div class="text-center mb-16 flex flex-col justify-center items-center">
+      <div class="text-center mb-16 flex flex-col justify-center items-center" data-aos="fade-up">
 
         <p
           class="text-[12px] font-medium tracking-[0.03em] uppercase text-white p-[5px] px-[10px] rounded-[20px] border border-white/20">
-          STORESTACK</p>
+          WEBUILDERS</p>
 
-        <h2 class="text-4xl font-bold mt-2">How does it work?</h2>
-        <p class="text-base text-gray-200 mt-4 max-w-[550px] mx-auto">
+        <h2 class="text-[34px] font-bold mt-2">How does it work?</h2>
+        <p class="text-[14px] text-gray-200 mt-4 max-w-[550px] mx-auto">
           Valour's curriculum is divided into five key modules designed to build your expertise step-by-step.
         </p>
 
       </div>
 
       <!-- Modules Grid -->
-      <div class="grid md:grid-cols-2">
+      <div class="grid md:grid-cols-2" data-aos="fade-up">
         <!-- Step 1 -->
         <div
-          class="bg-[#0403133d] backdrop-blur-[24px] p-[45px] border border-[#FFFFFF14] flex flex-col items-center justify-center gap-[20px] text-center">
-          <p
-            class="text-[42px] md:text-[54px] font-bold leading-[100%] tracking-[-0.03em] text-center text-white capitalize font-[Sora]">
-            <span class="bg-gradient-to-t from-[rgba(63,15,201,0)_15%] to-[#6ffc82] bg-clip-text text-transparent">STEP
+          class="bg-[#0403133d] backdrop-blur-[24px] p-[45px] border border-[#FFFFFF14] flex flex-col items-center justify-center gap-[20px] text-center"
+          data-aos="fade-up">
+          <p class="text-[40px] md:text-[52px] font-bold leading-[100%] tracking-[-0.03em] text-center text-white capitalize font-[Sora]"
+            data-aos="fade-up">
+            <span class="bg-gradient-to-t from-[rgba(63,15,201,0)_15%] to-[#6ffc82] bg-clip-text text-transparent"
+              data-aos="fade-up">STEP
               1</span>
           </p>
-          <h3 class="text-xl font-bold mt-4">Choose a Prebuilt Store</h3>
-          <p class="text-gray-300 mt-2">
+          <h3 class="text-[18px] font-bold mt-4" data-aos="fade-up">Choose a Prebuilt Store</h3>
+          <p class="text-gray-300 mt-2 text-[15px]" data-aos="fade-up">
             Secure your Prebuilt Shopify (custom themes included) store today with a fast, hassle-free checkout process,
             so you can start your e-commerce journey within 1 hour.
           </p>
-          <div class="flex gap-6" data-framer-name="Highlights">
+          <div class="flex gap-6" data-framer-name="Highlights" data-aos="fade-up">
             <!-- Highlight 1 -->
             <div class="flex items-center gap-2 border border-white/20 p-2 rounded-[25px] px-[15px]"
-              data-framer-name="Wrapper">
+              data-framer-name="Wrapper" data-aos="fade-up">
               <!-- SVG Icon -->
               <div class="w-4 h-5 shrink-0" aria-hidden="true">
                 <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="13"
@@ -455,13 +472,13 @@
               </div>
               <!-- Text -->
               <div class="flex flex-col justify-start shrink-0">
-                <p class="text-[14px] leading-[14px] text-white text-center">30+ Themes</p>
+                <p class="text-[12px] leading-[14px] text-white text-center">30+ Themes</p>
               </div>
             </div>
 
             <!-- Highlight 2 -->
             <div class="flex items-center gap-2 border border-white/20 p-2 rounded-[25px] px-[15px]"
-              data-framer-name="Wrapper">
+              data-framer-name="Wrapper" data-aos="fade-up">
               <!-- SVG Icon -->
               <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="17" height="16"
                 viewBox="0 0 17 16" fill="none" id="svg277474897_5578">
@@ -508,7 +525,7 @@
               </svg>
               <!-- Text -->
               <div class="flex flex-col justify-start shrink-0">
-                <p class="text-[14px] leading-[14px] text-white text-center">1 hour</p>
+                <p class="text-[12px] leading-[14px] text-white text-center">1 hour</p>
               </div>
             </div>
           </div>
@@ -517,23 +534,25 @@
 
         <!-- Step 2 -->
         <div
-          class="bg-[#0403133d] backdrop-blur-[24px] p-[45px] border border-[#FFFFFF14] flex flex-col items-center justify-center gap-[20px] text-center">
-          <p
-            class="text-[42px] md:text-[54px] font-bold leading-[100%] tracking-[-0.03em] text-center text-white capitalize font-[Sora]">
-            <span class="bg-gradient-to-t from-[rgba(63,15,201,0)_15%] to-[#6ffc82] bg-clip-text text-transparent">STEP
+          class="bg-[#0403133d] backdrop-blur-[24px] p-[45px] border border-[#FFFFFF14] flex flex-col items-center justify-center gap-[20px] text-center"
+          data-aos="fade-up">
+          <p class="text-[40px] md:text-[52px] font-bold leading-[100%] tracking-[-0.03em] text-center text-white capitalize font-[Sora]"
+            data-aos="fade-up">
+            <span class="bg-gradient-to-t from-[rgba(63,15,201,0)_15%] to-[#6ffc82] bg-clip-text text-transparent"
+              data-aos="fade-up">STEP
               2</span>
           </p>
-          <h3 class="text-xl font-bold mt-4">We Set Up Your Store</h3>
-          <p class="text-gray-300 mt-2">
+          <h3 class="text-[18px] font-bold mt-4" data-aos="fade-up">We Set Up Your Store</h3>
+          <p class="text-gray-300 mt-2 text-[15px]" data-aos="fade-up">
             Our team configures your store, integrates high-converting products, and even provides ad strategies to help
             you start strong.
           </p>
-          <div class="flex gap-6" data-framer-name="Highlights">
+          <div class="flex gap-6" data-framer-name="Highlights" data-aos="fade-up">
 
 
             <!-- Highlight 2 -->
             <div class="flex items-center gap-2 border border-white/20 p-2 rounded-[25px] px-[15px]"
-              data-framer-name="Wrapper">
+              data-framer-name="Wrapper" data-aos="fade-up">
               <!-- SVG Icon -->
               <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="17" height="16"
                 viewBox="0 0 17 16" fill="none" id="svg277474897_5578">
@@ -579,8 +598,8 @@
                   fill="#6769FF" stroke="#6769FF" stroke-width="0.1px"></path>
               </svg>
               <!-- Text -->
-              <div class="flex flex-col justify-start shrink-0">
-                <p class="text-[14px] leading-[14px] text-white text-center">INSTANT DELIVERY</p>
+              <div class="flex flex-col justify-start shrink-0" data-aos="fade-up">
+                <p class="text-[12px] leading-[14px] text-white text-center">INSTANT DELIVERY</p>
               </div>
             </div>
           </div>
@@ -588,23 +607,25 @@
         </div>
         <!-- Step 3 -->
         <div
-          class="bg-[#0403133d] backdrop-blur-[24px] p-[45px] border border-[#FFFFFF14] flex flex-col items-center justify-center gap-[20px] text-center">
-          <p
-            class="text-[42px] md:text-[54px] font-bold leading-[100%] tracking-[-0.03em] text-center text-white capitalize font-[Sora]">
-            <span class="bg-gradient-to-t from-[rgba(63,15,201,0)_15%] to-[#6ffc82] bg-clip-text text-transparent">STEP
+          class="bg-[#0403133d] backdrop-blur-[24px] p-[45px] border border-[#FFFFFF14] flex flex-col items-center justify-center gap-[20px] text-center"
+          data-aos="fade-up">
+          <p class="text-[40px] md:text-[52px] font-bold leading-[100%] tracking-[-0.03em] text-center text-white capitalize font-[Sora]"
+            data-aos="fade-up">
+            <span class="bg-gradient-to-t from-[rgba(63,15,201,0)_15%] to-[#6ffc82] bg-clip-text text-transparent"
+              data-aos="fade-up">STEP
               3</span>
           </p>
-          <h3 class="text-xl font-bold mt-4">Supplier Ships Your Orders Automatically</h3>
-          <p class="text-gray-300 mt-2">
+          <h3 class="text-[18px] font-bold mt-4" data-aos="fade-up">Supplier Ships Your Orders Automatically</h3>
+          <p class="text-gray-300 mt-2 text-[15px]" data-aos="fade-up">
             Whenever you make a sale, the supplier handles fulfillment. For example, if you're selling a smartwatch for
             $49.99, we connect you with a supplier who ships it worldwide for just $12.99—completely hands-off.
           </p>
-          <div class="flex gap-6" data-framer-name="Highlights">
+          <div class="flex gap-6" data-framer-name="Highlights" data-aos="fade-up">
             <!-- Highlight 1 -->
             <div class="flex items-center gap-2 border border-white/20 p-2 rounded-[25px] px-[15px]"
-              data-framer-name="Wrapper">
+              data-framer-name="Wrapper" data-aos="fade-up">
               <!-- SVG Icon -->
-              <div class="w-4 h-5 shrink-0" aria-hidden="true">
+              <div class="w-4 h-5 shrink-0" aria-hidden="true" data-aos="fade-up">
                 <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="13"
                   height="15" viewBox="0 0 13 15" fill="none" id="svg637706277_1717">
                   <path
@@ -613,7 +634,7 @@
                 </svg>
               </div>
               <!-- Text -->
-              <div class="flex flex-col justify-start shrink-0">
+              <div class="flex flex-col justify-start shrink-0" data-aos="fade-up">
                 <p class="text-[12px] leading-[14px] text-white text-center">FOR BRANDS WITH NO SUPPLIERS</p>
               </div>
             </div>
@@ -622,23 +643,24 @@
         </div>
         <!-- Step 4 -->
         <div
-          class="bg-[#0403133d] backdrop-blur-[24px] p-[45px] border border-[#FFFFFF14] flex flex-col items-center justify-center gap-[20px] text-center">
-          <p
-            class="text-[42px] md:text-[54px] font-bold leading-[100%] tracking-[-0.03em] text-center text-white capitalize font-[Sora]">
+          class="bg-[#0403133d] backdrop-blur-[24px] p-[45px] border border-[#FFFFFF14] flex flex-col items-center justify-center gap-[20px] text-center"
+          data-aos="fade-up">
+          <p class="text-[40px] md:text-[52px] font-bold leading-[100%] tracking-[-0.03em] text-center text-white capitalize font-[Sora]"
+            data-aos="fade-up">
             <span class="bg-gradient-to-t from-[rgba(63,15,201,0)_15%] to-[#6ffc82] bg-clip-text text-transparent">STEP
               4</span>
           </p>
-          <h3 class="text-xl font-bold mt-4">Keep Your Profits & Scale Your Store</h3>
-          <p class="text-gray-300 mt-2">
+          <h3 class="text-[18px] font-bold mt-4" data-aos="fade-up">Keep Your Profits & Scale Your Store</h3>
+          <p class="text-gray-300 mt-2 text-[15px]" data-aos="fade-up">
             You keep the profit from every sale based on your product margins. Use the included course and proven
             strategies to grow and scale your business even further.
           </p>
-          <div class="flex gap-6" data-framer-name="Highlights">
+          <div class="flex gap-6" data-framer-name="Highlights" data-aos="fade-up">
             <!-- Highlight 1 -->
             <div class="flex items-center gap-2 border border-white/20 p-2 rounded-[25px] px-[15px]"
-              data-framer-name="Wrapper">
+              data-framer-name="Wrapper" data-aos="fade-up">
               <!-- SVG Icon -->
-              <div class="w-4 h-5 shrink-0" aria-hidden="true">
+              <div class="w-4 h-5 shrink-0" aria-hidden="true" data-aos="fade-up">
                 <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="13"
                   height="15" viewBox="0 0 13 15" fill="none" id="svg637706277_1717">
                   <path
@@ -647,14 +669,14 @@
                 </svg>
               </div>
               <!-- Text -->
-              <div class="flex flex-col justify-start shrink-0">
-                <p class="text-[14px] leading-[14px] text-white text-center">5 lessons</p>
+              <div class="flex flex-col justify-start shrink-0" data-aos="fade-up">
+                <p class="text-[12px] leading-[14px] text-white text-center" data-aos="fade-up">5 lessons</p>
               </div>
             </div>
 
             <!-- Highlight 2 -->
             <div class="flex items-center gap-2 border border-white/20 p-2 rounded-[25px] px-[15px]"
-              data-framer-name="Wrapper">
+              data-framer-name="Wrapper" data-aos="fade-up">
               <!-- SVG Icon -->
               <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="17" height="16"
                 viewBox="0 0 17 16" fill="none" id="svg277474897_5578">
@@ -701,7 +723,7 @@
               </svg>
               <!-- Text -->
               <div class="flex flex-col justify-start shrink-0">
-                <p class="text-[14px] leading-[14px] text-white text-center">1 month</p>
+                <p class="text-[12px] leading-[14px] text-white text-center">1 month</p>
               </div>
             </div>
           </div>
@@ -709,12 +731,13 @@
         </div>
         <!-- Add more steps as needed -->
       </div>
-      <div class="grid relative">
+      <div class="grid relative" data-aos="fade-up">
         <div
-          class="bg-[#0403133d] backdrop-blur-[24px] p-[45px] border border-[#FFFFFF14] flex flex-col items-center justify-center gap-[50px] text-center">
+          class="bg-[#0403133d] backdrop-blur-[24px] p-[45px] border border-[#FFFFFF14] flex flex-col items-center justify-center gap-[50px] text-center"
+          data-aos="fade-up">
 
-          <h1 class="text-4xl font-bold mt-4">Full Refund Guarantee 💰</h1>
-          <p class="text-gray-300 mt-2">
+          <h1 class="text-[34px] font-bold mt-4" data-aos="fade-up">Full Refund Guarantee 💰</h1>
+          <p class="text-gray-300 mt-2 text-[15px]" data-aos="fade-up">
             If you're <span class="font-bold">not completely satisfied</span> with your store or the results you
             achieve, we offer a <span class="font-bold">full refund</span> of your <span class="font-bold">purchase
               price</span> along with any <span class="font-bold">Shopify subscription fees</span> you've paid. There
@@ -722,12 +745,12 @@
               guarantee</span> to ensure you can start your business with <span class="font-bold">confidence</span> and
             <span class="font-bold">peace of mind</span>.
           </p>
-          <div class="flex gap-6" data-framer-name="Highlights">
+          <div class="flex gap-6" data-framer-name="Highlights" data-aos="fade-up">
             <!-- Highlight 1 -->
             <div class="flex items-center gap-2 border border-white/20 p-2 rounded-[25px] px-[15px]"
-              data-framer-name="Wrapper">
+              data-framer-name="Wrapper" data-aos="fade-up">
               <!-- SVG Icon -->
-              <div class="w-4 h-5 shrink-0" aria-hidden="true">
+              <div class="w-4 h-5 shrink-0" aria-hidden="true" data-aos="fade-up">
                 <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="13"
                   height="15" viewBox="0 0 13 15" fill="none" id="svg637706277_1717">
                   <path
@@ -736,8 +759,8 @@
                 </svg>
               </div>
               <!-- Text -->
-              <div class="flex flex-col justify-start shrink-0">
-                <p class="text-[14px] leading-[14px] text-white text-center">ONE TIME PAYMENT</p>
+              <div class="flex flex-col justify-start shrink-0" data-aos="fade-up">
+                <p class="text-[12px] leading-[14px] text-white text-center" data-aos="fade-up">ONE TIME PAYMENT</p>
               </div>
             </div>
 
@@ -748,51 +771,154 @@
       </div>
   </section>
 
-  <section class="py-16 px-6 text-white text-center md:px-[220px]">
+  <section class="py-10 flex flex-col gap-[50px]  bg-[#031203] md:px-[50px]">
+    <div class="max-w-2xl flex flex-col items-center mx-auto text-center py-[50px]">
+      <div class="">
+        <p class="text-[12px] tracking-widest uppercase font-bold border border-[#FFFFFF14] px-[15px] py-[7px] rounded-[25px]"
+          data-aos="fade-up">
+          TESTIMONIALS</p>
+      </div>
+      <h2 class="text-[34px] font-bold mt-2" data-aos="fade-up">What our clients have to say</h2>
+    </div>
+    <div class="container px-4 relative">
+      <!-- Carousel -->
+      <div id="testimonial-carousel" class="owl-carousel flex items-stretch">
+        <!-- Testimonial Item -->
+        <div class="item flex flex-col items-start gap-[20px] px-6 py-10 bg-[#081708] shadow-lg rounded-lg">
+          <div class="star">
+            <img src="/static/images/star-removebg-preview.png" alt="Star"
+              class="w-[20px] h-[20px] object-contain m-0 p-0 filter brightness-0 invert" />
+          </div>
+          <h1 class="text-[22px]">"The Design Is Beautiful"</h1>
+          <p class="text-[14px] italic mb-4 text-gray-400">
+            "Incredible experience! The store is beautifully designed, and sales are rolling in. I made significant profits last week and can’t wait to see more growth."
+          </p>
+          <div class="w-20 h-20 flex items-center justify-start gap-[20px] mb-4">
+            <img src="https://framerusercontent.com/images/aXHbqI6TZyPMsjy2JUX7ZKjy3c.jpg" alt="User"
+              class="w-[50px] h-[50px] object-cover rounded-full shadow-md border-2 border-white" />
+            
+            <div>
+              <h4 class="text-[16px] font-semibold text-white whitespace-nowrap">Vikrant Lodha</h4>
+              <p class="text-[13px] whitespace-nowrap text-gray-600">CEO @resitant</p>
+            </div>   
+          </div>
+        </div>
+
+        <!-- Copy and change content for more items -->
+        <div class="item flex flex-col items-start gap-[20px] px-6 py-10 bg-[#081708] shadow-lg rounded-lg">
+          <div class="star">
+            <img src="/static/images/star-removebg-preview.png" alt="Star"
+              class="w-[20px] h-[20px] object-contain m-0 p-0 filter brightness-0 invert" />
+          </div>
+          <h1 class="text-[22px]">“Insanely Good Value"</h1>
+          <p class="text-[14px] italic mb-4 text-gray-400">
+            “I honestly thought it was too good to be true, this is worth hundreds, if not thousands, for just $50 I got my first sale within 3 days. 
+          </p>
+          <div class="w-20 h-20 flex items-center justify-start gap-[20px] mb-4">
+            <img src="https://framerusercontent.com/images/aXHbqI6TZyPMsjy2JUX7ZKjy3c.jpg" alt="User"
+              class="w-[50px] h-[50px] object-cover rounded-full shadow-md border-2 border-white" />
+            
+            <div>
+              <h4 class="text-[16px] font-semibold text-white whitespace-nowrap">Rahul Sharma</h4>
+              <p class="text-[13px] whitespace-nowrap text-gray-600">Founder @ageltd</p>
+            </div>   
+          </div>
+        </div>
+
+        <div class="item flex flex-col items-start gap-[20px] px-6 py-10 bg-[#081708] shadow-lg rounded-lg">
+          <div class="star">
+            <img src="/static/images/star-removebg-preview.png" alt="Star"
+              class="w-[20px] h-[20px] object-contain m-0 p-0 filter brightness-0 invert" />
+          </div>
+          <h1 class="text-[22px]">"Looks Better Than $5K Stores…"</h1>
+          <p class="text-[14px] italic mb-4 text-gray-400">
+            "I’ve paid thousands before, but nothing looked this good for just $50. The design and layout are next-level."
+          </p>
+          <div class="w-20 h-20 flex items-center justify-start gap-[20px] mb-4">
+            <img src="https://framerusercontent.com/images/qhSZqeQXvMd00UEOuQEdiDKoZs.jpg" alt="User"
+              class="w-[50px] h-[50px] object-cover rounded-full shadow-md border-2 border-white" />
+            
+            <div>
+              <h4 class="text-[16px] font-semibold text-white whitespace-nowrap">Rohit Birla</h4>
+              <p class="text-[13px] whitespace-nowrap text-gray-600">Founder @wedo</p>
+            </div>   
+          </div>
+        </div>
+      </div>
+
+      <!-- Arrows (hidden on mobile) -->
+      <div class="hidden md:block absolute left-0 top-1/2 transform -translate-y-1/2 z-10">
+        <button id="prevBtn"
+          class="bg-[#081708] border border-[#FFFFFF14] text-white p-[5px] px-[10px] rounded-full shadow ">
+          &larr;
+        </button>
+      </div>
+      <div class="hidden md:block absolute right-0 top-1/2 transform -translate-y-1/2 z-10">
+        <button id="nextBtn"
+          class=" bg-[#081708] border border-[#FFFFFF14] text-white p-[5px] px-[10px] rounded-full shadow ">
+          &rarr;
+        </button>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="py-16 px-6 text-white text-center md:px-[220px]" data-aos="fade-up">
+    <div class="max-w-2xl flex flex-col items-center mx-auto text-center py-[50px]">
+      <div class="">
+        <p class="text-[15px] tracking-widest uppercase font-bold border border-[#FFFFFF14] px-[15px] py-[7px] rounded-[25px]"
+          data-aos="fade-up">
+          PRICING</p>
+      </div>
+      <h2 class="text-[34px] font-bold mt-2" data-aos="fade-up">Our pricing plan</h2>
+    </div>
     <div
-      class="pricing flex justify-start max-w-[380px] border border-[#FFFFFF14] shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
-      <div class="product-card p-[25px]">
-        <div class="flex items-center justify-between">
-          <div class="pricing-img flex items-center justify-between gap-[10px]">
-            <img src="https://framerusercontent.com/images/6gSa2nXW3YqDmOGEDolzmwi4bg.png" alt="">
-            <h2 class="font-bold text-[20px]">Pro</h2>
+      class="pricing flex justify-start max-w-[380px] border border-[#FFFFFF14] shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
+      data-aos="fade-up">
+      <div class="product-card p-[25px]" data-aos="fade-up">
+        <div class="flex items-center justify-between" data-aos="fade-up">
+          <div class="pricing-img flex items-center justify-between gap-[10px]" data-aos="fade-up">
+            <img src="https://framerusercontent.com/images/6gSa2nXW3YqDmOGEDolzmwi4bg.png" alt="" data-aos="fade-up">
+            <h2 class="font-bold text-[18px]" data-aos="fade-up">Pro</h2>
           </div>
           <div>
-            <p
-              class="text-sm sm:text-base md:text-[12px] font-bold text-white border border-[#FFFFFF14] p-2 sm:p-2.5 md:p-[10px] px-4 sm:px-5 md:px-[10px] md:py-[5px] rounded-[5px] tracking-wider text-center">
-              247 AVALIABLE PACKS</p>
+            <p class="text-[10px] sm:text-[12px] md:text-[14px] font-bold text-white border border-white/10 px-4 py-2 sm:px-5 sm:py-2.5 md:px-4 md:py-1.5 rounded-md tracking-wider text-center"
+            data-aos="fade-up">
+            247 AVAILABLE PACKS
+         </p>
           </div>
         </div>
-        <div class="price flex flex-col justify-start items-start  text-start py-[30px]">
-          <h2 class="font-medium text-[55px]">$49.95</h2>
-          <p class="flex text-[15px]">Everything you need to launch your own branded Shopify store in 24 hours.</p>
+        <div class="price flex flex-col justify-start items-start  text-start py-[30px]" data-aos="fade-up">
+          <h2 class="font-medium text-[52px]" data-aos="fade-up">$49.95</h2>
+          <p class="flex text-[13px]" data-aos="fade-up">Everything you need to launch your own branded Shopify store in
+            24 hours.</p>
         </div>
         <hr>
-        <div class="theme-features py-[20px]">
-          <ul class="text-sm text-gray-600 flex flex-col gap-[15px]">
-            <li class="flex items-center gap-[10px]">
-              <i class="uil uil-check text-[#FFFF] text-[25px]"></i>
-              <h2 class="text-[15px] leading-7   text-[#FFFF] text-start">30 Premium Themes + Pre-Built Shopify Store
+        <div class="theme-features py-[20px]" data-aos="fade-up">
+          <ul class="text-[12px] text-gray-600 flex flex-col gap-[15px]" data-aos="fade-up">
+            <li class="flex items-center gap-[10px]" data-aos="fade-up">
+              <i class="uil uil-check text-[#FFFF] text-[23px]"></i>
+              <h2 class="text-[13px] leading-7   text-[#FFFF] text-start">30 Premium Themes + Pre-Built Shopify Store
               </h2>
             </li>
-            <li class="flex items-center gap-[10px]">
-              <i class="uil uil-check text-[#FFFF] text-[25px]"></i>
-              <h2 class="text-[15px] leading-7   text-[#FFFF] text-start">Winning Product + Verified Supplier watchlist
+            <li class="flex items-center gap-[10px]" data-aos="fade-up">
+              <i class="uil uil-check text-[#FFFF] text-[23px]"></i>
+              <h2 class="text-[13px] leading-7   text-[#FFFF] text-start">Winning Product + Verified Supplier watchlist
               </h2>
             </li>
-            <li class="flex items-center gap-[10px]">
-              <i class="uil uil-check text-[#FFFF] text-[25px]"></i>
-              <h2 class="text-[15px] leading-7   text-[#FFFF] text-start">Aesthetic, High-Converting Design</h2>
+            <li class="flex items-center gap-[10px]" data-aos="fade-up">
+              <i class="uil uil-check text-[#FFFF] text-[23px]"></i>
+              <h2 class="text-[13px] leading-7   text-[#FFFF] text-start">Aesthetic, High-Converting Design</h2>
             </li>
-            <li class="flex items-center gap-[10px]">
-              <i class="uil uil-check text-[#FFFF] text-[25px]"></i>
-              <h2 class="text-[15px] leading-7   text-[#FFFF] text-start">One-time payment. Instant access. Zero fluff
+            <li class="flex items-center gap-[10px]" data-aos="fade-up">
+              <i class="uil uil-check text-[#FFFF] text-[23px]"></i>
+              <h2 class="text-[13px] leading-7   text-[#FFFF] text-start">One-time payment. Instant access. Zero fluff
               </h2>
             </li>
           </ul>
         </div>
-        <div class="pricing-btn">
-          <a href="https://storestacks.gumroad.com/l/Pack">
+        <div class="pricing-btn" data-aos="fade-up">
+          <a href="https://storestacks.gumroad.com/l/Pack" data-aos="fade-up">
             <button
               class="animated-button hidden md:flex bg-white hover:bg-[#16CF2F] text-green-600 hover:text-white transition-all duration-300 px-4 py-2 rounded-md items-center gap-2 relative">
               <svg viewBox="0 0 24 24"
@@ -803,7 +929,7 @@
                 </path>
               </svg>
 
-              <span class="text font-medium border-white px-[10px]">GRAB YOURS</span>
+              <span class="text font-medium border-white px-[10px] text-[14px]">GRAB YOURS</span>
               <span class="circle hidden"></span>
               <!-- if this is decorative or animation controlled by CSS, keep it. -->
 
@@ -820,17 +946,17 @@
       </div>
     </div>
   </section>
-  <section class="text-white px-4 py-12">
-    <div class="max-w-2xl flex flex-col items-center mx-auto text-center">
-      <div class="">
-        <p
-          class="text-sm tracking-widest uppercase font-bold border border-[#FFFFFF14] px-[15px] py-[7px] rounded-[25px]">
+  <section class="text-white px-4 py-12" data-aos="fade-up">
+    <div class="max-w-2xl flex flex-col items-center mx-auto text-center" data-aos="fade-up">
+      <div class="" data-aos="fade-up">
+        <p class="text-[12px] tracking-widest uppercase font-bold border border-[#FFFFFF14] px-[15px] py-[7px] rounded-[25px]"
+          data-aos="fade-up">
           FAQ</p>
       </div>
-      <h2 class="text-4xl font-bold mt-2">Maybe we have an answer</h2>
+      <h2 class="text-[34px] font-bold mt-2" data-aos="fade-up">Maybe we have an answer</h2>
     </div>
 
-    <div class="mt-10 w-full md:px-[220px] mx-auto">
+    <div class="mt-10 w-full md:px-[220px] mx-auto" data-aos="fade-up">
       <!-- Accordion Item -->
       <div x-data="{ open: false }"
         class="w-full border border-white/20 backdrop-blur-md  framer-hover hover:bg-white/10 hover:border-white/10">
@@ -841,7 +967,7 @@
             <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4" />
           </svg>
         </button>
-        <div x-show="open" x-transition class="px-6 pb-4 text-[15px] font-semibold text-gray-300">
+        <div x-show="open" x-transition class="px-6 pb-4 text-[13px] font-semibold text-gray-300">
           You’ll receive a fully optimized, pre-built Shopify store, premium theme, winning product with supplier,
           branding kit, and a launch blueprint, everything you need to start fast.
         </div>
@@ -851,13 +977,13 @@
       <div x-data="{ open: false }"
         class="w-full border border-white/20 backdrop-blur-md  framer-hover hover:bg-white/10 hover:border-white/10">
         <button @click="open = !open" class="flex justify-between items-center w-full px-6 py-6 focus:outline-none">
-          <h5 class="text-left text-lg font-bold">Do I need experience to run this store?</h5>
+          <h5 class="text-left text-[16px] font-bold">Do I need experience to run this store?</h5>
           <svg :class="{'rotate-45': open}" class="w-5 h-5 transform transition-transform duration-300 text-white"
             fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4" />
           </svg>
         </button>
-        <div x-show="open" x-transition class="px-6 pb-4 text-[15px] font-semibold text-gray-300">
+        <div x-show="open" x-transition class="px-6 pb-4 text-[13px] font-semibold text-gray-300">
           No prior experience is needed! Our stores are fully set up and optimized, making them beginner-friendly. Plus,
           we include a step-by-step guide to help you with everything from managing orders to marketing your store. If
           you need more help, don't hesitate to contact us.
@@ -866,13 +992,13 @@
       <div x-data="{ open: false }"
         class="w-full border border-white/20 backdrop-blur-md  framer-hover hover:bg-white/10 hover:border-white/10">
         <button @click="open = !open" class="flex justify-between items-center w-full px-6 py-6 focus:outline-none">
-          <h5 class="text-left text-lg font-bold">Is the store optimized for mobile devices?</h5>
+          <h5 class="text-left text-[16px] font-bold">Is the store optimized for mobile devices?</h5>
           <svg :class="{'rotate-45': open}" class="w-5 h-5 transform transition-transform duration-300 text-white"
             fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4" />
           </svg>
         </button>
-        <div x-show="open" x-transition class="px-6 pb-4 text-[15px] font-semibold text-gray-300">
+        <div x-show="open" x-transition class="px-6 pb-4 text-[13px] font-semibold text-gray-300">
           Absolutely. Every store is fully responsive and built with mobile-first design in mind. Your store will look
           clean, professional, and high-converting on all devices, especially mobile, where most customers shop.
         </div>
@@ -880,13 +1006,13 @@
       <div x-data="{ open: false }"
         class="w-full border border-white/20 backdrop-blur-md  framer-hover hover:bg-white/10 hover:border-white/10">
         <button @click="open = !open" class="flex justify-between items-center w-full px-6 py-6 focus:outline-none">
-          <h5 class="text-left text-lg font-bold">Can I Sell My Own Chosen Products?</h5>
+          <h5 class="text-left text-[16px] font-bold">Can I Sell My Own Chosen Products?</h5>
           <svg :class="{'rotate-45': open}" class="w-5 h-5 transform transition-transform duration-300 text-white"
             fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4" />
           </svg>
         </button>
-        <div x-show="open" x-transition class="px-6 pb-4 text-[15px] font-semibold text-gray-300">
+        <div x-show="open" x-transition class="px-6 pb-4 text-[13px] font-semibold text-gray-300">
           Yes! You have full control over your store’s products. You can add or remove products anytime to suit your
           niche and business goals
         </div>
@@ -894,13 +1020,13 @@
       <div x-data="{ open: false }"
         class="w-full border border-white/20 backdrop-blur-md  framer-hover hover:bg-white/10 hover:border-white/10">
         <button @click="open = !open" class="flex justify-between items-center w-full px-6 py-6 focus:outline-none">
-          <h5 class="text-left text-lg font-bold">What If I Have Issues After Purchasing?</h5>
+          <h5 class="text-left text-[16px] font-bold">What If I Have Issues After Purchasing?</h5>
           <svg :class="{'rotate-45': open}" class="w-5 h-5 transform transition-transform duration-300 text-white"
             fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4" />
           </svg>
         </button>
-        <div x-show="open" x-transition class="px-6 pb-4 text-[15px] font-semibold text-gray-300">
+        <div x-show="open" x-transition class="px-6 pb-4 text-[13px] font-semibold text-gray-300">
           We offer full support to help you get started. If you run into any issues, you can reach out to our team for
           assistance.
         </div>
@@ -911,7 +1037,8 @@
   </section>
 
   <section
-    class="py-[150px] sm:py-[180px] md:py-[200px] text-white px-4 sm:px-8 md:px-[100px] lg:px-[150px] xl:px-[220px] flex flex-col justify-center items-center relative">
+    class="py-[150px] sm:py-[180px] md:py-[200px] text-white px-4 sm:px-8 md:px-[100px] lg:px-[150px] xl:px-[220px] flex flex-col justify-center items-center relative"
+    data-aos="fade-up">
     <!-- Background Image -->
     <div class="absolute inset-0 flex justify-center items-center">
       <img src="https://framerusercontent.com/images/z73ieFN8PAYaq2AhJRjefimEQPw.jpg" alt="Guarantee Background"
@@ -920,25 +1047,26 @@
 
     <!-- Overlay Content -->
     <div
-      class="relative top-[20px] z-10 w-full max-w-6xl mx-auto text-center text-white flex flex-col justify-center items-center gap-[30px] px-4 sm:px-6">
+      class="relative top-[20px] z-10 w-full max-w-6xl mx-auto text-center text-white flex flex-col justify-center items-center gap-[30px] px-4 sm:px-6"
+      data-aos="fade-up">
       <!-- Preheading -->
-      <p
-        class="text-sm tracking-widest uppercase font-bold border border-[#FFFFFF14] px-[15px] py-[7px] rounded-[25px]">
+      <p class="text-[12px] tracking-widest uppercase font-bold border border-[#FFFFFF14] px-[15px] py-[7px] rounded-[25px]"
+        data-aos="fade-up">
         FAQ</p>
 
       <!-- Title -->
-      <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold">Your Success, Guaranteed.</h2>
+      <h2 class="text-[22px] sm:text-[28px] md:text-[34px] font-bold" data-aos="fade-up">Your Success, Guaranteed.</h2>
 
       <!-- Description -->
-      <p class="text-sm sm:text-base md:text-[15px] text-white max-w-2xl mx-auto">
-        With StoreStack, your satisfaction is our priority. If you're not completely satisfied with your purchase within
+      <p class="text-[12px] sm:text-[14px] md:text-[13px] text-white max-w-2xl mx-auto" data-aos="fade-up">
+        With Webuilders, your satisfaction is our priority. If you're not completely satisfied with your purchase within
         7 days, we'll refund your investment no questions asked
       </p>
 
-      <div class="flex flex-col md:flex-row justify-center items-center gap-[20px] sm:gap-[30px]">
+      <div class="flex flex-col md:flex-row justify-center items-center gap-[20px] sm:gap-[30px]" data-aos="fade-up">
         <!-- CTA Button -->
-        <div class="flex justify-center pt-4">
-          <a href="https://storestacks.gumroad.com/l/Pack">
+        <div class="flex justify-center pt-4" data-aos="fade-up">
+          <a href="https://storestacks.gumroad.com/l/Pack" data-aos="fade-up">
             <button
               class="animated-button hidden md:flex bg-white hover:bg-[#16CF2F] text-green-600 hover:text-white transition-all duration-300 px-4 py-2 rounded-md items-center gap-2 relative">
               <svg viewBox="0 0 24 24"
@@ -948,7 +1076,7 @@
                   d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z">
                 </path>
               </svg>
-              <span class="text font-medium border-white px-[10px]">GRAB YOURS</span>
+              <span class="text font-medium border-white px-[10px] text-[14px]">GRAB YOURS</span>
               <span class="circle hidden"></span>
               <svg viewBox="0 0 24 24"
                 class="arr-1 w-5 h-6 p-1 rounded-full bg-[#16CF2F] text-green-600 transition-all duration-300"
@@ -962,8 +1090,8 @@
         </div>
 
         <!-- Avatars and Stats -->
-        <div class="flex flex-col sm:flex-row items-center gap-4">
-          <div class="flex items-center">
+        <div class="flex flex-col sm:flex-row items-center gap-4" data-aos="fade-up">
+          <div class="flex items-center" data-aos="fade-up">
             <!-- Avatars -->
             <div class="flex -space-x-3">
               <img src="https://framerusercontent.com/images/sFJggTzla8eMLg8n1AbKDQlyulU.jpg?scale-down-to=1024"
@@ -976,204 +1104,200 @@
 
             <!-- "+2k" -->
             <div
-              class="relative -right-[15px] w-10 h-10 rounded-full bg-[#0EC927] text-[18px] text-white flex items-center justify-center font-semibold shadow-inner">
+              class="relative -right-[15px] w-10 h-10 rounded-full bg-[#0EC927] text-[18px] text-white flex items-center justify-center font-semibold shadow-inner"
+              data-aos="fade-up">
               2k+
             </div>
           </div>
 
           <!-- Review Stats -->
           <div id="review_star_content"
-            class="flex flex-col items-center sm:items-start gap-[5px] text-center sm:text-left">
+            class="flex flex-col items-center sm:items-start gap-[5px] text-center sm:text-left" data-aos="fade-up">
             <div class="star">
               <img src="/static/images/star-removebg-preview.png" alt="" class="w-[100px]">
             </div>
-            <p class="font-semibold">Join 3000+ Brands</p>
+            <p class="font-semibold text-[12px]">Join 3000+ Brands</p>
           </div>
         </div>
       </div>
     </div>
   </section>
-
-  <section class="py-10 flex flex-col gap-[50px]  bg-[#031203] px-[50px]">
-    <div class="max-w-2xl flex flex-col items-center mx-auto text-center py-[50px]">
-      <div class="">
-        <p
-          class="text-sm tracking-widest uppercase font-bold border border-[#FFFFFF14] px-[15px] py-[7px] rounded-[25px]">
-          FAQ</p>
-      </div>
-      <h2 class="text-4xl font-bold mt-2">Maybe we have an answer</h2>
+  <section class="relative bg-gradient-to-b from-[#040313] to-transparent to-[38%] opacity-100 text-white font-sora"
+    data-aos="fade-up">
+    <!-- Background Image -->
+    <div class="absolute inset-0 z-0">
+      <img src="https://framerusercontent.com/images/TZGgHyBBmDQxbDq0hRCGlId50FU.png" alt="Background"
+        class="w-full h-full object-cover bg-gradient-to-b from-[#040313] to-transparent to-[38%] opacity-100">
+      <div class="absolute inset-0"></div>
     </div>
-    <div class="container px-4 relative">
-      <!-- Carousel -->
-      <div id="testimonial-carousel" class="owl-carousel">
-        <!-- Testimonial Item -->
-        <div class="item text-center px-6 py-10 bg-[#081708] shadow-lg rounded-lg">
-          <div class="w-20 h-20 mx-auto mb-4">
-            <img src="https://i.pravatar.cc/100?img=1" alt="User"
-              class="w-full h-full object-cover rounded-full shadow-md border-2 border-white" />
-          </div>
-          <p class="text-gray-600 text-base italic mb-4">
-            “This toy changed the way my kids play. So creative and eco-friendly!”
-          </p>
-          <h4 class="text-lg font-semibold text-white">Rahul Sharma</h4>
-        </div>
 
-        <!-- Copy and change content for more items -->
-        <div class="item text-center px-6 py-10 bg-[#081708] shadow-lg rounded-lg">
-          <div class="w-20 h-20 mx-auto mb-4">
-            <img src="https://i.pravatar.cc/100?img=2" alt="User"
-              class="w-full h-full object-cover rounded-full shadow-md border-2 border-white" />
+    <div class="footer-bg relative z-10 max-w-[70rem] mx-auto py-20 px-4 sm:px-6 lg:px-8" data-aos="fade-up">
+      <div class="footer-header flex flex-col lg:flex-row justify-between gap-10 lg:gap-0 p-[20px]">
+        <h1 class="text-[38px] md:text-[58px] font-bold leading-tight" data-aos="fade-up">Join The<br>Community</h1>
+        <div class="socials flex flex-col w-full lg:w-[400px] gap-[10px]" data-aos="fade-up">
+          <div class="fB flex justify-between gap-[30px] sm:gap-[50px] items-center">
+            <div class="flex items-center gap-[15px]" data-aos="fade-up">
+              <i class="uil uil-facebook text-[23px]" data-aos="fade-up"></i>
+              <h2 data-aos="fade-up">FACEBOOK</h2>
+            </div>
+            <div data-aos="fade-up">
+              <i class="uil uil-arrow-up-right" data-aos="fade-up"></i>
+            </div>
           </div>
-          <p class="text-gray-600 text-base italic mb-4">
-            “Loved the quality and design. Definitely a favorite in our home!”
-          </p>
-          <h4 class="text-lg font-semibold text-white">Sneha Patel</h4>
-        </div>
+          <div class="border border-[#FFFFFF14]" data-aos="fade-up"></div>
 
-        <div class="item text-center px-6 py-10 bg-[#081708] shadow-lg rounded-lg">
-          <div class="w-20 h-20 mx-auto mb-4">
-            <img src="https://i.pravatar.cc/100?img=3" alt="User"
-              class="w-full h-full object-cover rounded-full shadow-md border-2 border-white" />
+          <div class="fb flex justify-between gap-[30px] sm:gap-[50px] items-center" data-aos="fade-up">
+            <div class="flex items-center gap-[15px]" data-aos="fade-up">
+              <i class="uil uil-instagram text-[23px]" data-aos="fade-up"></i>
+              <h2 data-aos="fade-up">INSTAGRAM</h2>
+            </div>
+            <div data-aos="fade-up">
+              <i class="uil uil-arrow-up-right" data-aos="fade-up"></i>
+            </div>
           </div>
-          <p class="text-gray-600 text-base italic mb-4">
-            “Beautifully crafted wooden toys. Highly recommend for all parents!”
-          </p>
-          <h4 class="text-lg font-semibold text-white">Aarav Desai</h4>
+          <div class="border border-[#FFFFFF14]" data-aos="fade-up"></div>
+
+          <div class="fb flex justify-between gap-[30px] sm:gap-[50px] items-center" data-aos="fade-up">
+            <div class="flex items-center gap-[15px]" data-aos="fade-up">
+              <i class="fa-brands fa-tiktok text-[23px]" data-aos="fade-up"></i>
+              <h2 data-aos="fade-up">TIKTOK</h2>
+            </div>
+            <div>
+              <i class="uil uil-arrow-up-right" data-aos="fade-up"></i>
+            </div>
+          </div>
+          <div class="border border-[#FFFFFF14]" data-aos="fade-up"></div>
         </div>
       </div>
 
-      <!-- Arrows (hidden on mobile) -->
-      <div class="hidden md:block absolute left-0 top-1/2 transform -translate-y-1/2 z-10">
-        <button id="prevBtn" class="bg-[#081708] border border-[#FFFFFF14] text-white p-[5px] px-[10px] rounded-full shadow ">
-          &larr;
-        </button>
+      <div class="footer-policy flex flex-col gap-[20px] pt-[50px] p-[20px]" data-aos="fade-up">
+        <div class="footer-subheading py-[50px]" data-aos="fade-up">
+          <h2 class="text-[26px] font-bold text-white" data-aos="fade-up">Webuilders - Shopify Packs for Entrepreneurs
+          </h2>
+        </div>
+        <div class="flex flex-col gap-[15px]" data-aos="fade-up">
+          <div class="flex justify-between items-center" data-aos="fade-up">
+            <div class="footer-heading">
+              <h2 class="uppercase font-medium" data-aos="fade-up">Price</h2>
+            </div>
+            <div>
+              <i class="uil uil-arrow-up-right" data-aos="fade-up"></i>
+            </div>
+          </div>
+          <div class="border border-[#FFFFFF14]" data-aos="fade-up"></div>
+
+          <div class="flex justify-between items-center" data-aos="fade-up">
+            <div class="footer-heading">
+              <h2 class="uppercase font-medium" data-aos="fade-up">Blog</h2>
+            </div>
+            <div>
+              <i class="uil uil-arrow-up-right" data-aos="fade-up"></i>
+            </div>
+          </div>
+          <div class="border border-[#FFFFFF14]" data-aos="fade-up"></div>
+
+          <div class="flex justify-between items-center">
+            <div class="footer-heading">
+              <h2 class="uppercase font-medium" data-aos="fade-up">Contact</h2>
+            </div>
+            <div>
+              <i class="uil uil-arrow-up-right" data-aos="fade-up"></i>
+            </div>
+          </div>
+          <div class="border border-[#FFFFFF14]" data-aos="fade-up"></div>
+
+          <div class="flex justify-between items-center" data-aos="fade-up">
+            <div class="footer-heading">
+              <h2 class="uppercase font-medium" data-aos="fade-up">Terms & Conditions</h2>
+            </div>
+            <div>
+              <i class="uil uil-arrow-up-right" data-aos="fade-up"></i>
+            </div>
+          </div>
+          <div class="border border-[#FFFFFF14]" data-aos="fade-up"></div>
+
+          <div class="flex justify-between items-center" data-aos="fade-up">
+            <div class="footer-heading">
+              <h2 class="uppercase font-medium" data-aos="fade-up">Privacy Policy</h2>
+            </div>
+            <div>
+              <i class="uil uil-arrow-up-right" data-aos="fade-up"></i>
+            </div>
+          </div>
+          <div class="border border-[#FFFFFF14]" data-aos="fade-up"></div>
+        </div>
       </div>
-      <div class="hidden md:block absolute right-0 top-1/2 transform -translate-y-1/2 z-10">
-        <button id="nextBtn" class=" bg-[#081708] border border-[#FFFFFF14] text-white p-[5px] px-[10px] rounded-full shadow ">
-          &rarr;
-        </button>
+
+      <div class="pt-[50px] p-[20px] text-sm sm:text-base" data-aos="fade-up">
+        <h3>© Webuilders 2025. All Rights Reserved.</h3>
       </div>
     </div>
-    </section>
+  </section>
 
 
-    <section class="relative bg-gradient-to-b from-[#040313] to-transparent to-[38%] opacity-100 text-white font-sora">
-      <!-- Background Image -->
-      <div class="absolute inset-0 z-0">
-        <img src="https://framerusercontent.com/images/TZGgHyBBmDQxbDq0hRCGlId50FU.png" alt="Background"
-          class="w-full h-full object-cover bg-gradient-to-b from-[#040313] to-transparent to-[38%] opacity-100">
-        <div class="absolute inset-0"></div>
-      </div>
-    
-      <div class="footer-bg relative z-10 max-w-[70rem] mx-auto py-20 px-4 sm:px-6 lg:px-8">
-        <div class="footer-header flex flex-col lg:flex-row justify-between gap-10 lg:gap-0 p-[20px]">
-          <h1 class="text-[40px] md:text-[60px] font-bold leading-tight">Join The<br>Community</h1>
-          <div class="socials flex flex-col w-full lg:w-[400px] gap-[10px]">
-            <div class="fB flex justify-between gap-[30px] sm:gap-[50px] items-center">
-              <div class="flex items-center gap-[15px]">
-                <i class="uil uil-facebook text-[25px]"></i>
-                <h2>FACEBOOK</h2>
-              </div>
-              <div>
-                <i class="uil uil-arrow-up-right"></i>
-              </div>
-            </div>
-            <div class="border border-[#FFFFFF14]"></div>
-    
-            <div class="fb flex justify-between gap-[30px] sm:gap-[50px] items-center">
-              <div class="flex items-center gap-[15px]">
-                <i class="uil uil-instagram text-[25px]"></i>
-                <h2>INSTAGRAM</h2>
-              </div>
-              <div>
-                <i class="uil uil-arrow-up-right"></i>
-              </div>
-            </div>
-            <div class="border border-[#FFFFFF14]"></div>
-    
-            <div class="fb flex justify-between gap-[30px] sm:gap-[50px] items-center">
-              <div class="flex items-center gap-[15px]">
-                <i class="fa-brands fa-tiktok text-[25px]"></i>
-                <h2>TIKTOK</h2>
-              </div>
-              <div>
-                <i class="uil uil-arrow-up-right"></i>
-              </div>
-            </div>
-            <div class="border border-[#FFFFFF14]"></div>
-          </div>
-        </div>
-    
-        <div class="footer-policy flex flex-col gap-[20px] pt-[50px] p-[20px]">
-          <div class="footer-subheading py-[50px]">
-            <h2 class="text-[28px] font-bold text-white">StoreStack- Shopify Packs for Entrepreneurs</h2>
-          </div>
-          <div class="flex flex-col gap-[15px]">
-            <div class="flex justify-between items-center">
-              <div class="footer-heading">
-                <h2 class="uppercase font-medium">Price</h2>
-              </div>
-              <div>
-                <i class="uil uil-arrow-up-right"></i>
-              </div>
-            </div>
-            <div class="border border-[#FFFFFF14]"></div>
-    
-            <div class="flex justify-between items-center">
-              <div class="footer-heading">
-                <h2 class="uppercase font-medium">Blog</h2>
-              </div>
-              <div>
-                <i class="uil uil-arrow-up-right"></i>
-              </div>
-            </div>
-            <div class="border border-[#FFFFFF14]"></div>
-    
-            <div class="flex justify-between items-center">
-              <div class="footer-heading">
-                <h2 class="uppercase font-medium">Contact</h2>
-              </div>
-              <div>
-                <i class="uil uil-arrow-up-right"></i>
-              </div>
-            </div>
-            <div class="border border-[#FFFFFF14]"></div>
-    
-            <div class="flex justify-between items-center">
-              <div class="footer-heading">
-                <h2 class="uppercase font-medium">Terms & Conditions</h2>
-              </div>
-              <div>
-                <i class="uil uil-arrow-up-right"></i>
-              </div>
-            </div>
-            <div class="border border-[#FFFFFF14]"></div>
-    
-            <div class="flex justify-between items-center">
-              <div class="footer-heading">
-                <h2 class="uppercase font-medium">Privacy Policy</h2>
-              </div>
-              <div>
-                <i class="uil uil-arrow-up-right"></i>
-              </div>
-            </div>
-            <div class="border border-[#FFFFFF14]"></div>
-          </div>
-        </div>
-    
-        <div class="pt-[50px] p-[20px] text-sm sm:text-base">
-          <h3>© StoreStack 2025. All Rights Reserved.</h3>
-        </div>
-      </div>
-    </section>
-    
-    
 
-    <!-- Script -->
-    <script src="/static/js/index.js"></script>
+  <!-- Script -->
+  <script src="/static/js/index.js"></script>
 
-    <!-- Swiper JS -->
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <!-- AOS JS -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+  <script>
+    AOS.init({
+      duration: 1000, // animation duration in ms
+      once: true,     // whether animation should happen only once
+    });
+  </script>
+
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <!-- Owl Carousel JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+  <script>
+    $(document).ready(function () {
+      const owl = $('#testimonial-carousel');
+
+      owl.owlCarousel({
+        loop: true,
+        margin: 24,
+        autoplay: true,
+        autoplayTimeout: 4000,
+        autoplayHoverPause: true,
+        smartSpeed: 800,
+        nav: false,
+        dots: true,
+        responsive: {
+          0: {
+            items: 1,
+            dots: true
+          },
+          768: {
+            items: 2,
+            dots: true
+          },
+          1024: {
+            items: 3,
+            dots: false
+          }
+        }
+      });
+
+      // Navigation buttons (only for desktop)
+      $('#prevBtn').click(function () {
+        owl.trigger('prev.owl.carousel');
+      });
+      $('#nextBtn').click(function () {
+        owl.trigger('next.owl.carousel');
+      });
+    });
+  </script>
+
 
 </body>
 
